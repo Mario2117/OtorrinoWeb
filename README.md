@@ -11,3 +11,6 @@ Para correr programa
 1. Para correr GULP: Entrar en folder /src y correr comando gulp
 2. Para correr tailwind: en ./ correr comando npm run tw
 3. Correr live server 
+
+En caso de error en liveserver:
+Abrir desde el browser el folder Build
