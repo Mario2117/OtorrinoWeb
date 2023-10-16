@@ -1,18 +1,40 @@
 
-        
-<nav class="flex items-center justify-between bg-white h-32">
-    <div class="flex items-center pl-9">
+<!--Navbar WEB-->
+<nav class="hidden transition-all items-center justify-between bg-white h-32 md:flex">
+    <div class="flex items-center pl-1 md:pl-9">
         <img src="../img/Logo.png" alt="Logo" class="h-28 w-auto">
         <div>
         <p class="text-sm tracking-widest font-serif">DR. CARLO PEDROZA</p>
         <p class="text-xs tracking-widest font-serif">OTORRINOLARINGÓLOGO</p>
         </div>
     </div>
-    <div class="flex items-center justify-evenly h-16 w-3/5 shadow-lg ml-auto rounded-l-full bg-lime-950 text-lg tracking-widest text-white font-serif font-light">
-        <a class="" href="">INICIO</a>
-        <a class="" href="">¿QUIÉNES SOMOS?</a>
-        <a class="" href="">SERVICIOS</a>
-        <a class="" href="">CONTACTO</a>
+
+    <div class="flex items-center justify-evenly h-16 w-3/5 shadow-lg ml-auto 
+        rounded-l-full bg-lime-950 text-lg text-white font-serif font-light ">
+        <a class="hover:text-orange-100" href="">INICIO</a>
+        <a class="hover:text-orange-100" href="">¿QUIÉNES SOMOS?</a>
+        <a class="hover:text-orange-100" href="">SERVICIOS</a>
+        <a class="hover:text-orange-100" href="">CONTACTO</a>
+    </div>
+</nav>
+
+<nav class="flex items-center justify-between bg-white h-24 md:hidden">
+    <div class="flex items-center pl-1">
+        <img src="../img/Logo.png" alt="Logo" class="h-20 w-auto">
+        <div>
+        <p class="text-xs tracking-widest font-serif">DR. CARLO PEDROZA</p>
+        <p class="text-xs tracking-widest font-serif">OTORRINOLARINGÓLOGO</p>
+        </div>
+    </div>
+
+
+    <div class="flex items-center justify-evenly h-16 w-1/6 shadow-lg 
+    rounded-l-full bg-lime-950 text-lg text-white font-serif font-light transition-all hover:w-2/6">
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="pl-2 w-10 h-10 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    
     </div>
 </nav>
 
