@@ -9,13 +9,14 @@
 </head>
 
 <body>
-
-    <div class="flex items-center justify-center w-screen h-[800px]">
+    <!--
+    <div class="flex items-center justify-center w-screen h-[800px] ">
         <div class=" bg-[#F1E9E0] h-[600px] w-[550px] absolute z-0 left-0 top-44"></div>
         <img src="../img/doctor.png" alt="" class="h-auto w-[460px] relative z-10 shadow-2xl ">
 
-        <div class="flex flex-col w-[700px] ml-36 mr-5 font-serif">
-            <!--Texto-->
+        <div class="flex flex-col w-[700px] ml-36 mr-5 font-serif">-->
+    <!--Texto-->
+    <!--
             <div>
                 <h1 class="text-7xl text-[#303A2C]">Dr. Carlo Pedroza</h1>
                 <p class="w-auto pt-3 text-lg text-[#333122]">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -27,7 +28,39 @@
             
             <button class="text-lg bg-[#F1E9E0] mt-5 w-36 border-2 border-[#303A2C] py-4 px-4 rounded-full shadow-md hover:shadow-inner">Saber más...</button>
         </div>
-    </div> 
+    </div> -->
+
+
+    <div class="flex flex-col items-center justify-center w-screen h-auto lg:ml-32 lg:mr-32 pt-10 lg:flex-row">
+
+        <div class="bg-[#F1E9E0] h-[170px] w-3/4 absolute z-0 top-20 lg:h-[520px] lg:w-[550px] lg:left-0 lg:top-40">
+        </div>
+
+        <img src="../img/doctor.png" alt="" class="transition-all shadow-[0px_0px_5px_0px_#000000]
+             w-1/2 md:w-5/12 z-10   lg:w-[460px]">
+
+        <div class="flex flex-col items-center pt-10 pl-5 pr-5 font-serif lg:pt-0  lg:items-start lg:pl-32 xl:pl-40">
+            <!--Texto-->
+            <div class="w-11/12 md:w-8/12 lg:w-9/12">
+                <h1 class="text-3xl text-[#303A2C] pb-1 md:text-5xl xl:text-7xl">Dr. Carlo Pedroza</h1>
+                <div class="bg-[#878560] w-[240px] h-0.5 md:w-[380px] lg:hidden"></div>
+                <p class=" pt-4 text-base text-[#333122] 
+                md:text-lg">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur."</p>
+            </div>
+
+            <button
+                class="w-4/6 px-2 py-2 mt-5 text-lg rounded-full shadow-md border-2 border-[#303A2C] bg-[#F1E9E0] md:w-56 lg:w-40 lg:text-lg lg:py-4 lg:px-4 hover:shadow-inner">
+                Saber
+                más...</button>
+        </div>
+    </div>
 
 
 </body>
