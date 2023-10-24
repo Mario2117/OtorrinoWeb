@@ -1,7 +1,7 @@
 {
   "name": "otorrinoweb",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pasos para instalar lo necesario. \r 1. npm init\r 2. npm install -D tailwindcss\r 3. npm install browser-sync gulp --save-dev\r 4. npm install --save-dev gulp-file-include\r 5. Entrar terminal modo administrador: Set-ExecutionPolicy RemoteSigned\r Para correr programa\r 1. Para correr GULP: Entrar en folder /src y correr comando gulp\r 2. Para correr tailwind: en ./ correr comando npm run tw\r 3. Correr live server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
