@@ -1,6 +1,7 @@
 let sliderContainer = document.getElementById('review-cards');
 let slider = document.getElementById('slider');
 let cards = slider.getElementsByTagName('li');
+let reviewWidth = document.getElementById('review').offsetWidth;
 let botonPrev = document.getElementById('prevB');
 let botonNext = document.getElementById('nextB');
 
@@ -13,7 +14,7 @@ if (document.clientWidth > 768) {
 } else {
     elementsToShow = 1;
 }
-
+*/
 
 sliderChildren.slice(-elementsToShow).reverse().forEach(card => {
     slider.insertAdjacentHTML("afterbegin",card.outerHTML);
@@ -22,31 +23,36 @@ sliderChildren.slice(-elementsToShow).reverse().forEach(card => {
 sliderChildren.slice(0,elementsToShow).reverse().forEach(card => {
     slider.insertAdjacentHTML("beforeend",card.outerHTML);
 });
-*/
+
 let sliderContainerWidth = sliderContainer.clientWidth;
 
 let cardWidth = sliderContainerWidth/elementsToShow;
 
-slider.style.width = cards.length*cardWidth+'px';
-/*  
+//slider.style.width = cards.length*cardWidth+'px';
+
+
+//cardWidth = slider.getElementsByTagName('li').offsetWidth;
+
 botonPrev.onclick = () => {
     console.log("left");
-    console.log(cardWidth);
-    slider.scrollLeft += cardWidth;
+    console.log(reviewWidth);
+    console.log(slider.scrollLeft);
+    sliderContainer.scrollLeft -= reviewWidth;
 };
 
 botonNext.onclick = () => {
     console.log("right");
-    console.log(cardWidth);
-    slider.scrollRight -= cardWidth;
+    console.log(reviewWidth);
+    console.log(slider.scrollLeft);
+    sliderContainer.scrollLeft += reviewWidth;
 };
-*/
+/*
 for (let index = 0; index < cards.length; index++) {
     const element = cards[index];
     element.style.width = cardWidth+'px';
     
 }
-
+*/
 function next() {
     console.log(Math.round(+slider.style.marginLeft.slice(0,-2)));
     if(Math.round(+slider.style.marginLeft.slice(0,-2))!=-Math.round(cardWidth*(cards.length-elementsToShow)))
@@ -61,10 +67,10 @@ function prev() {
 
 
 const infiniteScroll=() => {
-    if (slider.scrollLeft === 0) {
+    if (sliderContainer.scrollLeft === 0) {
         console.log("izquierda");
-    } else if(Math.ceil(slider.scrollLeft) === slider.scrollWidth - slider.offsetWidth){
+    } else if(Math.ceil(sliderContainer.scrollLeft) === sliderContainer.scrollWidth - sliderContainer.offsetWidth){
         console.log("derecha");
     }
 };
-slider.addEventListener("scroll",infiniteScroll);
+sliderContainer.addEventListener("scroll",infiniteScroll);
