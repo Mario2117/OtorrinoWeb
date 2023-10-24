@@ -6,19 +6,19 @@
         <div class="text-md text-[#CDB8A0] font-serif mb-3">
             Pacientes te cuentan su experiencias
         </div>
-        <button id="" onclick="prev()" class="w-fit h-fit">
+        <button id="prevB" onclick="prev()" class="w-fit h-fit">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="lg:w-9 lg:h-9 w-7 h-7">
                 <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
             </svg>
         </button>
-        <button onclick="next()" class="w-fit h-fit">
+        <button id="nextB" onclick="next()" class="w-fit h-fit">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="lg:w-9 lg:h-9 w-7 h-7">
                 <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
             </svg>
         </button>
-        <div id="review-cards" class="mb-4 flex flex-row  w-fit max-w-4xl lg:max-w-[1024px] overflow-hidden">
+        <div id="review-cards" class="mb-4 flex flex-row w-fit max-w-4xl lg:max-w-[1024px] overflow-hidden">
             <ul id="slider" class="flex w-full">
-                <li class="h-72 flex flex-col shadow-[0px_0px_5px_0px_#000000]">
+                <li class="h-72 flex flex-col shadow-[0px_0px_5px_0px_#000000] mx-2">
                     <div class="w-full h-[70px] bg-[#333122] flex flex-row items-center"> 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="ml-3 mr-1 w-11 h-11">
                             <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="h-72 flex flex-col shadow-[0px_0px_5px_0px_#000000]">
+                <li class="h-72 flex flex-col shadow-[0px_0px_5px_0px_#000000] mx-2">
                     <div class="w-full h-[70px] bg-[#333122] flex flex-row items-center"> 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="ml-3 mr-1 w-11 h-11">
                             <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="h-72 flex flex-col shadow-[0px_0px_5px_0px_#000000]">
+                <li class="h-72 flex flex-col shadow-[0px_0px_5px_0px_#000000] mx-2">
                     <div class="w-full h-[70px] bg-[#333122] flex flex-row items-center"> 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="ml-3 mr-1 w-11 h-11">
                             <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="h-72 flex flex-col shadow-[0px_0px_5px_0px_#000000]">
+                <li class="h-72 flex flex-col shadow-[0px_0px_5px_0px_#000000] mx-2">
                     <div class="w-full h-[70px] bg-[#333122] flex flex-row items-center"> 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="ml-3 mr-1 w-11 h-11">
                             <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="h-72 flex flex-col shadow-[0px_0px_5px_0px_#000000]">
+                <li class="h-72 flex flex-col shadow-[0px_0px_5px_0px_#000000] mx-2">
                     <div class="w-full h-[70px] bg-[#333122] flex flex-row items-center"> 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="ml-3 mr-1 w-11 h-11">
                             <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
@@ -155,5 +155,5 @@
             </div>
         </div>
     </div>
-    <script src="./slider.js"></script>
+    <script src="./slider.js" defer></script>
 </section>
