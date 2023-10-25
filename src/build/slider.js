@@ -20,7 +20,7 @@ sliderChildren.slice(-elementsToShow).reverse().forEach(card => {
     slider.insertAdjacentHTML("afterbegin",card.outerHTML);
 });
 
-sliderChildren.slice(0,elementsToShow).reverse().forEach(card => {
+sliderChildren.slice(0,elementsToShow).forEach(card => {
     slider.insertAdjacentHTML("beforeend",card.outerHTML);
 });
 
@@ -67,10 +67,18 @@ function prev() {
 
 
 const infiniteScroll=() => {
+
     if (sliderContainer.scrollLeft === 0) {
-        console.log("izquierda");
+        sliderContainer.classList.remove("scroll-smooth");
+        sliderContainer.scrollLeft = sliderContainer.scrollWidth - ( 2 * sliderContainer.offsetWidth);
+        sliderContainer.classList.add("scroll-smooth");
+        
     } else if(Math.ceil(sliderContainer.scrollLeft) === sliderContainer.scrollWidth - sliderContainer.offsetWidth){
-        console.log("derecha");
+        
+        sliderContainer.classList.remove("scroll-smooth");
+        sliderContainer.scrollLeft = sliderContainer.offsetWidth;
+        sliderContainer.classList.add("scroll-smooth");
+
     }
 };
 sliderContainer.addEventListener("scroll",infiniteScroll);
