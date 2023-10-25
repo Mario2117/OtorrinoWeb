@@ -4,8 +4,17 @@ let cards = slider.getElementsByTagName('li');
 let reviewWidth = document.getElementById('review').offsetWidth;
 let botonPrev = document.getElementById('prevB');
 let botonNext = document.getElementById('nextB');
+let elementsToShow = 3;
+/*  
+if (document.clientWidth > 768) {
+    elementsToShow = 3;
+} else {
+    elementsToShow = 1;
+}
+*/
 
-let isDragging = false, startX, startScrollLeft;
+//Dragging
+let isDragging = false, startX, startScrollLeft, timeOutId;
 
 const dragStart = (e) => {
     isDragging = true;
@@ -35,17 +44,10 @@ const dragStop = (e) => {
 sliderContainer.addEventListener("mousedown", dragStart);
 sliderContainer.addEventListener("mousemove", dragging);
 sliderContainer.addEventListener("mouseup", dragStop);
+//endDragging
 
+//infiniteScroll
 sliderChildren = [...slider.children];
-
-let elementsToShow = 3;
-/*  
-if (document.clientWidth > 768) {
-    elementsToShow = 3;
-} else {
-    elementsToShow = 1;
-}
-*/
 
 sliderChildren.slice(-elementsToShow).reverse().forEach(card => {
     slider.insertAdjacentHTML("afterbegin",card.outerHTML);
@@ -59,11 +61,34 @@ let sliderContainerWidth = sliderContainer.clientWidth;
 
 let cardWidth = sliderContainerWidth/elementsToShow;
 
-//slider.style.width = cards.length*cardWidth+'px';
+const infiniteScroll=() => {
 
+    if (sliderContainer.scrollLeft === 0) {
+        sliderContainer.classList.remove("scroll-smooth");
+        sliderContainer.scrollLeft = sliderContainer.scrollWidth - ( 2 * sliderContainer.offsetWidth);
+        //sliderContainer.classList.add("scroll-smooth");
+        
+    } else if(Math.ceil(sliderContainer.scrollLeft) === sliderContainer.scrollWidth - sliderContainer.offsetWidth){
+        
+        sliderContainer.classList.remove("scroll-smooth");
+        sliderContainer.scrollLeft = sliderContainer.offsetWidth;
+        //sliderContainer.classList.add("scroll-smooth");
+    }
+
+    clearTimeout(timeOutId);
+    if(!sliderContainer.matches(":hover")) {autoplay();}
+    else {sliderContainer.classList.remove("scroll-smooth");}
+};
+sliderContainer.addEventListener("scroll",infiniteScroll);
+//endInfiniteScroll
+
+
+//slider.style.width = cards.length*cardWidth+'px';
 
 //cardWidth = slider.getElementsByTagName('li').offsetWidth;
 
+
+//buttonMovement
 botonPrev.onclick = () => {
     sliderContainer.classList.add("scroll-smooth");
     sliderContainer.scrollLeft -= reviewWidth;
@@ -93,21 +118,17 @@ function prev() {
     if(Math.round(+slider.style.marginLeft.slice(0,-2))!= 0)
         slider.style.marginLeft = (((+slider.style.marginLeft.slice(0,-2))+cardWidth))+'px';
 }
+//endButtonMovement
 
+//autoplay
+const autoplay = () => {
+    if(window.innnerWidth < 1000) return;
+    sliderContainer.classList.add("scroll-smooth");
+    timeOutId = setTimeout(() => sliderContainer.scrollLeft += cardWidth, 2500);
+    //sliderContainer.classList.remove("scroll-smooth");
+}
 
-const infiniteScroll=() => {
+autoplay();
 
-    if (sliderContainer.scrollLeft === 0) {
-        //sliderContainer.classList.remove("scroll-smooth");
-        sliderContainer.scrollLeft = sliderContainer.scrollWidth - ( 2 * sliderContainer.offsetWidth);
-        //sliderContainer.classList.add("scroll-smooth");
-        
-    } else if(Math.ceil(sliderContainer.scrollLeft) === sliderContainer.scrollWidth - sliderContainer.offsetWidth){
-        
-        //sliderContainer.classList.remove("scroll-smooth");
-        sliderContainer.scrollLeft = sliderContainer.offsetWidth;
-        //sliderContainer.classList.add("scroll-smooth");
-
-    }
-};
-sliderContainer.addEventListener("scroll",infiniteScroll);
+sliderContainer.addEventListener("mouseenter", () => clearTimeout(timeOutId));
+sliderContainer.addEventListener("mouseleave", autoplay);
