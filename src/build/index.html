@@ -24,55 +24,304 @@
         <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
     </div>
     <div class="flex flex-row gap-3 mx-3 place-content-center items-center h-full">
-        
-            <div class="relative overflow-hidden round-lg bg-cover bg-no-repeat bg-center bg-opacity-10" 
-                style="background-image: url('ear.jpg');">
-                <button id="button-ear" class="w-72 h-72 shadow-[0px_0px_5px_0px_#000000]">
-                    
-                    <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
-                    
-                        <div class="text-white text-serif text-2xl text-center pb-5">
-                            Oído
+            
+        <div class="flex flex-col items-center">
+            <div id="ear-box" class="">
+                
+                <div class="relative overflow-hidden round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 " 
+                    style="background-image: url('ear.jpg');">
+                    <button onclick="myFunction('ear')" id="button-ear" class="w-72 h-72 shadow-[0px_0px_5px_0px_#000000]">
+                        
+                        <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
+                        
+                            <div class="text-white text-serif text-2xl text-center pb-5">
+                                Oído
+                            </div>
+
                         </div>
-
-                    </div>
-                    
-                </button>
-            </div>
-    
-
-        <div class="relative overflow-hidden round-lg bg-cover bg-no-repeat bg-center bg-opacity-10" 
-            style="background-image: url('throat.jpg');">
-            <button id="button-ear" class="w-72 h-72 shadow-[0px_0px_5px_0px_#000000]">
-                
-                <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
-                
-                    <div class="text-white text-serif text-2xl text-center pb-5">
-                        Garganta
-                    </div>
-
+                        
+                    </button>
                 </div>
-                
-            </button>
+            </div>
+            <div id="ear-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
         </div>
-        <div class="relative overflow-hidden round-lg bg-cover bg-no-repeat bg-center bg-opacity-10" 
-                style="background-image: url('nose.jpg');">
-                <button id="button-ear" class="w-72 h-72 shadow-[0px_0px_5px_0px_#000000]">
-                    
-                    <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
-                    
-                        <div class="text-white text-serif text-2xl text-center pb-5">
-                            Nariz
-                        </div>
+    
+        <div class="flex flex-col items-center">
+            <div id="throat-box" class="">
+                <div class="relative overflow-hidden round-lg bg-cover bg-no-repeat bg-center bg-opacity-10" 
+                    style="background-image: url('throat.jpg');">
+                    <button onclick="myFunction('throat')" onclick="" id="button-throat" class="w-72 h-72 shadow-[0px_0px_5px_0px_#000000]">
+                        
+                        <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
+                        
+                            <div class="text-white text-serif text-2xl text-center pb-5">
+                                Garganta
+                            </div>
 
-                    </div>
-                    
-                </button>
+                        </div>
+                        
+                    </button>
+                </div>
+            </div>
+            <div id="throat-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
+        </div>
+        <div class="flex flex-col items-center">
+            <div id="nose-box" class="">
+                <div class="relative overflow-hidden round-lg bg-cover bg-no-repeat bg-center bg-opacity-10" 
+                        style="background-image: url('nose.jpg');">
+                        <button onclick="myFunction('nose')" id="button-nose" class="w-72 h-72 shadow-[0px_0px_5px_0px_#000000]">
+                            
+                            <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
+                            
+                                <div class="text-white text-serif text-2xl text-center pb-5">
+                                    Nariz
+                                </div>
+
+                            </div>
+                            
+                        </button>
+                </div>
+            </div>
+            <div id="nose-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
         </div>
        
     </div>
     
-    <div class="flex-grow h-1 bg-[#333122] mt-3 mx-3"></div>
+    <div id="bottom-line" class="flex-grow h-1 bg-[#333122] mt-5 mx-3"></div>
+    <div id="ear-services" class="mx-3 bg-[#333122] hidden">
+        <div class="flex flex-wrap gap-4 p-6 justify-center text-lg font-serif">
+            <a href="#"
+                class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12">
+                Service 1
+                <div class="text-gray-500 font-thin text-sm pt-1">
+                    <span>Topics: 63</span>
+                    <span>MCQs: 20697</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 2
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 48</span>
+                    <span>MCQs: 18222</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 3
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 55</span>
+                    <span>MCQs: 14783</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 4
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 26</span>
+                    <span>MCQs: 8818</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 5
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 40</span>
+                    <span>MCQs: 9584</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 6
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 8</span>
+                    <span>MCQs: 2576</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 5</span>
+                    <span>MCQs: 1739</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 1</span>
+                    <span>MCQs: 217</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 1</span>
+                    <span>MCQs: 154</span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div id="throat-services" class="mx-3 bg-[#333122] hidden">
+        <div class="flex flex-wrap gap-4 p-6 justify-center text-lg font-serif">
+            <a href="#"
+                class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12">
+                Service 1
+        
+                <div class="text-gray-500 font-thin text-sm pt-1">
+                    <span>Topics: 63</span>
+                    <span>MCQs: 20697</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 2
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 48</span>
+                    <span>MCQs: 18222</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 3
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 55</span>
+                    <span>MCQs: 14783</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 4
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 26</span>
+                    <span>MCQs: 8818</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 5
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 40</span>
+                    <span>MCQs: 9584</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 6
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 8</span>
+                    <span>MCQs: 2576</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 5</span>
+                    <span>MCQs: 1739</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 1</span>
+                    <span>MCQs: 217</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 1</span>
+                    <span>MCQs: 154</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="nose-services" class="mx-3 bg-[#333122] hidden">
+        <div class="flex flex-wrap gap-4 p-6 justify-center text-lg font-serif">
+            <a href="#"
+                class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12">
+                Service 1
+        
+                <div class="text-gray-500 font-thin text-sm pt-1">
+                    <span>Topics: 63</span>
+                    <span>MCQs: 20697</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 2
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 48</span>
+                    <span>MCQs: 18222</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 3
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 55</span>
+                    <span>MCQs: 14783</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 4
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 26</span>
+                    <span>MCQs: 8818</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 5
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 40</span>
+                    <span>MCQs: 9584</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service 6
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 8</span>
+                    <span>MCQs: 2576</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 5</span>
+                    <span>MCQs: 1739</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 1</span>
+                    <span>MCQs: 217</span>
+                </div>
+            </a>
+            <a class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
+                href="#">
+                Service
+                <div class="text-gray-500 font-thin text-sm">
+                    <span>Topics: 1</span>
+                    <span>MCQs: 154</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="./services.js"></script>
+
 </section>
     <h1>footer</h1>
 </body>
