@@ -4,18 +4,20 @@ let cards = slider.getElementsByTagName('li');
 let reviewWidth = document.getElementById('review').offsetWidth;
 let botonPrev = document.getElementById('prevB');
 let botonNext = document.getElementById('nextB');
-let elementsToShow = 3;
-/*  
-if (document.clientWidth > 768) {
+let sliderContainerWidth = sliderContainer.clientWidth;
+let elementsToShow = Math.round(sliderContainerWidth/reviewWidth);  
+
+
+/* if(window.innnerWidth > 768) {
     elementsToShow = 3;
 } else {
     elementsToShow = 1;
 }
-*/
+ */
 
 //Dragging
 let isDragging = false, startX, startScrollLeft, timeOutId;
-
+if(elementsToShow > 2) {
 const dragStart = (e) => {
     isDragging = true;
     slider.classList.add("dragging");
@@ -44,6 +46,7 @@ const dragStop = (e) => {
 sliderContainer.addEventListener("mousedown", dragStart);
 sliderContainer.addEventListener("mousemove", dragging);
 sliderContainer.addEventListener("mouseup", dragStop);
+} else {}
 //endDragging
 
 //infiniteScroll
@@ -56,10 +59,6 @@ sliderChildren.slice(-elementsToShow).reverse().forEach(card => {
 sliderChildren.slice(0, elementsToShow).forEach(card => {
     slider.insertAdjacentHTML("beforeend",card.outerHTML);
 });
-
-let sliderContainerWidth = sliderContainer.clientWidth;
-
-let cardWidth = sliderContainerWidth/elementsToShow;
 
 const infiniteScroll=() => {
 
@@ -85,7 +84,7 @@ sliderContainer.addEventListener("scroll",infiniteScroll);
 
 //slider.style.width = cards.length*cardWidth+'px';
 
-//cardWidth = slider.getElementsByTagName('li').offsetWidth;
+//cardWidth = document.getElementsById('review').offsetWidth;
 
 
 //buttonMovement
@@ -107,24 +106,13 @@ for (let index = 0; index < cards.length; index++) {
     
 }
 */
-function next() {
-    console.log(Math.round(+slider.style.marginLeft.slice(0,-2)));
-    if(Math.round(+slider.style.marginLeft.slice(0,-2))!=-Math.round(cardWidth*(cards.length-elementsToShow)))
-        slider.style.marginLeft = (((+slider.style.marginLeft.slice(0,-2))-cardWidth))+'px';
-}
 
-function prev() {
-    console.log(Math.round(+slider.style.marginLeft.slice(0,-2)));
-    if(Math.round(+slider.style.marginLeft.slice(0,-2))!= 0)
-        slider.style.marginLeft = (((+slider.style.marginLeft.slice(0,-2))+cardWidth))+'px';
-}
 //endButtonMovement
 
 //autoplay
 const autoplay = () => {
-    if(window.innnerWidth < 1000) return;
     sliderContainer.classList.add("scroll-smooth");
-    timeOutId = setTimeout(() => sliderContainer.scrollLeft += cardWidth, 2500);
+    timeOutId = setTimeout(() => sliderContainer.scrollLeft += reviewWidth, 2500);
     //sliderContainer.classList.remove("scroll-smooth");
 }
 
