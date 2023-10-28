@@ -28,17 +28,17 @@ function main() {
     */
 
     //Dragging
-    let isDragging = false, startX, startScrollLeft, timeOutId;
+    let isDraggingRev = false, startX, startScrollLeft, timeOutId;
     if(reviewsToShow > 2) {
     const dragStart = (e) => {
-        isDragging = true;
+        isDraggingRev = true;
         reviewSlider.classList.add("dragging");
         startX = e.pageX;
         startScrollLeft = reviewCards.scrollLeft;
     }
 
     const dragging = (e) => {
-        if(!isDragging) return;
+        if(!isDraggingRev) return;
         reviewSlider.classList.remove("cursor-grab");
         reviewCards.classList.remove("snap-x");
         reviewCards.scrollLeft = startScrollLeft - (e.pageX - startX);
@@ -48,7 +48,7 @@ function main() {
     }
 
     const dragStop = (e) => {
-        isDragging = false;
+        isDraggingRev = false;
         reviewSlider.classList.remove("cursor-grabbing");
         reviewSlider.classList.add("cursor-grab");
         reviewCards.classList.add("snap-x");
