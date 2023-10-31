@@ -1004,16 +1004,16 @@ video {
   max-width: 48rem;
 }
 
+.max-w-screen-2xl {
+  max-width: 1536px;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-screen-2xl {
-  max-width: 1536px;
 }
 
 .flex-shrink-0 {
@@ -1710,10 +1710,6 @@ video {
     width: 2.25rem;
   }
 
-  .lg\:w-9\/12 {
-    width: 75%;
-  }
-
   .lg\:w-\[520px\] {
     width: 520px;
   }
@@ -1795,6 +1791,10 @@ video {
 
   .min-\[1130px\]\:flex-row {
     flex-direction: row;
+  }
+
+  .min-\[1130px\]\:justify-between {
+    justify-content: space-between;
   }
 }
 
