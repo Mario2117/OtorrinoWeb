@@ -7,6 +7,16 @@ let nextReviews = document.getElementById('nextB');
 let reviewCardsWidth = reviewCards.clientWidth;
 let reviewsToShow = Math.round(reviewCardsWidth/reviewWidth); 
 
+reviewSliderChildren = [...reviewSlider.children];
+
+reviewSliderChildren.slice(-reviewsToShow).reverse().forEach(card => {
+    reviewSlider.insertAdjacentHTML("afterbegin",card.outerHTML);
+});
+
+reviewSliderChildren.slice(0, reviewsToShow).forEach(card => {
+    reviewSlider.insertAdjacentHTML("beforeend",card.outerHTML);
+});
+
 function inicializaVariables(){
     reviewCards = document.getElementById('review-cards');
     reviewSlider = document.getElementById('slider');
@@ -62,15 +72,7 @@ function main() {
     //endDragging
 
     //infiniteScroll
-    reviewSliderChildren = [...reviewSlider.children];
 
-    reviewSliderChildren.slice(-reviewsToShow).reverse().forEach(card => {
-        reviewSlider.insertAdjacentHTML("afterbegin",card.outerHTML);
-    });
-
-    reviewSliderChildren.slice(0, reviewsToShow).forEach(card => {
-        reviewSlider.insertAdjacentHTML("beforeend",card.outerHTML);
-    });
 
     const infiniteScroll=() => {
 
