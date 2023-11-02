@@ -8,7 +8,55 @@
 </head>
 <body>
     <h1>header</h1>
-    <h1 class="bg-green-500 md:bg-red-400">Hello world</h1>
+    <section class="w-full bg-[#303A2C] relative h-fit shadow-inner pt-5 pb-5">
+    <div class="flex flex-col w-full h-full items-center">
+        
+        <div class="flex flex-row w-full place-content-center">
+            <button id="prevB" class="w-fit h-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="lg:w-9 lg:h-9 w-7 h-7">
+                    <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <div id="review-cards" class="snap-x select-none cursor-grab flex flex-row mb-4 w-9/12 md:w-10/12 lg:11/12 lg:max-w-6xl overflow-x-scroll md:overflow-x-hidden font-serif">
+                <ul id="slider" class="flex w-full">
+                    <li id="review" class="snap-start px-2 py-1 w-full md:w-1/3 flex-shrink-0 flex flex-col items-center  justify-center">
+                        <img src="/src/img/adult-4402808_640.jpg" alt="Misión" class="w-4/5 relative top-5 z-10">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0]  z-0 w-full grow flex flex-col relative items-center -top-5">
+                            
+                            <h2 class="text-4xl tracking-wide  pt-14 pb-4">Misión</h2>
+                            <p class="pr-6 pl-6 pb-3 text-center text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </li>
+                    <li id="review" class="snap-start px-2 py-1 w-full md:w-1/3 flex-shrink-0 flex flex-col items-center  justify-center">
+                        <img src="/src/img/nurse-2019420_640.jpg" alt="Misión" class="w-4/5 relative top-5 z-10">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0]  z-0 w-full grow flex flex-col relative items-center -top-5">
+                            
+                            <h2 class="text-4xl tracking-wide  pt-14 pb-4">Visión</h2>
+                            <p class="pr-6 pl-6 pb-3 text-center text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </li>
+                    <li id="review" class="snap-start px-2 py-1 w-full md:w-1/3 flex-shrink-0 flex flex-col items-center  justify-center">
+                        <img src="/src/img/surgery-1807541_640.jpg" alt="Misión" class="w-4/5 relative top-5 z-10">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0]  z-0 w-full grow flex flex-col relative items-center -top-5">
+                            
+                            <h2 class="text-4xl tracking-wide  pt-14 pb-4">Valores</h2>
+                            <p class="pr-6 pl-6 pb-3 text-center text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button id="nextB"  class="w-fit h-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="lg:w-9 lg:h-9 w-7 h-7">
+                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+    <script src="./reviewSlider.js" defer></script>
+</section>
+
     <h1>footer</h1>
 </body>
 </html>
