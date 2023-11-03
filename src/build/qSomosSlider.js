@@ -19,11 +19,11 @@ somosSliderChildren.slice(0, somossToShow).forEach(card => {
 
 function inicializaVariables(){
     somosCards = document.getElementById('somos-cards');
-    somosSlider = document.getElementById('slider');
+    somosSlider = document.getElementById('somos-slider');
     //cards = somosSlider.getElementsByTagName('li');
     somosWidth = document.getElementById('somos').offsetWidth;
-    prevsomoss = document.getElementById('prevB');
-    nextsomoss = document.getElementById('nextB');
+    prevsomoss = document.getElementById('prevBso');
+    nextsomoss = document.getElementById('nextBso');
     somosCardsWidth = somosCards.clientWidth;
     somossToShow = Math.round(somosCardsWidth/somosWidth);  
 
