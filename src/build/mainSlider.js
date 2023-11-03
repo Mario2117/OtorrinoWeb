@@ -79,8 +79,9 @@ function main() {
         }
 
         clearTimeout(timeOutId);
-        if(!sliderContainer.matches(":hover")) {autoplay();}
-        else {sliderContainer.classList.remove("scroll-smooth");}
+        autoplay();
+        //if(!sliderContainer.matches(":hover")) {autoplay();}
+        //else {sliderContainer.classList.remove("scroll-smooth");}
     };
     sliderContainer.addEventListener("scroll",infiniteScroll);
     //endInfiniteScroll
