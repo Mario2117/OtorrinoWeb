@@ -599,6 +599,10 @@ video {
   top: -1.25rem;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .bottom-16{
   bottom: 4rem;
 }
@@ -1284,6 +1288,10 @@ video {
   padding-right: 0.25rem;
 }
 
+.pr-2{
+  padding-right: 0.5rem;
+}
+
 .pr-5{
   padding-right: 1.25rem;
 }
@@ -1328,20 +1336,20 @@ video {
   text-align: center;
 }
 
-.font-Kaisei{
-  font-family: 'Kaisei Tokumin', serif;
-}
-
-.font-serif{
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
 .font-Abhaya{
   font-family: 'Abhaya Libre', serif;
 }
 
 .font-Jomolhari{
   font-family: 'Jomolhari', serif;
+}
+
+.font-Kaisei{
+  font-family: 'Kaisei Tokumin', serif;
+}
+
+.font-serif{
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl{
@@ -1413,16 +1421,16 @@ video {
   font-weight: 300;
 }
 
+.font-medium{
+  font-weight: 500;
+}
+
 .font-normal{
   font-weight: 400;
 }
 
 .font-semibold{
   font-weight: 600;
-}
-
-.font-medium{
-  font-weight: 500;
 }
 
 .leading-5{
@@ -1488,6 +1496,12 @@ video {
 .shadow-\[0px_0px_5px_0px_\#000000\]{
   --tw-shadow: 0px 0px 5px 0px #000000;
   --tw-shadow-colored: 0px 0px 5px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[inset_0px_0px_32px_0px_\#000\]{
+  --tw-shadow: inset 0px 0px 32px 0px #000;
+  --tw-shadow-colored: inset 0px 0px 32px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
