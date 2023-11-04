@@ -712,6 +712,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.ml-0{
+  margin-left: 0px;
+}
+
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -1564,9 +1568,9 @@ video {
   color: rgb(135 133 96 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\#F1E9E0\]:hover{
+.hover\:text-\[\#CDB8A0\]:hover{
   --tw-text-opacity: 1;
-  color: rgb(241 233 224 / var(--tw-text-opacity));
+  color: rgb(205 184 160 / var(--tw-text-opacity));
 }
 
 .hover\:text-orange-100:hover{
@@ -1731,6 +1735,10 @@ video {
     margin-right: 0.75rem;
   }
 
+  .lg\:ml-5{
+    margin-left: 1.25rem;
+  }
+
   .lg\:mr-3{
     margin-right: 0.75rem;
   }
@@ -1871,8 +1879,20 @@ video {
     flex-direction: row;
   }
 
+  .min-\[1130px\]\:items-center{
+    align-items: center;
+  }
+
+  .min-\[1130px\]\:justify-center{
+    justify-content: center;
+  }
+
   .min-\[1130px\]\:justify-between{
     justify-content: space-between;
+  }
+
+  .min-\[1130px\]\:pl-0{
+    padding-left: 0px;
   }
 }
 
