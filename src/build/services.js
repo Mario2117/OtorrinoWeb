@@ -30,6 +30,7 @@ function myFunction(service){
         earLine.classList.remove("hidden");
         noseLine.classList.add("hidden");
         throatLine.classList.add("hidden");
+        bottomLine.classList.add("hidden");
 
         earService.classList.remove("hidden");
         throatService.classList.add("hidden");
@@ -47,6 +48,7 @@ function myFunction(service){
         noseLine.classList.remove("hidden");
         earLine.classList.add("hidden");
         throatLine.classList.add("hidden");
+        bottomLine.classList.add("hidden");
 
         noseService.classList.remove("hidden");
         throatService.classList.add("hidden");
@@ -64,6 +66,7 @@ function myFunction(service){
         throatLine.classList.remove("hidden");
         noseLine.classList.add("hidden");
         earLine.classList.add("hidden");
+        bottomLine.classList.add("hidden");
 
         throatService.classList.remove("hidden");
         noseService.classList.add("hidden");
