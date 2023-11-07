@@ -1730,6 +1730,26 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:top-24{
+    top: 6rem;
+  }
+
+  .lg\:top-28{
+    top: 7rem;
+  }
+
+  .lg\:top-36{
+    top: 9rem;
+  }
+
+  .lg\:top-40{
+    top: 10rem;
+  }
+
+  .lg\:top-48{
+    top: 12rem;
+  }
+
   .lg\:mx-3{
     margin-left: 0.75rem;
     margin-right: 0.75rem;
@@ -1871,6 +1891,10 @@ video {
 }
 
 @media (min-width: 1130px){
+  .min-\[1130px\]\:top-0{
+    top: 0px;
+  }
+
   .min-\[1130px\]\:w-0{
     width: 0px;
   }
