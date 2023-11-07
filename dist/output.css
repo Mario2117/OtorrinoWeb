@@ -848,16 +848,16 @@ video {
   height: 1.75rem;
 }
 
-.h-72{
-  height: 18rem;
-}
-
 .h-8{
   height: 2rem;
 }
 
 .h-9{
   height: 2.25rem;
+}
+
+.h-96{
+  height: 24rem;
 }
 
 .h-\[1px\]{
@@ -903,10 +903,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-96{
-  height: 24rem;
 }
 
 .w-1\/3{
