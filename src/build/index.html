@@ -173,28 +173,6 @@
     <script src="./mainSlider.js" defer></script>
 </section>
     <section class="flex w-full pt-5 pb-24 h-fit justify-center">
-    <!-- 
-    <div class="flex items-center justify-center w-screen h-[800px] ">
-        <div class=" bg-[#F1E9E0] h-[600px] w-[550px] absolute z-0 left-0 top-44"></div>
-        <img src="../img/doctor.png" alt="" class="h-auto w-[460px] relative z-10 shadow-2xl ">
-
-        <div class="flex flex-col w-[700px] ml-36 mr-5 font-serif">-->
-    <!--Texto--> <!--
-
-            <div>
-                <h1 class="text-7xl text-[#303A2C]">Dr. Carlo Pedroza</h1>
-                <p class="w-auto pt-3 text-lg text-[#333122]">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum."</p>
-            </div>
-            
-            <button class="text-lg bg-[#F1E9E0] mt-5 w-36 border-2 border-[#303A2C] py-4 px-4 rounded-full shadow-md hover:shadow-inner">Saber más...</button>
-        </div>-->
-
-
-
     <div
         class="flex flex-col items-center justify-center w-screen h-[800px] mt-5 mb-5 lg:flex-row relative max-w-screen-2xl">
         <!-- max-w-screen-2xl -->
@@ -228,27 +206,29 @@
                     Atención con paciencia y calidad, buscando la recuperación de la salud de la manera más óptima.</p>
             </div>
 
-            <button
-                class=" w-4/6 px-2 py-2 mt-5 text-lg rounded-full border-2 border-[#303A2C] shadow-md bg-[#F1E9E0] md:w-56 lg:w-40 lg:text-lg lg:py-4 lg:px-4 hover:shadow-[0px_0px_5px_0px_#000000]">
-                Saber
-                más...</button>
+            <a href="/src/build/page_q_somos.html"
+                class=" w-4/6 px-2 py-2 mt-5 text-lg rounded-full border-2 border-[#303A2C] shadow-md bg-[#F1E9E0] md:w-56 text-center lg:w-40 lg:text-lg lg:py-4 lg:px-4 hover:shadow-[0px_0px_5px_0px_#000000]">Saber
+                más...
+            </a>
         </div>
     </div>
 
 </section>
-    <section class="w-full bg-[#303A2C] relative h-fit shadow-[inset_0px_0px_32px_0px_#000] pt-5 pb-5 font-Jomolhari">
+    <section id="lol" class="w-full bg-[#303A2C] relative h-fit shadow-[inset_0px_0px_32px_0px_#000] pt-5 pb-5 font-Jomolhari">
+    
     <div class="flex flex-col w-full h-full items-center">
-        
+        <h2 class="mt-3 text-white font-bold text-2xl font-Abhaya md:text-4xl">NUESTRA IDENTIDAD</h2>
+        <p class="text-md text-[#CDB8A0] font-Abhaya  md:text-xl">Conoce nuestros intereses</p>
         <div class="flex flex-row w-full place-content-center justify-center items-center">
-            <button id="prevBso" class="w-fit h-fit md:hidden">
+            <button id="prevBso" class="w-fit h-fit lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="lg:w-9 lg:h-9 w-8 h-8">
                     <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
                 </svg>
             </button>
 
             <div id="somos-cards" class="snap-x select-none cursor-grab flex flex-row mb-4 w-9/12 md:w-10/12 lg:11/12 lg:max-w-6xl overflow-x-scroll md:overflow-x-hidden font-serif">
-                <ul id="somos-slider" class="flex w-full">
-                    <li id="somos" class="snap-start px-2 py-1 w-full md:w-1/3 flex-shrink-0 flex flex-col items-center  justify-center">
+                <ul id="somos-slider" class="flex w-full ">
+                    <li id="somos" class="snap-start px-2 py-1 w-full lg:w-1/3 flex-shrink-0 flex flex-col items-center  justify-center">
                         <img src="/src/img/adult-4402808_640.jpg" alt="Misión" class="shadow-[0px_0px_5px_0px_#000000] w-4/5 relative top-5 z-10">
                         <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0]  z-0 w-full grow flex flex-col relative items-center -top-5">
                             
@@ -259,7 +239,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="snap-start px-2 py-1 w-full md:w-1/3 flex-shrink-0 flex flex-col items-center  justify-center">
+                    <li class="snap-start px-2 py-1 w-full lg:w-1/3 flex-shrink-0 flex flex-col items-center  justify-center">
                         <img src="/src/img/nurse-2019420_640.jpg" alt="Misión" class="shadow-[0px_0px_5px_0px_#000000] w-4/5 relative top-5 z-10">
                         <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0]  z-0 w-full grow flex flex-col relative items-center -top-5">
                             
@@ -270,7 +250,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="snap-start px-2 py-1 w-full md:w-1/3 flex-shrink-0 flex flex-col items-center  justify-center">
+                    <li class="snap-start px-2 py-1 w-full lg:w-1/3 flex-shrink-0 flex flex-col items-center  justify-center">
                         <img src="/src/img/surgery-1807541_640.jpg" alt="Misión" class="shadow-[0px_0px_5px_0px_#000000] w-4/5 relative top-5 z-10">
                         <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0]  z-0 w-full grow flex flex-col relative items-center -top-5">
                             
@@ -284,7 +264,7 @@
                     </li>
                 </ul>
             </div>
-            <button id="nextBso"  class="w-fit h-fit md:hidden">
+            <button id="nextBso"  class="w-fit h-fit lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="lg:w-9 lg:h-9 w-8 h-8">
                     <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
                 </svg>
@@ -298,10 +278,10 @@
     <p class="text-center">SERVICIOS</p>
     <section class="w-full bg-[#303A2C] relative h-fit shadow-[inset_0px_0px_32px_0px_#000] pt-5 pb-5">
     <div class="flex flex-col w-full h-full items-center">
-        <div class="mt-3 text-white font-bold text-2xl font-Abhaya lg:text-4xl">
+        <div class="mt-3 text-white font-bold text-2xl font-Abhaya md:text-4xl">
             RESEÑAS
         </div>
-        <div class="text-md text-[#CDB8A0] font-Abhaya mb-3 lg:text-xl">
+        <div class="text-md text-[#CDB8A0] font-Abhaya mb-3 md:text-xl">
             Pacientes te cuentan su experiencias
         </div>
         
@@ -451,7 +431,7 @@
 
     <section class="flex w-full pt-16 pb-16 h-fit justify-center">
     <div class="flex flex-row w-full justify-evenly min-[1130px]:justify-between  max-w-screen-xl">
-        <div class="flex flex-col font-Abhaya items-center justify-center pr-5 pl-5 md:pr-2 md:pl-2 lg:pr-0 lg:pl-0 w-fit relative"><!-- md:w-7/12 lg:w-6/12 2xl:w-5/12 -->
+        <div class="flex flex-col font-Abhaya items-center justify-center  lg:pr-0 lg:pl-0 w-fit relative"><!-- md:w-7/12 lg:w-6/12 2xl:w-5/12 -->
             <div class="flex flex-col items-center justify-center tracking-widest">
                 <h1 class="text-3xl lg:text-4xl pb-5 text-[#303A2C] font-bold">VISÍTANOS EN</h1>
                 <div class="md:text-base lg:text-xl text-[#333122] text-center">
@@ -542,7 +522,7 @@
         </div>
         <div class="min-[1130px]:w-0"></div>
         <div class="hidden lg:block lg:w-6/12 2xl:w-7/12 max-w-xl relative">
-            <div class="block lg:top-48 min-[1130px]:top-0 bg-[#F1E9E0] lg:h-[400px] lg:w-[520px] absolute z-0 -right-9 top-9"></div>
+            <div class="block lg:top-48 xl:top-10 min-[1130px]:top-0 bg-[#F1E9E0] lg:h-[400px] lg:w-[520px] absolute z-0 -right-9 top-9"></div>
             <iframe class="z-10 absolute lg:top-36 min-[1130px]:top-0 lg:w-[530px] lg:h-[400px] shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1682.0478779856303!2d-117.01378093647735!3d32.52358941651168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d949ee47092df5%3A0xa9885fa77b8cd016!2sDr.%20Carlo%20Pedroza%20Mendez%2C%20Otorrinolaring%C3%B3logo!5e0!3m2!1ses-419!2smx!4v1698281435650!5m2!1ses-419!2smx"
                 style="border:0;" allowfullscreen="" loading="lazy"
