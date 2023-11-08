@@ -15,7 +15,8 @@ let throatLine = document.getElementById("throat-line");
 let noseLine = document.getElementById("nose-line");
 
 let bottomLine = document.getElementById("bottom-line");
-
+let prevB = document.getElementById("prevB");
+let nextB = document.getElementById("nextB");
 
 function myFunction(service){
     if(service == "ear"){
@@ -72,5 +73,41 @@ function myFunction(service){
         noseService.classList.add("hidden");
         earService.classList.add("hidden");
     }
+
     
 }
+
+        var openButton = document.getElementById('open');
+        var dialog = document.getElementById('dialog');
+        var closeButton = document.getElementById('close');
+        var overlay = document.getElementById('overlay');
+
+        // show the overlay and the dialog
+        openButton.addEventListener('click', function () {
+            dialog.classList.remove('hidden');
+            overlay.classList.remove('hidden');
+        });
+
+        // hide the overlay and the dialog
+        closeButton.addEventListener('click', function () {
+            dialog.classList.add('hidden');
+            overlay.classList.add('hidden');
+        });
+        
+        var openButton2 = document.getElementById('open2');
+        var dialog2 = document.getElementById('dialog2');
+        var closeButton2 = document.getElementById('close2');
+        var overlay2 = document.getElementById('overlay2');
+
+        // show the overlay and the dialog
+        openButton2.addEventListener('click', function () {
+            dialog2.classList.remove('hidden');
+            overlay2.classList.remove('hidden');
+        });
+
+        // hide the overlay and the dialog
+        closeButton2.addEventListener('click', function () {
+            dialog2.classList.add('hidden');
+            overlay2.classList.add('hidden');
+        });
+
