@@ -591,10 +591,6 @@ video {
   position: sticky;
 }
 
-.-right-9{
-  right: -2.25rem;
-}
-
 .-top-5{
   top: -1.25rem;
 }
@@ -701,6 +697,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-16{
+  margin-bottom: 4rem;
+}
+
 .mb-3{
   margin-bottom: 0.75rem;
 }
@@ -727,6 +727,10 @@ video {
 
 .ml-44{
   margin-left: 11rem;
+}
+
+.ml-5{
+  margin-left: 1.25rem;
 }
 
 .ml-auto{
@@ -1146,20 +1150,20 @@ video {
   border-bottom-left-radius: 9999px;
 }
 
-.rounded-tr-lg{
-  border-top-right-radius: 0.5rem;
-}
-
-.rounded-tl-lg{
-  border-top-left-radius: 0.5rem;
-}
-
 .rounded-bl-lg{
   border-bottom-left-radius: 0.5rem;
 }
 
 .rounded-br-lg{
   border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-tl-lg{
+  border-top-left-radius: 0.5rem;
+}
+
+.rounded-tr-lg{
+  border-top-right-radius: 0.5rem;
 }
 
 .border-2{
@@ -1721,17 +1725,25 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:top-36{
-    top: 9rem;
+  .lg\:left-10{
+    left: 2.5rem;
   }
 
-  .lg\:top-48{
-    top: 12rem;
+  .lg\:top-10{
+    top: 2.5rem;
+  }
+
+  .lg\:top-16{
+    top: 4rem;
   }
 
   .lg\:mx-3{
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+  }
+
+  .lg\:ml-14{
+    margin-left: 3.5rem;
   }
 
   .lg\:ml-5{
@@ -1752,6 +1764,10 @@ video {
 
   .lg\:h-9{
     height: 2.25rem;
+  }
+
+  .lg\:h-\[300px\]{
+    height: 300px;
   }
 
   .lg\:h-\[400px\]{
@@ -1790,12 +1806,8 @@ video {
     width: 2.25rem;
   }
 
-  .lg\:w-\[520px\]{
-    width: 520px;
-  }
-
-  .lg\:w-\[530px\]{
-    width: 530px;
+  .lg\:w-\[400px\]{
+    width: 400px;
   }
 
   .lg\:w-\[550px\]{
@@ -1874,12 +1886,32 @@ video {
 }
 
 @media (min-width: 1130px){
+  .min-\[1130px\]\:left-0{
+    left: 0px;
+  }
+
   .min-\[1130px\]\:top-0{
     top: 0px;
   }
 
+  .min-\[1130px\]\:ml-0{
+    margin-left: 0px;
+  }
+
+  .min-\[1130px\]\:block{
+    display: block;
+  }
+
+  .min-\[1130px\]\:h-\[400px\]{
+    height: 400px;
+  }
+
   .min-\[1130px\]\:w-0{
     width: 0px;
+  }
+
+  .min-\[1130px\]\:w-\[530px\]{
+    width: 530px;
   }
 
   .min-\[1130px\]\:flex-row{
@@ -1911,10 +1943,6 @@ video {
 }
 
 @media (min-width: 1280px){
-  .xl\:top-10{
-    top: 2.5rem;
-  }
-
   .xl\:pl-40{
     padding-left: 10rem;
   }
