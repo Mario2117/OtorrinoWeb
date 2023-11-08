@@ -1186,6 +1186,11 @@ video {
      object-fit: cover;
 }
 
+.object-top{
+  -o-object-position: top;
+     object-position: top;
+}
+
 .p-6{
   padding: 1.5rem;
 }
@@ -1446,6 +1451,11 @@ video {
   color: rgb(51 49 34 / var(--tw-text-opacity));
 }
 
+.text-\[\#878560\]{
+  --tw-text-opacity: 1;
+  color: rgb(135 133 96 / var(--tw-text-opacity));
+}
+
 .text-\[\#CDB8A0\]{
   --tw-text-opacity: 1;
   color: rgb(205 184 160 / var(--tw-text-opacity));
@@ -1510,11 +1520,6 @@ video {
 .shadow-black{
   --tw-shadow-color: #000;
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.drop-shadow-lg{
-  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-all{
