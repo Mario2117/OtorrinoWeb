@@ -9,8 +9,54 @@
 <body>
     <h1>header</h1>
     <h1 class="bg-red-400">Hello world</h1>
-    <section class="w-screen bg-white absolute h-fit shadow-inner">
+    <section class="w-screen bg-white absolute h-fit shadow-inner overflow-y-auto">
     <div>
+
+
+        <!-- Dialog Modal Service 1 -->
+        <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60 place-content-center items-center"></div>
+    
+        <div id="dialog"
+        class="hidden flex flex-col fixed z-50 bg-white px-8 py-6 drop-shadow-lg items-center mx-96 my-20">
+        <div class="flex items-center py-4 w-full">
+        <!-- The left line -->
+        <button id="close" class="cursor-pointer">
+        <img src=".\selector-icon.png" class="h-28">
+        </button>
+        <div class="flex-grow h-1 bg-[#333122] mx-3"></div> 
+        
+        <!-- Your text here -->
+        <h1 class="text-6xl font-semibold text-[#333122] font-serif">RINOPLASTÍA</h1>
+
+        <!-- The right line -->
+        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+        </div> 
+
+        <div class="text-2xl text-center font-serif">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="flex items-center py-4 w-full">
+            <!-- The left line -->
+            <div class="flex-grow h-1 bg-[#333122] mx-3"></div> 
+            
+            <!-- Your text here -->
+            <h1 class="text-6xl font-semibold text-[#333122] font-serif">GALERÍA</h1>
+    
+            <!-- The right line -->
+            <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+            </div> 
+        <div class="py-5 border-t border-b border-gray-300">
+            <img src="ear.jpg">
+        </div>
+        <div class="flex justify-end">
+        
+        <!-- <button id="close" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-700 text-white cursor-pointer rounded-md">
+            Close</button> -->
+        </div>
+        </div>
+ 
+    <!--Dialog Modal Service -->
     <div class="flex items-center py-4">
         <!-- The left line -->
         <div class="flex-grow h-1 bg-[#333122] mx-3"></div> 
@@ -24,7 +70,7 @@
         <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
     </div>
     <div class="flex flex-row w-full place-content-center items-center">
-        <button onclick="previousSlide()" id="prevB" class="w-fit h-fit sm:hidden">
+        <button onclick="mySliderNext()" id="prevB" class="w-fit h-fit sm:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#303A2C" class="lg:w-9 lg:h-9 w-7 h-7">
                 <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
             </svg>
@@ -92,7 +138,7 @@
                 </div>
             
         </div>
-        <button onclick="nextSlide()" id="nextB"  class="w-fit h-fit sm:hidden">
+        <button onclick="mySliderPrev()" id="nextB"  class="w-fit h-fit sm:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#303A2C" class="lg:w-9 lg:h-9 w-7 h-7">
                 <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
             </svg>
@@ -109,28 +155,7 @@
                     <span>MCQs: 20697</span>
                 </div>
             </a>
-            <!-- Dialog Modal Service 1 -->
-                <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
-                <div id="dialog"
-                class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md px-8 py-6 drop-shadow-lg items-center">
-                <h1 class="text-6xl font-semibold">RINOPLASTÍA</h1>
-                <div class="py-5 border-t border-b border-gray-300">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.”
-
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <h1 class="text-6xl font-semibold">GALERÍA</h1>
-                <div class="py-5 border-t border-b border-gray-300">
-                    <img src="ear.jpg">
-                </div>
-                <div class="flex justify-end">
-                
-                <button id="close" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-700 text-white cursor-pointer rounded-md">
-                    Close</button>
-                </div>
-                </div>
-            <!--Dialog Modal Service -->
+            
 
             <a id="open2" class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
                 href="#">
@@ -377,6 +402,8 @@
             </a>
         </div>
     </div>
+    
+
     
     </div>
     

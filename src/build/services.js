@@ -27,6 +27,11 @@ function myFunction(service){
         throatBox.classList.remove("border-[#303A2C]");
         noseBox.classList.remove("border-8");
         throatBox.classList.remove("border-8");
+        
+        // earBox.classList.remove("lg:hidden");
+        // noseBox.classList.add("lg:hidden");
+        // throatBox.classList.add("lg:hidden");
+
 
         earLine.classList.remove("hidden");
         noseLine.classList.add("hidden");
@@ -37,24 +42,6 @@ function myFunction(service){
         throatService.classList.add("hidden");
         noseService.classList.add("hidden");
     }
-    if(service == "nose"){
-        bottomLine.classList.remove("mt-5");
-        noseBox.classList.add("border-8");
-        noseBox.classList.add("border-[#303A2C]");
-        earBox.classList.remove("border-[#303A2C]");
-        throatBox.classList.remove("border-[#303A2C]");
-        earBox.classList.remove("border-8");
-        throatBox.classList.remove("border-8");
-
-        noseLine.classList.remove("hidden");
-        earLine.classList.add("hidden");
-        throatLine.classList.add("hidden");
-        bottomLine.classList.add("hidden");
-
-        noseService.classList.remove("hidden");
-        throatService.classList.add("hidden");
-        earService.classList.add("hidden");
-    }
     if(service == "throat"){
         bottomLine.classList.remove("mt-5");
         throatBox.classList.add("border-8");
@@ -63,6 +50,10 @@ function myFunction(service){
         noseBox.classList.remove("border-[#303A2C]");
         earBox.classList.remove("border-8");
         noseBox.classList.remove("border-8");
+
+        // throatBox.classList.remove("sm:hidden");
+        // noseBox.classList.add("sm:hidden");
+        // earBox.classList.add("sm:hidden");
 
         throatLine.classList.remove("hidden");
         noseLine.classList.add("hidden");
@@ -73,10 +64,69 @@ function myFunction(service){
         noseService.classList.add("hidden");
         earService.classList.add("hidden");
     }
+    if(service == "nose"){
+        bottomLine.classList.remove("mt-5");
+        noseBox.classList.add("border-8");
+        noseBox.classList.add("border-[#303A2C]");
+        earBox.classList.remove("border-[#303A2C]");
+        throatBox.classList.remove("border-[#303A2C]");
+        earBox.classList.remove("border-8");
+        throatBox.classList.remove("border-8");
 
-    
+        // throatBox.classList.add("sm:hidden");
+        // noseBox.classList.remove("sm:hidden");
+        // earBox.classList.add("sm:hidden");
+
+        noseLine.classList.remove("hidden");
+        earLine.classList.add("hidden");
+        throatLine.classList.add("hidden");
+        bottomLine.classList.add("hidden");
+
+        noseService.classList.remove("hidden");
+        throatService.classList.add("hidden");
+        earService.classList.add("hidden");
+    }
+        
 }
 
+
+
+
+function mySliderNext(){
+    earVer = earBox.classList.contains("sm:hidden");
+    throatVer = throatBox.classList.contains("sm:hidden");
+    noseVer = noseBox.classList.contains("sm:hidden");
+
+
+    if (earVer){
+        myFunction("throat");
+    }
+    if(throatVer){
+        myFunction("nose");
+    }
+    if(noseVer){
+        myFunction("ear");
+    }
+}
+function mySliderPrev(current){
+    earVer = earBox.classList.contains("sm:hidden");
+    throatVer = throatBox.classList.contains("sm:hidden");
+    noseVer = noseBox.classList.contains("sm:hidden");
+    if (earVer){
+        myFunction("nose");
+    }
+    if(throatVer){
+        myFunction("ear");
+    }
+    if(noseVer){
+        myFunction("throat");
+    }
+}
+
+
+
+
+// Dialog (needs to optimize)
         var openButton = document.getElementById('open');
         var dialog = document.getElementById('dialog');
         var closeButton = document.getElementById('close');
