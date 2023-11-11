@@ -15,8 +15,7 @@ let throatLine = document.getElementById("throat-line");
 let noseLine = document.getElementById("nose-line");
 
 let bottomLine = document.getElementById("bottom-line");
-let prevB = document.getElementById("prevB");
-let nextB = document.getElementById("nextB");
+
 
 function myFunction(service){
     if(service == "ear"){
@@ -76,29 +75,6 @@ function myFunction(service){
     }
         
 }
-
-
-
-
-function mySliderNext(){
-    earVer = earBox.classList.contains("sm:hidden");
-    throatVer = throatBox.classList.contains("sm:hidden");
-    noseVer = noseBox.classList.contains("sm:hidden");
-
-
-    if (earVer){
-        myFunction("throat");
-    }
-    if(throatVer){
-        myFunction("nose");
-    }
-    if(noseVer){
-        myFunction("ear");
-    }
-}
-
-
-
 
 
 // Dialog (needs to optimize)

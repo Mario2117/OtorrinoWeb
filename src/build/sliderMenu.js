@@ -1,137 +1,150 @@
-let reviewCards = document.getElementById('review-cards');
-let reviewSlider = document.getElementById('slider');
-//let cards = reviewSlider.getElementsByTagName('li');
-let reviewWidth = document.getElementById('review').offsetWidth;
-let prevReviews = document.getElementById('prevB');
-let nextReviews = document.getElementById('nextB');
-let reviewCardsWidth = reviewCards.clientWidth;
-let reviewsToShow = Math.round(reviewCardsWidth/reviewWidth); 
+let serviceCards = document.getElementById('service-cards');
+let servicesliderS = document.getElementById('sliderS');
+//let cards = servicesliderS.getElementsByTagName('li');
+let serviceWidth = document.getElementById('service').offsetWidth;
+let prevservices = document.getElementById('prevBs');
+let nextservices = document.getElementById('nextBs');
+let serviceCardsWidth = serviceCards.clientWidth;
+let servicesToShow = Math.round(serviceCardsWidth/serviceWidth); 
+
+servicesliderSChildren = [...servicesliderS.children];
+
+// servicesliderSChildren.slice(-servicesToShow).reverse().forEach(card => {
+//     servicesliderS.insertAdjacentHTML("afterbegin",card.outerHTML);
+// });
+
+// servicesliderSChildren.slice(0, servicesToShow).forEach(card => {
+//     servicesliderS.insertAdjacentHTML("beforeend",card.outerHTML);
+// });
 
 function inicializaVariables(){
-    reviewCards = document.getElementById('review-cards');
-    reviewSlider = document.getElementById('slider');
-    //cards = reviewSlider.getElementsByTagName('li');
-    reviewWidth = document.getElementById('review').offsetWidth;
-    prevReviews = document.getElementById('prevB');
-    nextReviews = document.getElementById('nextB');
-    reviewCardsWidth = reviewCards.clientWidth;
-    reviewsToShow = Math.round(reviewCardsWidth/reviewWidth);  
+    serviceCards = document.getElementById('service-cards');
+    servicesliderS = document.getElementById('sliderS');
+    //cards = servicesliderS.getElementsByTagName('li');
+    serviceWidth = document.getElementById('service').offsetWidth;
+    prevservices = document.getElementById('prevBs');
+    nextservices = document.getElementById('nextBs');
+    serviceCardsWidth = serviceCards.clientWidth;
+    servicesToShow = Math.round(serviceCardsWidth/serviceWidth);  
 
 }
 function main() {
 
     /* if(window.innnerWidth > 768) {
-        reviewsToShow = 3;
+        servicesToShow = 3;
     } else {
-        reviewsToShow = 1;
+        servicesToShow = 1;
     }
     */
 
     //Dragging
     let isDraggingRev = false, startX, startScrollLeft, timeOutId;
-    if(reviewsToShow > 2) {
-    const dragStart = (e) => {
-        isDraggingRev = true;
-        reviewSlider.classList.add("dragging");
-        startX = e.pageX;
-        startScrollLeft = reviewCards.scrollLeft;
-    }
+    console.log(servicesToShow);
+    if(servicesToShow < 2) {
+        console.log(servicesToShow);
 
-    const dragging = (e) => {
-        if(!isDraggingRev) return;
-        reviewSlider.classList.remove("cursor-grab");
-        reviewCards.classList.remove("snap-x");
-        reviewCards.scrollLeft = startScrollLeft - (e.pageX - startX);
-        reviewSlider.classList.add("cursor-grabbing");
-        reviewSlider.classList.add("dragging");
+        // const dragStart = (e) => {
+        //     isDraggingRev = true;
+        //     servicesliderS.classList.add("dragging");
+        //     startX = e.pageX;
+        //     startScrollLeft = serviceCards.scrollLeft;
+        // }
+
+        // const dragging = (e) => {
+        //     if(!isDraggingRev) return;
+        //     servicesliderS.classList.remove("cursor-grab");
+        //     serviceCards.classList.remove("snap-x");
+        //     serviceCards.scrollLeft = startScrollLeft - (e.pageX - startX);
+        //     servicesliderS.classList.add("cursor-grabbing");
+        //     servicesliderS.classList.add("dragging");
+            
+        // }
+
+        // const dragStop = (e) => {
+        //     isDraggingRev = false;
+        //     servicesliderS.classList.remove("cursor-grabbing");
+        //     servicesliderS.classList.add("cursor-grab");
+        //     serviceCards.classList.add("snap-x");
+        //     servicesliderS.classList.remove("dragging");
+        // }
+
+        // serviceCards.addEventListener("mousedown", dragStart);
+        // serviceCards.addEventListener("mousemove", dragging);
+        // serviceCards.addEventListener("mouseup", dragStop);
         
-    }
+        //endDragging
 
-    const dragStop = (e) => {
-        isDraggingRev = false;
-        reviewSlider.classList.remove("cursor-grabbing");
-        reviewSlider.classList.add("cursor-grab");
-        reviewCards.classList.add("snap-x");
-        reviewSlider.classList.remove("dragging");
-    }
+        //infiniteScroll
 
-    reviewCards.addEventListener("mousedown", dragStart);
-    reviewCards.addEventListener("mousemove", dragging);
-    reviewCards.addEventListener("mouseup", dragStop);
-    } else {}
-    //endDragging
 
-    //infiniteScroll
-    reviewSliderChildren = [...reviewSlider.children];
+        const infiniteScroll=() => {
 
-    reviewSliderChildren.slice(-reviewsToShow).reverse().forEach(card => {
-        reviewSlider.insertAdjacentHTML("afterbegin",card.outerHTML);
-    });
+            if (serviceCards.scrollLeft === 0) {
+                // serviceCards.classList.remove("scroll-smooth");
+                // serviceCards.scrollLeft = serviceCards.scrollWidth - ( 2 * serviceCards.offsetWidth);
+                //serviceCards.classList.add("scroll-smooth");
+                prevservices.classList.add("hidden");
+                nextservices.classList.remove("hidden");
+                
+            } else if(Math.ceil(serviceCards.scrollLeft) === serviceCards.scrollWidth - serviceCards.offsetWidth){
+                
+                // serviceCards.classList.remove("scroll-smooth");
+                // serviceCards.scrollLeft = serviceCards.offsetWidth;
+                //serviceCards.classList.add("scroll-smooth");
+                nextservices.classList.add("hidden");
+                prevservices.classList.remove("hidden");
+            } else {
+                nextservices.classList.remove("hidden");
+                prevservices.classList.remove("hidden");
+            }
 
-    reviewSliderChildren.slice(0, reviewsToShow).forEach(card => {
-        reviewSlider.insertAdjacentHTML("beforeend",card.outerHTML);
-    });
+            // clearTimeout(timeOutId);
+            // if(!serviceCards.matches(":hover")) {autoplay();}
+            // else {serviceCards.classList.remove("scroll-smooth");}
+        };
+        serviceCards.addEventListener("scroll",infiniteScroll);
+        //endInfiniteScroll
 
-    const infiniteScroll=() => {
 
-        if (reviewCards.scrollLeft === 0) {
-            reviewCards.classList.remove("scroll-smooth");
-            reviewCards.scrollLeft = reviewCards.scrollWidth - ( 2 * reviewCards.offsetWidth);
-            //reviewCards.classList.add("scroll-smooth");
+        //servicesliderS.style.width = cards.length*cardWidth+'px';
+
+        //cardWidth = document.getElementsById('service').offsetWidth;
+
+
+        //buttonMovement
+        prevservices.onclick = () => {
+            serviceCards.classList.add("scroll-smooth");
+            serviceCards.scrollLeft -= serviceWidth;
+            serviceCards.classList.remove("scroll-smooth");
+        };
+
+        nextservices.onclick = () => {
+            serviceCards.classList.add("scroll-smooth");
+            serviceCards.scrollLeft += serviceWidth;
+            serviceCards.classList.remove("scroll-smooth");
+        };
+        /*
+        for (let index = 0; index < cards.length; index++) {
+            const element = cards[index];
+            element.style.width = cardWidth+'px';
             
-        } else if(Math.ceil(reviewCards.scrollLeft) === reviewCards.scrollWidth - reviewCards.offsetWidth){
-            
-            reviewCards.classList.remove("scroll-smooth");
-            reviewCards.scrollLeft = reviewCards.offsetWidth;
-            //reviewCards.classList.add("scroll-smooth");
+        }
+        */
+
+        //endButtonMovement
+
+        //autoplay
+        const autoplay = () => {
+            serviceCards.classList.add("scroll-smooth");
+            timeOutId = setTimeout(() => serviceCards.scrollLeft += serviceWidth, 2500);
+            //serviceCards.classList.remove("scroll-smooth");
         }
 
-        clearTimeout(timeOutId);
-        if(!reviewCards.matches(":hover")) {autoplay();}
-        else {reviewCards.classList.remove("scroll-smooth");}
-    };
-    reviewCards.addEventListener("scroll",infiniteScroll);
-    //endInfiniteScroll
+        autoplay();
 
-
-    //reviewSlider.style.width = cards.length*cardWidth+'px';
-
-    //cardWidth = document.getElementsById('review').offsetWidth;
-
-
-    //buttonMovement
-    prevReviews.onclick = () => {
-        reviewCards.classList.add("scroll-smooth");
-        reviewCards.scrollLeft -= reviewWidth;
-        reviewCards.classList.remove("scroll-smooth");
-    };
-
-    nextReviews.onclick = () => {
-        reviewCards.classList.add("scroll-smooth");
-        reviewCards.scrollLeft += reviewWidth;
-        reviewCards.classList.remove("scroll-smooth");
-    };
-    /*
-    for (let index = 0; index < cards.length; index++) {
-        const element = cards[index];
-        element.style.width = cardWidth+'px';
-        
-    }
-    */
-
-    //endButtonMovement
-
-    //autoplay
-    const autoplay = () => {
-        reviewCards.classList.add("scroll-smooth");
-        timeOutId = setTimeout(() => reviewCards.scrollLeft += reviewWidth, 2500);
-        //reviewCards.classList.remove("scroll-smooth");
-    }
-
-    autoplay();
-
-    reviewCards.addEventListener("mouseenter", () => clearTimeout(timeOutId));
-    reviewCards.addEventListener("mouseleave", autoplay);
+        serviceCards.addEventListener("mouseenter", () => clearTimeout(timeOutId));
+        serviceCards.addEventListener("mouseleave", autoplay);
+    } else {}
 }
 
 main();
