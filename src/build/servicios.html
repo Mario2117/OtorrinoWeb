@@ -1,48 +1,60 @@
-<section class="w-screen bg-white absolute h-fit shadow-inner overflow-y-auto">
+<section class="relative w-screen bg-white h-fit shadow-inner">
     <div>
 
 
         <!-- Dialog Modal Service 1 -->
-        <div id="overlay" class="fixed z-40 w-screen h-full inset-0 bg-gray-900 bg-opacity-60 place-content-center items-center hidden"></div>
+        <div id="overlay" class="fixed z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60 place-content-center items-center hidden"></div>
     
         <div id="dialog"
-        class="flex flex-col fixed z-50 bg-white px-8 py-6 drop-shadow-lg items-center hidden">
-        <div class="flex items-center py-4 w-full">
-        <!-- The left line -->
-        <button id="close" class="cursor-pointer">
-        <img src=".\selector-icon.png" class="h-28">
-        </button>
-        <div class="flex-grow h-1 bg-[#333122] mx-3"></div> 
-        
-        <!-- Your text here -->
-        <h1 class="text-6xl font-semibold text-[#333122] font-serif">RINOPLASTÍA</h1>
-
-        <!-- The right line -->
-        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
-        </div> 
-
-        <div class="text-2xl text-center font-serif">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <div class="flex items-center py-4 w-full">
+        class="flex flex-col absolute z-50 bg-white px-8 py-6 drop-shadow-lg items-center h-fit overflow-y-auto mx-96 mt-20 hidden">
+            <div class="flex items-center py-4 w-full">
             <!-- The left line -->
+            <button id="close" class="cursor-pointer">
+            <img src=".\selector-icon.png" class="h-28">
+            </button>
             <div class="flex-grow h-1 bg-[#333122] mx-3"></div> 
             
             <!-- Your text here -->
-            <h1 class="text-6xl font-semibold text-[#333122] font-serif">GALERÍA</h1>
-    
+            <h1 class="text-6xl font-semibold text-[#333122] font-serif">RINOPLASTÍA</h1>
+
             <!-- The right line -->
-            <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+            <div class="flex-grow h-1 bg-[#333122] ml-3"></div>
+            <div class="w-28 h-1 bg-[#333122] mr-3"></div>
             </div> 
-        <div class="py-5 border-t border-b border-gray-300">
-            <img src="ear.jpg">
-        </div>
-        <div class="flex justify-end">
+
+            <div class="text-2xl text-center font-serif">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="flex items-center py-4 w-full">
+                <!-- The left line -->
+                <div class="flex-grow h-1 bg-[#333122] mx-3"></div> 
+                
+                <!-- Your text here -->
+                <h1 class="text-6xl font-semibold text-[#333122] font-serif">GALERÍA</h1>
         
-        <!-- <button id="close" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-700 text-white cursor-pointer rounded-md">
-            Close</button> -->
-        </div>
+                <!-- The right line -->
+                <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+                </div> 
+            <div class="flex flex-col py-5 space-y-3">
+                <div class="flex flex-row space-x-3">
+                    <img src="ear.jpg" class="object-scale-down h-72">
+                    <img src="ear.jpg" class="object-scale-down h-72">
+                    
+                   
+                </div>
+                
+                <div class="flex flex-row space-x-3">
+                    <img src="ear.jpg" class="object-scale-down h-72">
+                    <img src="ear.jpg" class="object-scale-down h-72">
+                </div>
+                
+            </div>
+            <div class="flex justify-end">
+            
+            <!-- <button id="close" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-700 text-white cursor-pointer rounded-md">
+                Close</button> -->
+            </div>
         </div>
  
     <!--Dialog Modal Service -->
@@ -64,22 +76,22 @@
     
     
    
-        <div class="flex flex-row w-full place-content-center items-center">
+        <div class="flex flex-row w-full y-fit place-content-center items-center overflow-visible">
             <button id="prevBs" class="w-fit h-fit md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#303A2C" class="lg:w-9 lg:h-9 w-7 h-7">
                     <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
                 </svg>
             </button>
         
-            <div id="service-cards" class="snap-x select-none cursor-grab flex flex-row my-4 w-9/12 md:w-10/12 lg:11/12 lg:max-w-6xl overflow-x-scroll md:overflow-x-hidden overflow-y-hidden">
+            <div id="service-cards" class="snap-x select-none cursor-grab flex flex-row mt-4 w-9/12 md:w-10/12 lg:w-11/12 lg:max-w-6xl overflow-x-scroll md:overflow-x-hidden overflow-y-visible">
                 <ul id="sliderS" class="flex w-full">
-                    <li id="service" class="snap-start px-2 py-1 w-full md:w-1/3 h-72 flex-shrink-0 flex flex-col md:overflow-y-hidden">
+                    <li id="service" class="snap-start px-2 pt-1 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col overflow-y-visible">
                         <div class="flex flex-col items-center">
-                            <div class="snap-start w-full h-72 flex flex-col">
+                            <div class="snap-start h-full w-full flex flex-col">
                                 
-                                <div id="ear-box" class="relative overflow-hidden round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                <div id="ear-box" class="relative round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
                                     style="background-image: url('ear.jpg');">
-                                    <button onclick="myFunction('ear')" id="ear-button" class="w-full h-72 shadow-[0px_0px_5px_0px_#000000]">
+                                    <button onclick="myFunction('ear')" id="ear-button" class="w-full h-full shadow-[0px_0px_5px_0px_#000000]">
                                         
                                         <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
                                         
@@ -96,13 +108,13 @@
                         </div>
                     </li>
                     
-                    <li class="snap-start px-2 py-1 w-full md:w-1/3 h-72 flex-shrink-0 flex flex-col">
+                    <li class="snap-start px-2 pt-1 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col overflow-y-visible">
                         <div class="flex flex-col items-center">
-                            <div class="snap-start w-full h-72 flex flex-col">
+                            <div class="snap-start h-full w-full flex flex-col">
                                 
-                                <div id="throat-box" class="relative overflow-hidden round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                <div id="throat-box" class="relative round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
                                     style="background-image: url('throat.jpg');">
-                                    <button onclick="myFunction('throat')" id="throat-button" class="w-full h-72 shadow-[0px_0px_5px_0px_#000000]">
+                                    <button onclick="myFunction('throat')" id="throat-button" class="w-full h-full shadow-[0px_0px_5px_0px_#000000]">
                                         
                                         <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
                                         
@@ -119,12 +131,13 @@
                         </div>
                     </li>
         
-                    <li class="snap-start px-2 py-1 w-full md:w-1/3 h-72 flex-shrink-0 flex flex-col">
+                    <li class="snap-start px-2 pt-1 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col overflow-y-visible">
                         <div class="flex flex-col items-center">
-                            <div class="snap-start w-full h-72 flex flex-col">
-                                <div id="nose-box" class="relative overflow-hidden round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                            <div class="snap-start h-full w-full flex flex-col">
+                                
+                                <div id="nose-box" class="relative round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
                                     style="background-image: url('nose.jpg');">
-                                    <button onclick="myFunction('nose')" id="nose-button" class="w-full h-72 shadow-[0px_0px_5px_0px_#000000]">
+                                    <button onclick="myFunction('nose')" id="nose-button" class="w-full h-full shadow-[0px_0px_5px_0px_#000000]">
                                         
                                         <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
                                         
