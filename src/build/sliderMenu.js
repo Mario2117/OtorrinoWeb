@@ -93,10 +93,19 @@ function main() {
                 //serviceCards.classList.add("scroll-smooth");
                 nextservices.classList.add("hidden");
                 prevservices.classList.remove("hidden");
-            } else {
+            } 
+            else if(Math.ceil(serviceCards.scrollLeft) === (serviceCards.scrollWidth - serviceCards.offsetWidth)/2){
+                
+                // serviceCards.classList.remove("scroll-smooth");
+                // serviceCards.scrollLeft = serviceCards.offsetWidth;
+                //serviceCards.classList.add("scroll-smooth");
                 nextservices.classList.remove("hidden");
                 prevservices.classList.remove("hidden");
-            }
+            } 
+            // else {
+            //     nextservices.classList.remove("hidden");
+            //     prevservices.classList.remove("hidden");
+            // }
 
             // clearTimeout(timeOutId);
             // if(!serviceCards.matches(":hover")) {autoplay();}

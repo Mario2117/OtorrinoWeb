@@ -17,7 +17,7 @@ let noseLine = document.getElementById("nose-line");
 let bottomLine = document.getElementById("bottom-line");
 
 
-function myFunction(service){
+function serviceMenu(service){
     if(service == "ear"){
         bottomLine.classList.remove("mt-5");
         earBox.classList.add("border-8");
