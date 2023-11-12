@@ -580,6 +580,10 @@ video {
   margin-right: 0.75rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -1049,11 +1053,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:mx-32 {
-    margin-left: 8rem;
-    margin-right: 8rem;
-  }
-
   .sm\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -1083,11 +1082,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mx-32 {
-    margin-left: 8rem;
-    margin-right: 8rem;
-  }
-
   .md\:hidden {
     display: none;
   }
@@ -1126,21 +1120,6 @@ video {
   .lg\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
-  }
-
-  .lg\:mx-52 {
-    margin-left: 13rem;
-    margin-right: 13rem;
-  }
-
-  .lg\:mx-44 {
-    margin-left: 11rem;
-    margin-right: 11rem;
-  }
-
-  .lg\:mx-60 {
-    margin-left: 15rem;
-    margin-right: 15rem;
   }
 
   .lg\:h-9 {
