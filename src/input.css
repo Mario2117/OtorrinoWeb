@@ -1,3 +1,41 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Jomolhari&family=Kaisei+Tokumin&display=swap');
+
 @tailwind base;
+  /* width */
+::-webkit-scrollbar{
+    background-color: rgba(255, 0, 0, 0);
+    height: 3px;
+    width: 3px;
+}
+::-webkit-scrollbar-thumb:vertical{
+    background: #303A2C;
+    border-radius: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(86, 86, 86);
+}
+/* Track */
+::-webkit-scrollbar-track:horizontal {
+    background: rgba(86, 86, 86, 0);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #303A2C;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #303a2c00;
+    border-radius: 2px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #303A2C;
+}
+
 @tailwind components;
 @tailwind utilities;
