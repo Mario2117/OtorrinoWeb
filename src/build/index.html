@@ -31,7 +31,7 @@
 
 <!--md:hidden-->
 
-<nav class="flex items-center justify-between bg-white h-24 w-screen md:hidden">
+<nav class="fixed z-0 flex items-center justify-between bg-white h-24 w-screen md:hidden">
 
     <a href="/src/build/index.html">
         <div class="flex items-center pl-1">
@@ -84,7 +84,6 @@
 
 </head>
 <body>
-    <h1>header</h1>
     <section class=" bg-[#303A2C] relative shadow-inner">
     <div id="carrusel" class="snap-x select-none cursor-grab flex flex-row w-full h-fit overflow-x-scroll md:overflow-x-hidden">
         <ul id="slider_image" class="flex w-full h-4/5">
@@ -260,95 +259,8 @@
     <script src="./qSomosSlider.js" defer></script>
 </section>
 
-    <section class="w-screen bg-white relative h-fit shadow-inner overflow-y-auto">
-    <div>
-
-
-       
-    <div class="flex items-center py-4">
-        <!-- The left line -->
-        <div class="flex-grow h-1 bg-[#333122] mx-3"></div> 
-
-        <!-- Your text here -->
-        <span class="mt-3 mb-3 text-[#333122] font-bold font-serif text-4xl sm:text-5xl">
-            CURRICULUM
-        </span>
-
-        <!-- The right line -->
-        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
-    </div>
+    <section class="relative w-screen bg-white h-fit shadow-inner pb-5">
     
-    <div id="main-row" class="flex md:flex-row flex-col place-content-center gap-3 items-start">
-        <div id="edu-col" class="flex flex-col flex-grow mx-3 md:w-1/2 mt-3 sm:mt-3">
-            <div id= "edu-text" class="text-3xl sm:text-4xl font-serif font-semibold text-center">
-                EDUCACIÓN
-            </div>
-            <div id="container-title" class="bg-[#333122] font-serif font-semibold text-2xl sm:text-3xl text-white text-center py-5 flex-grow mt-3"> 
-                2020-2020
-            </div>
-            <div id="container-content" class="bg-[#F1E9E0] font-serif text-xl text-[#333122] text-center py-5 flex-grow"> 
-                Medico General egresado de la Facultad de Medicina de la Universidad Autónoma de Baja California Campus Tijuana
-            </div>
-            <div id="container-title" class="bg-[#333122] font-serif font-semibold text-2xl sm:text-3xl text-white text-center py-5 flex-grow mt-3"> 
-                2020 - 2020
-            </div>
-            <div id="container-content" class="bg-[#F1E9E0] font-serif text-xl text-[#333122] text-center py-5 flex-grow"> 
-                Especialidad  en Otorrinolaringologìa  y cirugìa de  cabeza y cuello  en la  torre de especialidades del Centro Médico  Nacional de Occidente  en Guadalajara, jalisco, Mexico; certificado  por el  CONSEJO  MEXICANO DE  OTORRINOLARINGOLOGIA  Y CIRUGIA DE CABEZA Y CUELLO  a.c.
-            </div>
-            <div id="container-title" class="bg-[#333122] font-serif font-semibold text-2xl sm:text-3xl text-white text-center py-5 flex-grow mt-3"> 
-                2020 - PRESENTE
-            </div>
-            <div id="container-content" class="bg-[#F1E9E0] font-serif text-xl text-[#333122] text-center py-5 flex-grow"> 
-                Miembro del  Colegio de Otorrinolaringología y cirugía de cabeza  y cuello de  Baja California, capítulo Tijuana.
-            </div>
-            
-        </div>
-        <div id="exp-col" class="flex flex-col flex-grow mx-3 md:w-1/2 mt-10 md:mt-3">
-            <div id= "exp-text" class="text-3xl sm:text-4xl font-serif font-semibold text-center">
-                EXPERIENCIA
-            </div>
-            <div id="container-title" class="bg-[#333122] font-serif font-semibold text-2xl sm:text-3xl text-white text-center py-5 flex-grow mt-3"> 
-                2020 - 2020
-            </div>
-            <div id="container-content" class="bg-[#F1E9E0] font-serif text-xl text-[#333122] text-center py-5 flex-grow"> 
-                Medico  Otorrinolaringólogo en hospital CER Tijuana.
-            </div>
-            <div id="container-title" class="bg-[#333122] font-serif font-semibold text-2xl sm:text-3xl text-white text-center py-5 flex-grow mt-3"> 
-                2020 - 2020
-            </div>
-            <div id="container-content" class="bg-[#F1E9E0] font-serif text-xl text-[#333122] text-center py-5 flex-grow"> 
-                Medico  Otorrinolaringólogo  en  HGR 20  IMSS Tijuana.
-            </div>
-            <div id="container" class="bg-[#333122] font-serif font-semibold text-3xl text-white text-center py-5 flex-grow mt-3"> 
-                2020 - 2020
-            </div>
-            <div id="container-content" class="bg-[#F1E9E0] font-serif text-xl text-[#333122] text-center py-5 flex-grow"> 
-                Docente  de la materia de  otorrinolaringología en Universidad  Xochicalco campus Tijuana.
-            </div>
-            <div id="container-title" class="bg-[#333122] font-serif font-semibold text-2xl sm:text-3xl text-white text-center py-5 flex-grow mt-3"> 
-                2002 - PRESENTE
-            </div>
-            <div id="container-content" class="bg-[#F1E9E0] font-serif text-xl text-[#333122] text-center py-5 flex-grow"> 
-                Múltiples cursos  y congresos desde 2002 hasta la fecha.
-            </div>
-            
-        </div>
-
-    </div>
-
-    <div id="bottom-line" class="flex-grow h-1 bg-[#333122] my-5 mx-3"></div>
-
-    
-    
-
-    
-    </div>
-    
-    <script src="./services.js"></script>
-
-    
-</section>
-    <section class="relative w-screen bg-white h-fit shadow-inner">
     <div>
 
         <div id="overlay" class="fixed z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60 place-content-center items-center hidden"></div>
@@ -1588,8 +1500,8 @@
     </div>
     
     
-    <script src="./services.js"></script>
-    <script src="./sliderMenu.js"></script>
+    <script src="./services.js" defer></script>
+    <script src="./sliderMenu.js" defer></script>
 
     
 </section>
