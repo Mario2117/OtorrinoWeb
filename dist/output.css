@@ -2,7 +2,7 @@
 
 /* FONTS */
 
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1557,11 +1557,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-\[10px\]{
   font-size: 10px;
 }
@@ -2117,6 +2112,10 @@ video {
 
   .lg\:w-6\/12{
     width: 50%;
+  }
+
+  .lg\:w-72{
+    width: 18rem;
   }
 
   .lg\:w-9{
