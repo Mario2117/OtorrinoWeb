@@ -14,12 +14,9 @@ let earLine = document.getElementById("ear-line");
 let throatLine = document.getElementById("throat-line");
 let noseLine = document.getElementById("nose-line");
 
-let bottomLine = document.getElementById("bottom-line");
-
 
 function serviceMenu(service){
     if(service == "ear" && !earBox.classList.contains("border-[#303A2C]")){
-        bottomLine.classList.remove("mt-5");
         earBox.classList.add("border-8");
         earBox.classList.add("border-[#303A2C]");
         noseBox.classList.remove("border-[#303A2C]");
@@ -30,7 +27,6 @@ function serviceMenu(service){
         earLine.classList.remove("hidden");
         noseLine.classList.add("hidden");
         throatLine.classList.add("hidden");
-        bottomLine.classList.add("hidden");
 
         earService.classList.remove("hidden");
         throatService.classList.add("hidden");
@@ -41,12 +37,9 @@ function serviceMenu(service){
         earBox.classList.remove("border-[#303A2C]");
         earBox.classList.remove("border-8");
         earLine.classList.add("hidden");
-        bottomLine.classList.remove("hidden");
-        bottomLine.classList.add("mt-5");
     }
 
     if(service == "throat" && !throatBox.classList.contains("border-[#303A2C]")){
-        bottomLine.classList.remove("mt-5");
         throatBox.classList.add("border-8");
         throatBox.classList.add("border-[#303A2C]");
         earBox.classList.remove("border-[#303A2C]");
@@ -58,7 +51,6 @@ function serviceMenu(service){
         throatLine.classList.remove("hidden");
         noseLine.classList.add("hidden");
         earLine.classList.add("hidden");
-        bottomLine.classList.add("hidden");
 
         throatService.classList.remove("hidden");
         noseService.classList.add("hidden");
@@ -69,12 +61,9 @@ function serviceMenu(service){
         throatBox.classList.remove("border-[#303A2C]");
         throatBox.classList.remove("border-8");
         throatLine.classList.add("hidden");
-        bottomLine.classList.remove("hidden");
-        bottomLine.classList.add("mt-5");
     }
 
     if(service == "nose" && !noseBox.classList.contains("border-[#303A2C]")){
-        bottomLine.classList.remove("mt-5");
         noseBox.classList.add("border-8");
         noseBox.classList.add("border-[#303A2C]");
         earBox.classList.remove("border-[#303A2C]");
@@ -85,7 +74,6 @@ function serviceMenu(service){
         noseLine.classList.remove("hidden");
         earLine.classList.add("hidden");
         throatLine.classList.add("hidden");
-        bottomLine.classList.add("hidden");
 
         noseService.classList.remove("hidden");
         throatService.classList.add("hidden");
@@ -96,8 +84,6 @@ function serviceMenu(service){
         noseBox.classList.remove("border-[#303A2C]");
         noseBox.classList.remove("border-8");
         noseLine.classList.add("hidden");
-        bottomLine.classList.remove("hidden");
-        bottomLine.classList.add("mt-5");
     }
         
 }
@@ -118,9 +104,6 @@ function myServiceSelector(serviceId, operation){
         dialog.classList.add('hidden');
         overlay.classList.add('hidden');
     }
-    
-    
-
 }
 
 
