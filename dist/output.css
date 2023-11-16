@@ -731,6 +731,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
@@ -1111,6 +1116,14 @@ video {
   max-width: 56rem;
 }
 
+.max-w-\[1152px\]{
+  max-width: 1152px;
+}
+
+.max-w-\[960px\]{
+  max-width: 960px;
+}
+
 .max-w-screen-2xl{
   max-width: 1536px;
 }
@@ -1191,10 +1204,6 @@ video {
 
 .place-content-end{
   place-content: end;
-}
-
-.items-start{
-  align-items: flex-start;
 }
 
 .items-center{
