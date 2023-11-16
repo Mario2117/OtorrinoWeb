@@ -94,7 +94,8 @@ function myServiceSelector(serviceId, operation){
     var dialog = document.getElementById(`dialog-${serviceId}`);
     var closeButton = document.getElementById(`close-${serviceId}`);
     var overlay = document.getElementById('overlay');
-    
+    var serviceWithMultiple = document.getElementById('dialog-nose-3');
+
     // show the overlay and the dialog
     if (operation == 'open'){
         dialog.classList.remove('hidden');
@@ -103,6 +104,15 @@ function myServiceSelector(serviceId, operation){
     else if (operation == 'close'){
         dialog.classList.add('hidden');
         overlay.classList.add('hidden');
+    }
+    else if (operation == 'open-comp'){
+        serviceWithMultiple.classList.add('hidden');
+        dialog.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+    }
+    else if (operation == 'close-comp'){
+        dialog.classList.add('hidden');
+        serviceWithMultiple.classList.remove('hidden');
     }
 }
 
