@@ -14,6 +14,8 @@ let earLine = document.getElementById("ear-line");
 let throatLine = document.getElementById("throat-line");
 let noseLine = document.getElementById("nose-line");
 
+let sliderS = document.getElementById("sliderS");
+
 
 function serviceMenu(service){
     if(service == "ear" && !earBox.classList.contains("border-[#303A2C]")){
@@ -32,11 +34,14 @@ function serviceMenu(service){
         throatService.classList.add("hidden");
         noseService.classList.add("hidden");
 
+        sliderS.classList.remove("mb-5");
+
     } else if(service == "ear" && earBox.classList.contains("border-[#303A2C]")){
         earService.classList.add("hidden");
         earBox.classList.remove("border-[#303A2C]");
         earBox.classList.remove("border-8");
         earLine.classList.add("hidden");
+        sliderS.classList.add("mb-5");
     }
 
     if(service == "throat" && !throatBox.classList.contains("border-[#303A2C]")){
@@ -55,12 +60,15 @@ function serviceMenu(service){
         throatService.classList.remove("hidden");
         noseService.classList.add("hidden");
         earService.classList.add("hidden");
+
+        sliderS.classList.remove("mb-5");
         
     }else if(service == "throat" && throatBox.classList.contains("border-[#303A2C]")){
         throatService.classList.add("hidden");
         throatBox.classList.remove("border-[#303A2C]");
         throatBox.classList.remove("border-8");
         throatLine.classList.add("hidden");
+        sliderS.classList.add("mb-5");
     }
 
     if(service == "nose" && !noseBox.classList.contains("border-[#303A2C]")){
@@ -79,11 +87,14 @@ function serviceMenu(service){
         throatService.classList.add("hidden");
         earService.classList.add("hidden");
 
+        sliderS.classList.remove("mb-5");
+
     }else if(service == "nose" && noseBox.classList.contains("border-[#303A2C]")){
         noseService.classList.add("hidden");
         noseBox.classList.remove("border-[#303A2C]");
         noseBox.classList.remove("border-8");
         noseLine.classList.add("hidden");
+        sliderS.classList.add("mb-5");
     }
         
 }
