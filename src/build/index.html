@@ -8,7 +8,7 @@
     <title>Document</title>
 
     
-<nav class="hidden transition-all items-center justify-between sticky bg-white h-32 md:flex">
+<nav class="hidden transition-all items-center justify-between fixed w-full z-50  bg-white h-32 md:flex">
     <a href="/src/build/index.html">
         <div class="flex items-center pl-6">
             <img src="../img/Logo.png" alt="Logo" class="h-28 w-auto">
@@ -31,7 +31,7 @@
 
 <!--md:hidden-->
 
-<nav class="fixed z-50 flex items-center justify-between bg-white h-24 w-screen md:hidden">
+<nav class="fixed z-50 flex items-center justify-between bg-white  h-24 w-screen md:hidden">
 
     <a href="/src/build/index.html">
         <div class="flex items-center pl-1">
@@ -84,6 +84,7 @@
 
 </head>
 <body>
+    <div class="pt-24 md:pt-32"></div>
     <section class=" bg-[#303A2C] relative shadow-inner">
     <div id="carrusel" class="snap-x select-none cursor-grab flex flex-row w-full h-fit overflow-x-scroll md:overflow-x-hidden">
         <ul id="slider_image" class="flex w-full h-4/5">
@@ -156,7 +157,7 @@
     </div>
     <script src="./mainSlider.js" defer></script>
 </section>
-    <section class="flex w-full pt-5 pb-24 h-fit justify-center">
+    <section class="flex w-full pt-5 pb-10 lg:pb-24 md:pt-20 lg:pt-5 h-fit justify-center">
     <div
         class="flex flex-col items-center justify-center w-screen h-[800px] mt-5 mb-5 lg:flex-row relative max-w-screen-2xl">
         <!-- max-w-screen-2xl -->
@@ -259,11 +260,12 @@
     <script src="./qSomosSlider.js" defer></script>
 </section>
 
-    <section class="relative w-screen bg-white h-fit pb-5">
+    <section class="relative w-screen bg-white h-fit pb-5 pt-5">
     
     <!-- Main Menu Service Page -->
+    
 
-    <div class="flex items-center py-4">
+    <div class="flex items-center">
         <!-- The left line -->
         <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
 
@@ -296,11 +298,11 @@
                         <div class="flex flex-col items-center">
                             <div class="snap-start h-full w-full flex flex-col">
                                 
-                                <div id="ear-box" class="relative round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                <div id="ear-box" class="relative rounded-md bg-cover shadow-[0px_0px_5px_0px_#000000] bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
                                     style="background-image: url('ear.jpg');">
-                                    <button onclick="serviceMenu('ear')" id="ear-button" class="w-full h-full shadow-[0px_0px_5px_0px_#000000]">
+                                    <a href="/src/build/page_servicios.html" class="w-full h-full ">
                                         
-                                        <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
+                                        <div class="bg-[#333122] bg-opacity-50 rounded-md w-full h-full grow flex flex-col place-content-center items-center">
                                         
                                             <div class="text-white text-serif text-center pb-5">
                                                 <p class="text-2xl">Otoplastias</p> <p class="text-xl pt-2">¡Redefine tu estilo!</p>
@@ -308,7 +310,7 @@
         
                                         </div>
                                         
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                             <div id="ear-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
@@ -319,11 +321,11 @@
                         <div class="flex flex-col items-center">
                             <div class="snap-start h-full w-full flex flex-col">
                                 
-                                <div id="throat-box" class="relative round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                <div id="throat-box" class="relative round-lg bg-cover rounded-md bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
                                     style="background-image: url('throat.jpg');">
-                                    <button onclick="serviceMenu('throat')" id="throat-button" class="w-full h-full shadow-[0px_0px_5px_0px_#000000]">
+                                    <a href="/src/build/page_servicios.html" class="w-full rounded-md h-full shadow-[0px_0px_5px_0px_#000000]">
                                         
-                                        <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
+                                        <div class="bg-[#333122] bg-opacity-50 w-full rounded-md h-full grow flex flex-col place-content-center items-center">
                                         
                                             <div class="text-white text-serif text-center pb-5">
                                                 <p class="text-2xl">Amigdalitis</p> <p class="text-xl pt-2">¡No tengas miedo a sentirte bien!</p>
@@ -331,7 +333,7 @@
         
                                         </div>
                                         
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                             <div id="throat-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
@@ -342,11 +344,11 @@
                         <div class="flex flex-col items-center">
                             <div class="snap-start h-full w-full flex flex-col">
                                 
-                                <div id="nose-box" class="relative round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                <div id="nose-box" class="relative round-lg bg-cover bg-no-repeat rounded-md bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
                                     style="background-image: url('nose.jpg');">
-                                    <button onclick="serviceMenu('nose')" id="nose-button" class="w-full h-full shadow-[0px_0px_5px_0px_#000000]">
+                                    <a href="/src/build/page_servicios.html" class="w-full rounded-md h-full shadow-[0px_0px_5px_0px_#000000]">
                                         
-                                        <div class="bg-[#333122] bg-opacity-50 w-full h-full grow flex flex-col place-content-center items-center">
+                                        <div class="bg-[#333122] bg-opacity-50 w-full rounded-md h-full grow flex flex-col place-content-center items-center">
                                         
                                             <div class="text-white text-serif text-center pb-5">
                                                 <p class="text-2xl ">Rinoplastias</p> <p class="text-xl pt-2">¡Consigue la nariz de tu sueños!</p>
@@ -354,7 +356,7 @@
         
                                         </div>
                                         
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                             <div id="nose-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
@@ -372,7 +374,7 @@
         </div>
         
         <div class="flex flex-col items-center justify-center text-base  text-center md:text-lg lg:text-xl font-serif">
-            <p class="pr-10 pl-10 pt-5 max-w-4xl text-[#333122] ">¡Conoce los servicios que ofrecemos!</p>
+            <p class="pr-10 pl-10 pt-2 max-w-4xl text-[#333122] ">¡Conoce los servicios que ofrecemos!</p>
             <a href="/src/build/page_servicios.html" class=" w-4/6 px-2 py-2 mt-5 text-lg rounded-full border-2 border-[#303A2C] shadow-md bg-[#F1E9E0] md:w-56 text-center lg:w-72 lg:text-lg lg:py-4 lg:px-4 hover:shadow-[0px_0px_5px_0px_#000000]">Saber más...</a>
         </div>
     
@@ -587,7 +589,7 @@
                 <div class="bg-[#303A2C] shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] ml-0 rounded-md lg:ml-5 mt-5 md:mt-0">
                     <div class="flex flex-col items-center p-6">
                         <h1 class="text-xl tracking-widest text-[#CDB8A0]">AGENDA TU CITA</h1>
-                        <a href="mailto:Otorrinotj@gmail.com" class="text-white text-xl hover:text-[#CDB8A0]">Otorrinotj@gmail.com</a>
+                        <a href="mailto:Otorrinotj@gmail.com?subject = Quiero agendar una cita." class="text-white text-xl hover:text-[#CDB8A0]">Otorrinotj@gmail.com</a>
                         <a href="https://bit.ly/Dr_Carlo_Pedroza" class="text-white text-xl hover:text-[#CDB8A0]"> 664-262-7274</a>
                         <a class="text-white text-xl hover:text-[#CDB8A0]" href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana#tab=profile-reviews" target="_blank" rel="noopener noreferrer">                 
                             Doctoralia
@@ -694,18 +696,26 @@
             <div class="text-sm text-[#CDB8A0]">
                 CONTACTO
             </div>
-            <div class="mt-2 md:mt-5 text-white font-serif text-sm text-center">
-                <a href="mailto:abc@example.com?subject = Quiero agendar una cita.">dr.carlo@mail.com</a>
+            <div class="mt-1 md:mt-5 text-white font-serif text-sm text-center">
+                <a href="mailto:Otorrinotj@gmail.com">Otorrinotj@gmail.com</a>
             </div>
-            <div class="mt-3 text-white font-serif text-sm text-center">
-                <a href="https://wa.me/1XXXXXXXXXX">664-555-5555</a>
+            <div class="mt-2 text-white font-serif text-sm text-center">
+                <a href="https://wa.me/526642627274">664-262-7274</a>
+            </div>
+            <div class=" text-white font-serif text-sm text-center">
+                <p>664-208-7909</p>
             </div>
             <div class="mt-5 flex flex-row items-center justify-center">
-                <a href="facebook.com"><img src="./facebook_logo.png" alt="logo" class="h-5 w-auto mx-2"></a>
-                <a href="https://wa.me/1XXXXXXXXXX"><img src="./wa_logo.png" alt="logo" class="h-6 w-auto mx-2"></a>
-                <a href="https://www.instagram.com/dr.carlopedroza/"><img src="./insta_logo.png" alt="logo" class="h-5 w-auto mx-2"></a>
-                <a href="mailto:abc@example.com?subject = Quiero agendar una cita."><img src="./mail_logo.png" alt="logo" class="h-6 w-auto mx-2"></a>
-   
+                <a href="https://www.facebook.com/drpedrozatijuana"><img src="./facebook_logo.png" alt="logo" class="h-5 w-auto mx-2"></a>
+                <a href="https://wa.me/526642627274"><img src="./wa_logo.png" alt="logo" class="h-6 w-auto mx-2"></a>
+                <a href="https://www.instagram.com/dr.carlopedroza/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="./insta_logo.png" alt="logo" class="h-5 w-auto mx-2"></a>
+                <a href="mailto:Otorrinotj@gmail.com"><img src="./mail_logo.png" alt="logo" class="h-6 w-auto mx-2"></a>
+
+                <a href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana#tab=profile-reviews"  target="_blank" rel="noopener noreferrer">                 
+                    <img src="./dralia_logoblanco.png" alt="logo" class="h-5 w-auto mx-2">
+                </a>
+
+
             </div>
             <div class="mt-3 w-full"></div><svg width="" height="18" viewBox="0 0 361 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="9.5" x2="161" y2="9.5" stroke="#888661" stroke-width="5"/>
