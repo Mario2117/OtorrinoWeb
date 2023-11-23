@@ -2,7 +2,7 @@
 
 /* FONTS */
 
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -726,6 +726,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .ml-0{
   margin-left: 0px;
 }
@@ -1018,6 +1022,10 @@ video {
 
 .w-8{
   width: 2rem;
+}
+
+.w-8\/12{
+  width: 66.666667%;
 }
 
 .w-9{
@@ -1523,6 +1531,10 @@ video {
   padding-top: 0.25rem;
 }
 
+.pt-10{
+  padding-top: 2.5rem;
+}
+
 .pt-14{
   padding-top: 3.5rem;
 }
@@ -1808,6 +1820,16 @@ video {
   border-color: rgb(241 233 224 / var(--tw-border-opacity));
 }
 
+.hover\:bg-\[\#878560\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(135 133 96 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#CDB8A0\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 184 160 / var(--tw-bg-opacity));
+}
+
 .hover\:text-\[\#878560\]:hover{
   --tw-text-opacity: 1;
   color: rgb(135 133 96 / var(--tw-text-opacity));
@@ -1821,6 +1843,16 @@ video {
 .hover\:text-orange-100:hover{
   --tw-text-opacity: 1;
   color: rgb(255 237 213 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#F1E9E0\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(241 233 224 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-\[0px_0px_5px_0px_\#000000\]:hover{
@@ -2013,6 +2045,10 @@ video {
 
   .md\:w-56{
     width: 14rem;
+  }
+
+  .md\:w-6\/12{
+    width: 50%;
   }
 
   .md\:w-7\/12{
