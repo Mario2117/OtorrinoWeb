@@ -145,7 +145,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Timpanometría';
             title2.innerHTML = '';
             desc.innerHTML = 'Este estudio ayuda a determinar la movilidad de la membrana del tímpano, así como los procesos inflamatorios en el oído medio.';
-            desc2.innerHTML = 'Es útil para evaluar la necesidad de cirugía en algunos casos y, por lo general, se lleva a cabo durante la consulta médica.';
+            desc2.innerHTML = '<br>Es útil para evaluar la necesidad de cirugía en algunos casos y, por lo general, se lleva a cabo durante la consulta médica.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -156,7 +156,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Otoplastia';
             title2.innerHTML = '';
             desc.innerHTML = 'La cirugía se realiza con el propósito de mejorar la posición y estética de las orejas.';
-            desc2.innerHTML = 'Este procedimiento se lleva a cabo en quirófano, con anestesia local y sedación en adultos, o bajo anestesia general en niños.';
+            desc2.innerHTML = '<br>Este procedimiento se lleva a cabo en quirófano, con anestesia local y sedación en adultos, o bajo anestesia general en niños.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -167,7 +167,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Queloides';
             title2.innerHTML = '';
             desc.innerHTML = 'Son cicatrices anormales que se forman en las orejas después de perforaciones y pueden ser eliminadas en consulta bajo anestesia local o en quirófano si es necesario.';
-            desc2.innerHTML = 'El manejo se realiza en colaboración con dermatología.';
+            desc2.innerHTML = '<br>El manejo se realiza en colaboración con dermatología.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -200,7 +200,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Otitis';
             title2.innerHTML = '';
             desc.innerHTML = 'Es la inflamación del oído, al afectar el oído medio, constituye la infección más frecuente en pediatría.';
-            desc2.innerHTML = 'Puede manifestarse de forma aguda o crónica, con presencia de derrame purulento o seroso. Se hace necesaria la evaluación y exploración para obtener un diagnóstico preciso y aplicar un tratamiento adecuado.';
+            desc2.innerHTML = '<br>Puede manifestarse de forma aguda o crónica, con presencia de derrame purulento o seroso. Se hace necesaria la evaluación y exploración para obtener un diagnóstico preciso y aplicar un tratamiento adecuado.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -211,7 +211,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Tapones de cerilla';
             title2.innerHTML = '';
             desc.innerHTML = 'En la mayoría de los casos, se producen debido a la manipulación con cotonetes, uso de audífonos, entre otros.';
-            desc2.innerHTML = 'Pueden extraerse mediante limpieza bajo visión directa, el tradicional lavado de oído o por aspiración, siendo la elección del método determinada de acuerdo a las necesidades de cada paciente.';
+            desc2.innerHTML = '<br>Pueden extraerse mediante limpieza bajo visión directa, el tradicional lavado de oído o por aspiración, siendo la elección del método determinada de acuerdo a las necesidades de cada paciente.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -222,7 +222,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Vertigo';
             title2.innerHTML = '';
             desc.innerHTML = 'Se trata de un padecimiento angustiante, ya que afecta seriamente la capacidad de movimiento; el mareo suele representar un desafío para un diagnóstico preciso.';
-            desc2.innerHTML = 'Se llevan a cabo pruebas y valoraciones en consulta, y en algunos casos, se recurre a estudios neurofuncionales o de imagen para obtener un diagnóstico más completo.';
+            desc2.innerHTML = '<br>Se llevan a cabo pruebas y valoraciones en consulta, y en algunos casos, se recurre a estudios neurofuncionales o de imagen para obtener un diagnóstico más completo.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -255,7 +255,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Otitis Externa';
             title2.innerHTML = '';
             desc.innerHTML = 'También conocida coloquialmente como la otitis de los nadadores, se produce debido a la manipulación del oído mediante el uso de artefactos de limpieza como cotonetes y pasadores. ';
-            desc2.innerHTML = 'Puede tener un origen infeccioso, causado tanto por bacterias como por hongos.';
+            desc2.innerHTML = '<br>Puede tener un origen infeccioso, causado tanto por bacterias como por hongos.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -267,7 +267,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Faringoscopia- Laringoscopia';
             title2.innerHTML = '';
             desc.innerHTML = 'Procedimiento realizado en consulta médica que puede llevarse a cabo con diversas técnicas, adaptándose a cada caso.';
-            desc2.innerHTML = 'Esto puede incluir exploración mediante endoscopia rígida o nasofaringoscopia, así como laringoscopia flexible para evaluar las cuerdas vocales y su movilidad.';
+            desc2.innerHTML = '<br>Esto puede incluir exploración mediante endoscopia rígida o nasofaringoscopia, así como laringoscopia flexible para evaluar las cuerdas vocales y su movilidad.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -278,7 +278,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Amigdalitis (anginas)';
             title2.innerHTML = '';
             desc.innerHTML = 'Ofrecemos el tratamiento médico de los procesos de infección aguda y crónica de las amígdalas o adenoides.';
-            desc2.innerHTML = 'Además, se contempla el tratamiento quirúrgico mediante amigdalectomía y adenoidectomía.';
+            desc2.innerHTML = '<br>Además, se contempla el tratamiento quirúrgico mediante amigdalectomía y adenoidectomía.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -322,7 +322,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Faringitis';
             title2.innerHTML = '';
             desc.innerHTML = 'Se refiere al proceso inflamatorio en la garganta puede tener diversas causas, ya sea infeccioso, irritativo, entre otras.';
-            desc2.innerHTML = 'Se requiere evaluar cada caso para un diagnóstico preciso con un tratamiento adecuado.';
+            desc2.innerHTML = '<br>Se requiere evaluar cada caso para un diagnóstico preciso con un tratamiento adecuado.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -335,7 +335,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Rinoscopia';
             title2.innerHTML = '';
             desc.innerHTML = 'La rinoscopia es la exploración de la nariz se realiza en consulta y puede llevarse a cabo en dos pasos, con el uso de un vasoconstrictor.';
-            desc2.innerHTML = 'La endoscopia nasal se lleva a cabo en consulta y puede realizarse con un endoscopio rígido o flexible.';
+            desc2.innerHTML = '<br>La endoscopia nasal se lleva a cabo en consulta y puede realizarse con un endoscopio rígido o flexible.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -373,7 +373,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Turbinoplastia';
             title2.innerHTML = '';
             desc.innerHTML = 'Cirugía para reducir el tamaño de los cornetes nasales. Existen diversas técnicas, como el uso de electrocauterio, radiofrecuencia o microdebridador.';
-            desc2.innerHTML = 'La técnica a usar se determina según las necesidades individuales de cada paciente.';
+            desc2.innerHTML = '<br>La técnica a usar se determina según las necesidades individuales de cada paciente.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -384,7 +384,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Sangrado  Nasal (Epistaxis)';
             title2.innerHTML = '';
             desc.innerHTML = 'Según el caso, el sangrado puede resolverse en el consultorio o en quirófano.';
-            desc2.innerHTML = 'Se emplean diversos tratamientos como cauterización local, colocación de agentes hemostáticos, taponamientos nasales, entre otros, de acuerdo con las necesidades individuales de cada paciente.';
+            desc2.innerHTML = '<br>Se emplean diversos tratamientos como cauterización local, colocación de agentes hemostáticos, taponamientos nasales, entre otros, de acuerdo con las necesidades individuales de cada paciente.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -395,7 +395,7 @@ function myServiceSelector(serviceId, operation){
             title.innerHTML = 'Sinusitis';
             title2.innerHTML = '';
             desc.innerHTML = 'Es el tratamiento médico para mejorar la sinusitis o, en casos especiales, la resolución mediante cirugía de la inflamación de los senos paranasales.';
-            desc2.innerHTML = 'Esta inflamación puede deberse a diversas causas, como alergias, infecciones, entre otros.';
+            desc2.innerHTML = '<br>Esta inflamación puede deberse a diversas causas, como alergias, infecciones, entre otros.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -405,8 +405,8 @@ function myServiceSelector(serviceId, operation){
         case 'nose-7':
             title.innerHTML = 'Rinitis alérgica';
             title2.innerHTML = '';
-            desc.innerHTML = 'Tratamiento médico de la enfermedad alérgica nasal, ya sea estacional o persistente.';
-            desc2.innerHTML = 'Además, puede llevarse a cabo en conjunto con el servicio de alergología.';
+            desc.innerHTML = 'Tratamiento médico de la enfermedad alérgica nasal, ya sea estacional o persistente. Además, puede llevarse a cabo en conjunto con el servicio de alergología.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -506,7 +506,7 @@ function myServiceSelector(serviceId, operation){
         // Get the variable name
         var variableName = quoteText[i];
         // Check if the content is empty and hide the corresponding element
-        variableName.innerHTML = '"'+variableName.innerHTML+'"';
+        variableName.innerHTML = variableName.innerHTML;
     }
     
     if (operation == 'open'){
