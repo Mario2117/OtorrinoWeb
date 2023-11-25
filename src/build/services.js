@@ -243,7 +243,7 @@ function myServiceSelector(serviceId, operation){
         case 'ear-11':
             title.innerHTML = 'Cuerpos extraños';
             title2.innerHTML = '';
-            desc.innerHTML = '';
+            desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado durante la época de cuaresma';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -254,8 +254,8 @@ function myServiceSelector(serviceId, operation){
         case 'ear-12':
             title.innerHTML = 'Otitis Externa';
             title2.innerHTML = '';
-            desc.innerHTML = '';
-            desc2.innerHTML = '';
+            desc.innerHTML = 'También conocida coloquialmente como la otitis de los nadadores, se produce debido a la manipulación del oído mediante el uso de artefactos de limpieza como cotonetes y pasadores. ';
+            desc2.innerHTML = 'Puede tener un origen infeccioso, causado tanto por bacterias como por hongos.';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -288,7 +288,7 @@ function myServiceSelector(serviceId, operation){
         case 'throat-3':
             title.innerHTML = 'Cuerpos extraños en Orofaringe';
             title2.innerHTML = '';
-            desc.innerHTML = '';
+            desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado durante la época de cuaresma';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -416,7 +416,7 @@ function myServiceSelector(serviceId, operation){
         case 'nose-8':
             title.innerHTML = 'Cuerpos extraños';
             title2.innerHTML = '';
-            desc.innerHTML = '';
+            desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado durante la época de cuaresma';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
