@@ -1911,6 +1911,10 @@ video {
     width: 83.333333%;
   }
 
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
   .sm\:px-3{
     padding-left: 0.75rem;
     padding-right: 0.75rem;

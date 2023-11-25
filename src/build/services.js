@@ -109,6 +109,10 @@ function myServiceSelector(serviceId, operation){
     var closeCompButton = document.getElementById ("close-comp-button");
     var desc = document.getElementById("dialog-desc");
     var desc2 = document.getElementById("dialog-desc2");
+    var img1 = document.getElementById("dialog-img1");
+    var img2 = document.getElementById("dialog-img2");
+    var img3 = document.getElementById("dialog-img3");
+    var img4 = document.getElementById("dialog-img4");
     var hideableText = [title2, desc2, compTitle];
     var upperCaseText = [title, title2, compTitle];
     var quoteText = [desc, desc2]
@@ -127,6 +131,14 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = 'Limpieza de  Oidos';
             desc.innerHTML = 'La exploración instrumental de los oídos puede ser respaldada mediante endoscopia o microscopio.';
             desc2.innerHTML = 'La limpieza cuidadosa de los oídos se lleva a cabo, en caso de ser necesaria, como parte de la consulta médica.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-2':
@@ -134,6 +146,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Este estudio ayuda a determinar la movilidad de la membrana del tímpano, así como los procesos inflamatorios en el oído medio.';
             desc2.innerHTML = 'Es útil para evaluar la necesidad de cirugía en algunos casos y, por lo general, se lleva a cabo durante la consulta médica.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-3':
@@ -141,6 +157,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'La cirugía se realiza con el propósito de mejorar la posición y estética de las orejas.';
             desc2.innerHTML = 'Este procedimiento se lleva a cabo en quirófano, con anestesia local y sedación en adultos, o bajo anestesia general en niños.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-4':
@@ -148,6 +168,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Son cicatrices anormales que se forman en las orejas después de perforaciones y pueden ser eliminadas en consulta bajo anestesia local o en quirófano si es necesario.';
             desc2.innerHTML = 'El manejo se realiza en colaboración con dermatología.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-5':
@@ -155,6 +179,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'La timpanoplastia es la reconstrucción quirúrgica de la membrana del tímpano y puede llevarse a cabo en conjunto con otras cirugías, como la mastoidectomía.';
             desc2.innerHTML = '';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-6':
@@ -162,6 +190,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Es la cirugía para la eliminación de infecciones o colesteatomas en el hueso del oído.';
             desc2.innerHTML = '';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-7':
@@ -169,6 +201,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Es la inflamación del oído, al afectar el oído medio, constituye la infección más frecuente en pediatría.';
             desc2.innerHTML = 'Puede manifestarse de forma aguda o crónica, con presencia de derrame purulento o seroso. Se hace necesaria la evaluación y exploración para obtener un diagnóstico preciso y aplicar un tratamiento adecuado.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-8':
@@ -176,6 +212,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'En la mayoría de los casos, se producen debido a la manipulación con cotonetes, uso de audífonos, entre otros.';
             desc2.innerHTML = 'Pueden extraerse mediante limpieza bajo visión directa, el tradicional lavado de oído o por aspiración, siendo la elección del método determinada de acuerdo a las necesidades de cada paciente.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-9':
@@ -183,6 +223,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Se trata de un padecimiento angustiante, ya que afecta seriamente la capacidad de movimiento; el mareo suele representar un desafío para un diagnóstico preciso.';
             desc2.innerHTML = 'Se llevan a cabo pruebas y valoraciones en consulta, y en algunos casos, se recurre a estudios neurofuncionales o de imagen para obtener un diagnóstico más completo.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-10':
@@ -190,6 +234,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'El zumbido en los oídos puede tener diversas causas, que van desde orígenes fácilmente identificables, como tapones de cerumen, hasta problemas más serios, como neoplasias o tumores en el oído.';
             desc2.innerHTML = '';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-11':
@@ -197,6 +245,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = '';
             desc2.innerHTML = '';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'ear-12':
@@ -204,6 +256,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = '';
             desc2.innerHTML = '';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         // THROAT SERVICES
@@ -212,6 +268,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Procedimiento realizado en consulta médica que puede llevarse a cabo con diversas técnicas, adaptándose a cada caso.';
             desc2.innerHTML = 'Esto puede incluir exploración mediante endoscopia rígida o nasofaringoscopia, así como laringoscopia flexible para evaluar las cuerdas vocales y su movilidad.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'throat-2':
@@ -219,6 +279,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Ofrecemos el tratamiento médico de los procesos de infección aguda y crónica de las amígdalas o adenoides.';
             desc2.innerHTML = 'Además, se contempla el tratamiento quirúrgico mediante amigdalectomía y adenoidectomía.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'throat-3':
@@ -226,6 +290,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = '';
             desc2.innerHTML = '';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'throat-4':
@@ -233,6 +301,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Se ofrecen servicios como el diagnóstico y tratamiento de problemas en el cuello, así como biopsias y cirugías relacionadas con ganglios, quistes, entre otros.';
             desc2.innerHTML = '';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'throat-5':
@@ -240,6 +312,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Se realizan intervenciones quirúrgicas en glándulas salivales, incluyendo la parótida y la submaxilar, así como cirugía en la glándula tiroides.';
             desc2.innerHTML = '';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
         case 'throat-6':
@@ -247,6 +323,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Se refiere al proceso inflamatorio en la garganta puede tener diversas causas, ya sea infeccioso, irritativo, entre otras.';
             desc2.innerHTML = 'Se requiere evaluar cada caso para un diagnóstico preciso con un tratamiento adecuado.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
 
@@ -256,6 +336,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'La rinoscopia es la exploración de la nariz se realiza en consulta y puede llevarse a cabo en dos pasos, con el uso de un vasoconstrictor.';
             desc2.innerHTML = 'La endoscopia nasal se lleva a cabo en consulta y puede realizarse con un endoscopio rígido o flexible.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-2':
@@ -263,11 +347,15 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Es la alineación del tabique nasal, tiene como objetivo mejorar la respiración; además, ayuda en el manejo de la sinusitis o la alergia nasal.';
             desc2.innerHTML = '';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-3':
             title.innerHTML = 'Rinoplastia';
-            // title2.innerHTML = 'CIRUGÍAS COMPLEMENTARIAS <br> PARA EL PERFILADO FACIAL';
+            title2.innerHTML = '';
             title2.classList.add('hidden');
             compTitle.innerHTML = 'CIRUGÍAS COMPLEMENTARIAS <br> PARA EL PERFILADO FACIAL';
             desc.innerHTML = 'Es la cirugía destinada a mejorar la estética nasal, y es común combinarla con la septumplastia, denominándose entonces Rinoseptoplastia.<br>El objetivo es integrar la mejor estética y función de la nariz.';
@@ -275,6 +363,10 @@ function myServiceSelector(serviceId, operation){
             additionalOps.classList.remove('hidden');
             closeButton.classList.remove('hidden');
             closeCompButton.classList.add('hidden');
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-4':
@@ -282,6 +374,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Cirugía para reducir el tamaño de los cornetes nasales. Existen diversas técnicas, como el uso de electrocauterio, radiofrecuencia o microdebridador.';
             desc2.innerHTML = 'La técnica a usar se determina según las necesidades individuales de cada paciente.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-5':
@@ -289,6 +385,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Según el caso, el sangrado puede resolverse en el consultorio o en quirófano.';
             desc2.innerHTML = 'Se emplean diversos tratamientos como cauterización local, colocación de agentes hemostáticos, taponamientos nasales, entre otros, de acuerdo con las necesidades individuales de cada paciente.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-6':
@@ -296,6 +396,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Es el tratamiento médico para mejorar la sinusitis o, en casos especiales, la resolución mediante cirugía de la inflamación de los senos paranasales.';
             desc2.innerHTML = 'Esta inflamación puede deberse a diversas causas, como alergias, infecciones, entre otros.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-7':
@@ -303,6 +407,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Tratamiento médico de la enfermedad alérgica nasal, ya sea estacional o persistente.';
             desc2.innerHTML = 'Además, puede llevarse a cabo en conjunto con el servicio de alergología.';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-8':
@@ -310,6 +418,10 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = '';
             desc2.innerHTML = '';
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-comp-1':
@@ -319,6 +431,10 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'Cirugía diseñada para reposicionar el exceso de piel de los párpados y eliminar o reubicar las bolsas de grasa en dicha área.';
             desc2.innerHTML = '';
             additionalOps.classList.add('hidden');
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-comp-2':
@@ -327,6 +443,10 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'Procedimiento destinado a contribuir al perfilado facial.';
             desc2.innerHTML = '';
             additionalOps.classList.add('hidden');
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-comp-3':
@@ -335,6 +455,10 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'Cirugía que implica la colocación de un implante en la barbilla con el fin de lograr una mejor proyección del mentón.';
             desc2.innerHTML = 'Este procedimiento se lleva a cabo en quirófano mediante un abordaje intraoral o externo, por debajo del mentón.';
             additionalOps.classList.add('hidden');
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
 
         case 'nose-comp-4':
@@ -343,6 +467,10 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'Procedimiento quirúrgico que implica la extirpación de las bolsas de grasa de Bichat con el propósito de dar forma y perfilar el área de las mejillas.';
             desc2.innerHTML = '';
             additionalOps.classList.add('hidden');
+            img1.src = "ear.jpg";
+            img2.src = "ear.jpg";
+            img3.src = "ear.jpg";
+            img4.src = "ear.jpg";
             break;
         
     }
