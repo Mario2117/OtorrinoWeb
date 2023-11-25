@@ -806,6 +806,10 @@ video {
   margin-top: 2px;
 }
 
+.-mt-8{
+  margin-top: -2rem;
+}
+
 .box-content{
   box-sizing: content-box;
 }
