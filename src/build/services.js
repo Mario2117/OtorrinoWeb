@@ -135,17 +135,16 @@ function myServiceSelector(serviceId, operation){
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
             img4.src = "ear.jpg";
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
             break;
         
         case 'ear-2':
             title.innerHTML = 'Timpanometría';
             title2.innerHTML = '';
-            desc.innerHTML = 'Este estudio ayuda a determinar la movilidad de la membrana del tímpano, así como los procesos inflamatorios en el oído medio.';
-            desc2.innerHTML = '<br>Es útil para evaluar la necesidad de cirugía en algunos casos y, por lo general, se lleva a cabo durante la consulta médica.';
+            desc.innerHTML = 'Este estudio ayuda a determinar la movilidad de la membrana del tímpano, \
+                                así como los procesos inflamatorios en el oído medio. Es útil para evaluar \
+                                la necesidad de cirugía en algunos casos y, por lo general, se lleva a cabo durante \
+                                la consulta médica.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -155,8 +154,10 @@ function myServiceSelector(serviceId, operation){
         case 'ear-3':
             title.innerHTML = 'Otoplastia';
             title2.innerHTML = '';
-            desc.innerHTML = 'La cirugía se realiza con el propósito de mejorar la posición y estética de las orejas.';
-            desc2.innerHTML = '<br>Este procedimiento se lleva a cabo en quirófano, con anestesia local y sedación en adultos, o bajo anestesia general en niños.';
+            desc.innerHTML = 'La cirugía se realiza con el propósito de mejorar la posición y estética de las orejas. \
+                                Este procedimiento se lleva a cabo en quirófano, con anestesia local y sedación en adultos, \
+                                o bajo anestesia general en niños.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -166,8 +167,10 @@ function myServiceSelector(serviceId, operation){
         case 'ear-4':
             title.innerHTML = 'Queloides';
             title2.innerHTML = '';
-            desc.innerHTML = 'Son cicatrices anormales que se forman en las orejas después de perforaciones y pueden ser eliminadas en consulta bajo anestesia local o en quirófano si es necesario.';
-            desc2.innerHTML = '<br>El manejo se realiza en colaboración con dermatología.';
+            desc.innerHTML = 'Son cicatrices anormales que se forman en las orejas después de perforaciones y pueden ser \
+                                eliminadas en consulta bajo anestesia local o en quirófano si es necesario. \
+                                El manejo se realiza en colaboración con dermatología.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -177,7 +180,8 @@ function myServiceSelector(serviceId, operation){
         case 'ear-5':
             title.innerHTML = 'Timpanoplastia';
             title2.innerHTML = '';
-            desc.innerHTML = 'La timpanoplastia es la reconstrucción quirúrgica de la membrana del tímpano y puede llevarse a cabo en conjunto con otras cirugías, como la mastoidectomía.';
+            desc.innerHTML = 'La timpanoplastia es la reconstrucción quirúrgica de la membrana del tímpano y puede \
+                                llevarse a cabo en conjunto con otras cirugías, como la mastoidectomía.';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -199,8 +203,11 @@ function myServiceSelector(serviceId, operation){
         case 'ear-7':
             title.innerHTML = 'Otitis';
             title2.innerHTML = '';
-            desc.innerHTML = 'Es la inflamación del oído, al afectar el oído medio, constituye la infección más frecuente en pediatría.';
-            desc2.innerHTML = '<br>Puede manifestarse de forma aguda o crónica, con presencia de derrame purulento o seroso. Se hace necesaria la evaluación y exploración para obtener un diagnóstico preciso y aplicar un tratamiento adecuado.';
+            desc.innerHTML = 'Es la inflamación del oído, al afectar el oído medio, constituye la infección más \
+                                frecuente en pediatría. Puede manifestarse de forma aguda o crónica, con presencia \
+                                de derrame purulento o seroso. Se hace necesaria la evaluación y exploración para obtener \
+                                un diagnóstico preciso y aplicar un tratamiento adecuado.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -210,8 +217,11 @@ function myServiceSelector(serviceId, operation){
         case 'ear-8':
             title.innerHTML = 'Tapones de cerilla';
             title2.innerHTML = '';
-            desc.innerHTML = 'En la mayoría de los casos, se producen debido a la manipulación con cotonetes, uso de audífonos, entre otros.';
-            desc2.innerHTML = '<br>Pueden extraerse mediante limpieza bajo visión directa, el tradicional lavado de oído o por aspiración, siendo la elección del método determinada de acuerdo a las necesidades de cada paciente.';
+            desc.innerHTML = 'En la mayoría de los casos, se producen debido a la manipulación con cotonetes, \
+                                uso de audífonos, entre otros. Pueden extraerse mediante limpieza bajo visión \
+                                directa, el tradicional lavado de oído o por aspiración, siendo la elección del \
+                                método determinada de acuerdo a las necesidades de cada paciente.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -221,8 +231,11 @@ function myServiceSelector(serviceId, operation){
         case 'ear-9':
             title.innerHTML = 'Vertigo';
             title2.innerHTML = '';
-            desc.innerHTML = 'Se trata de un padecimiento angustiante, ya que afecta seriamente la capacidad de movimiento; el mareo suele representar un desafío para un diagnóstico preciso.';
-            desc2.innerHTML = '<br>Se llevan a cabo pruebas y valoraciones en consulta, y en algunos casos, se recurre a estudios neurofuncionales o de imagen para obtener un diagnóstico más completo.';
+            desc.innerHTML = 'Se trata de un padecimiento angustiante, ya que afecta seriamente la capacidad de \
+                                movimiento; el mareo suele representar un desafío para un diagnóstico preciso. \
+                                Se llevan a cabo pruebas y valoraciones en consulta, y en algunos casos, se recurre \
+                                a estudios neurofuncionales o de imagen para obtener un diagnóstico más completo.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -232,7 +245,9 @@ function myServiceSelector(serviceId, operation){
         case 'ear-10':
             title.innerHTML = 'Zumbidos de oídos (Acufeno/Tinnitus)';
             title2.innerHTML = '';
-            desc.innerHTML = 'El zumbido en los oídos puede tener diversas causas, que van desde orígenes fácilmente identificables, como tapones de cerumen, hasta problemas más serios, como neoplasias o tumores en el oído.';
+            desc.innerHTML = 'El zumbido en los oídos puede tener diversas causas, que van desde orígenes fácilmente \
+                                identificables, como tapones de cerumen, hasta problemas más serios, como neoplasias \
+                                o tumores en el oído.';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -243,7 +258,11 @@ function myServiceSelector(serviceId, operation){
         case 'ear-11':
             title.innerHTML = 'Cuerpos extraños';
             title2.innerHTML = '';
-            desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado durante la época de cuaresma';
+            desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los \
+                                niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los \
+                                cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir \
+                                alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado \
+                                durante la época de cuaresma';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -254,8 +273,10 @@ function myServiceSelector(serviceId, operation){
         case 'ear-12':
             title.innerHTML = 'Otitis Externa';
             title2.innerHTML = '';
-            desc.innerHTML = 'También conocida coloquialmente como la otitis de los nadadores, se produce debido a la manipulación del oído mediante el uso de artefactos de limpieza como cotonetes y pasadores. ';
-            desc2.innerHTML = '<br>Puede tener un origen infeccioso, causado tanto por bacterias como por hongos.';
+            desc.innerHTML = 'También conocida coloquialmente como la otitis de los nadadores, se produce debido a la \
+                                manipulación del oído mediante el uso de artefactos de limpieza como cotonetes y \
+                                pasadores. Puede tener un origen infeccioso, causado tanto por bacterias como por hongos.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -266,8 +287,11 @@ function myServiceSelector(serviceId, operation){
         case 'throat-1':
             title.innerHTML = 'Faringoscopia- Laringoscopia';
             title2.innerHTML = '';
-            desc.innerHTML = 'Procedimiento realizado en consulta médica que puede llevarse a cabo con diversas técnicas, adaptándose a cada caso.';
-            desc2.innerHTML = '<br>Esto puede incluir exploración mediante endoscopia rígida o nasofaringoscopia, así como laringoscopia flexible para evaluar las cuerdas vocales y su movilidad.';
+            desc.innerHTML = 'Procedimiento realizado en consulta médica que puede llevarse a cabo con diversas técnicas, \
+                                adaptándose a cada caso. Esto puede incluir exploración mediante endoscopia rígida o \
+                                nasofaringoscopia, así como laringoscopia flexible para evaluar las cuerdas vocales y su \
+                                movilidad.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -277,8 +301,9 @@ function myServiceSelector(serviceId, operation){
         case 'throat-2':
             title.innerHTML = 'Amigdalitis (anginas)';
             title2.innerHTML = '';
-            desc.innerHTML = 'Ofrecemos el tratamiento médico de los procesos de infección aguda y crónica de las amígdalas o adenoides.';
-            desc2.innerHTML = '<br>Además, se contempla el tratamiento quirúrgico mediante amigdalectomía y adenoidectomía.';
+            desc.innerHTML = 'Ofrecemos el tratamiento médico de los procesos de infección aguda y crónica de las amígdalas \
+                                o adenoides. Además, se contempla el tratamiento quirúrgico mediante amigdalectomía y adenoidectomía.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -288,7 +313,11 @@ function myServiceSelector(serviceId, operation){
         case 'throat-3':
             title.innerHTML = 'Cuerpos extraños en Orofaringe';
             title2.innerHTML = '';
-            desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado durante la época de cuaresma';
+            desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los \
+                                niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los \
+                                cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir \
+                                alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado \
+                                durante la época de cuaresma';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -299,7 +328,8 @@ function myServiceSelector(serviceId, operation){
         case 'throat-4':
             title.innerHTML = 'Lesiones del  cuello';
             title2.innerHTML = '';
-            desc.innerHTML = 'Se ofrecen servicios como el diagnóstico y tratamiento de problemas en el cuello, así como biopsias y cirugías relacionadas con ganglios, quistes, entre otros.';
+            desc.innerHTML = 'Se ofrecen servicios como el diagnóstico y tratamiento de problemas en el cuello, así como \
+                                biopsias y cirugías relacionadas con ganglios, quistes, entre otros.';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -310,7 +340,8 @@ function myServiceSelector(serviceId, operation){
         case 'throat-5':
             title.innerHTML = 'Cirugía de  glándulas';
             title2.innerHTML = '';
-            desc.innerHTML = 'Se realizan intervenciones quirúrgicas en glándulas salivales, incluyendo la parótida y la submaxilar, así como cirugía en la glándula tiroides.';
+            desc.innerHTML = 'Se realizan intervenciones quirúrgicas en glándulas salivales, incluyendo la parótida \
+                                y la submaxilar, así como cirugía en la glándula tiroides.';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -321,8 +352,10 @@ function myServiceSelector(serviceId, operation){
         case 'throat-6':
             title.innerHTML = 'Faringitis';
             title2.innerHTML = '';
-            desc.innerHTML = 'Se refiere al proceso inflamatorio en la garganta puede tener diversas causas, ya sea infeccioso, irritativo, entre otras.';
-            desc2.innerHTML = '<br>Se requiere evaluar cada caso para un diagnóstico preciso con un tratamiento adecuado.';
+            desc.innerHTML = 'Se refiere al proceso inflamatorio en la garganta puede tener diversas causas, ya sea \
+                                infeccioso, irritativo, entre otras. Se requiere evaluar cada caso para un diagnóstico \
+                                preciso con un tratamiento adecuado.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -345,7 +378,8 @@ function myServiceSelector(serviceId, operation){
         case 'nose-2':
             title.innerHTML = 'Septumplastia';
             title2.innerHTML = '';
-            desc.innerHTML = 'Es la alineación del tabique nasal, tiene como objetivo mejorar la respiración; además, ayuda en el manejo de la sinusitis o la alergia nasal.';
+            desc.innerHTML = 'Es la alineación del tabique nasal, tiene como objetivo mejorar la respiración; \
+                                además, ayuda en el manejo de la sinusitis o la alergia nasal.';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -358,8 +392,12 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             title2.classList.add('hidden');
             compTitle.innerHTML = 'CIRUGÍAS COMPLEMENTARIAS <br> PARA EL PERFILADO FACIAL';
-            desc.innerHTML = 'Es la cirugía destinada a mejorar la estética nasal, y es común combinarla con la septumplastia, denominándose entonces Rinoseptoplastia.<br>El objetivo es integrar la mejor estética y función de la nariz.';
-            desc2.innerHTML = 'Para lograrlo, se dispone de varios abordajes, ya sea cerrada o abierta, así como diferentes técnicas, como la estructural o de preservación. <br>La elección de cada opción se decide según las necesidades individuales de cada paciente.';
+            desc.innerHTML = 'Es la cirugía destinada a mejorar la estética nasal, y es común combinarla con la \
+                                septumplastia, denominándose entonces Rinoseptoplastia.<br>El objetivo es integrar \
+                                la mejor estética y función de la nariz.';
+            desc2.innerHTML = 'Para lograrlo, se dispone de varios abordajes, ya sea cerrada o abierta, así como \
+                                diferentes técnicas, como la estructural o de preservación. <br>La elección de cada \
+                                opción se decide según las necesidades individuales de cada paciente.';
             additionalOps.classList.remove('hidden');
             closeButton.classList.remove('hidden');
             closeCompButton.classList.add('hidden');
@@ -372,8 +410,10 @@ function myServiceSelector(serviceId, operation){
         case 'nose-4':
             title.innerHTML = 'Turbinoplastia';
             title2.innerHTML = '';
-            desc.innerHTML = 'Cirugía para reducir el tamaño de los cornetes nasales. Existen diversas técnicas, como el uso de electrocauterio, radiofrecuencia o microdebridador.';
-            desc2.innerHTML = '<br>La técnica a usar se determina según las necesidades individuales de cada paciente.';
+            desc.innerHTML = 'Cirugía para reducir el tamaño de los cornetes nasales. Existen diversas técnicas, \
+                                como el uso de electrocauterio, radiofrecuencia o microdebridador. La técnica a \
+                                usar se determina según las necesidades individuales de cada paciente.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -383,8 +423,11 @@ function myServiceSelector(serviceId, operation){
         case 'nose-5':
             title.innerHTML = 'Sangrado  Nasal (Epistaxis)';
             title2.innerHTML = '';
-            desc.innerHTML = 'Según el caso, el sangrado puede resolverse en el consultorio o en quirófano.';
-            desc2.innerHTML = '<br>Se emplean diversos tratamientos como cauterización local, colocación de agentes hemostáticos, taponamientos nasales, entre otros, de acuerdo con las necesidades individuales de cada paciente.';
+            desc.innerHTML = 'Según el caso, el sangrado puede resolverse en el consultorio o en quirófano. \
+                                Se emplean diversos tratamientos como cauterización local, colocación de agentes \
+                                hemostáticos, taponamientos nasales, entre otros, de acuerdo con las necesidades \
+                                individuales de cada paciente.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -394,8 +437,10 @@ function myServiceSelector(serviceId, operation){
         case 'nose-6':
             title.innerHTML = 'Sinusitis';
             title2.innerHTML = '';
-            desc.innerHTML = 'Es el tratamiento médico para mejorar la sinusitis o, en casos especiales, la resolución mediante cirugía de la inflamación de los senos paranasales.';
-            desc2.innerHTML = '<br>Esta inflamación puede deberse a diversas causas, como alergias, infecciones, entre otros.';
+            desc.innerHTML = 'Es el tratamiento médico para mejorar la sinusitis o, en casos especiales, la resolución \
+                                mediante cirugía de la inflamación de los senos paranasales. Esta inflamación puede \
+                                deberse a diversas causas, como alergias, infecciones, entre otros.';
+            desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -405,7 +450,8 @@ function myServiceSelector(serviceId, operation){
         case 'nose-7':
             title.innerHTML = 'Rinitis alérgica';
             title2.innerHTML = '';
-            desc.innerHTML = 'Tratamiento médico de la enfermedad alérgica nasal, ya sea estacional o persistente. Además, puede llevarse a cabo en conjunto con el servicio de alergología.';
+            desc.innerHTML = 'Tratamiento médico de la enfermedad alérgica nasal, ya sea estacional o persistente. \
+                                Además, puede llevarse a cabo en conjunto con el servicio de alergología.';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -416,7 +462,11 @@ function myServiceSelector(serviceId, operation){
         case 'nose-8':
             title.innerHTML = 'Cuerpos extraños';
             title2.innerHTML = '';
-            desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado durante la época de cuaresma';
+            desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los \
+                                niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los \
+                                cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir \
+                                alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado \
+                                durante la época de cuaresma';
             desc2.innerHTML = '';
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -427,8 +477,8 @@ function myServiceSelector(serviceId, operation){
         case 'nose-comp-1':
             title.innerHTML = 'Blefaroplastia';
             title2.innerHTML = '';
-            
-            desc.innerHTML = 'Cirugía diseñada para reposicionar el exceso de piel de los párpados y eliminar o reubicar las bolsas de grasa en dicha área.';
+            desc.innerHTML = 'Cirugía diseñada para reposicionar el exceso de piel de los párpados y eliminar o reubicar \
+                                las bolsas de grasa en dicha área.';
             desc2.innerHTML = '';
             additionalOps.classList.add('hidden');
             img1.src = "ear.jpg";
@@ -452,8 +502,10 @@ function myServiceSelector(serviceId, operation){
         case 'nose-comp-3':
             title.innerHTML = 'Mentoplastia';
             title2.innerHTML = '';
-            desc.innerHTML = 'Cirugía que implica la colocación de un implante en la barbilla con el fin de lograr una mejor proyección del mentón.';
-            desc2.innerHTML = 'Este procedimiento se lleva a cabo en quirófano mediante un abordaje intraoral o externo, por debajo del mentón.';
+            desc.innerHTML = 'Cirugía que implica la colocación de un implante en la barbilla con el fin de lograr una \
+                                mejor proyección del mentón. Este procedimiento se lleva a cabo en quirófano mediante \
+                                un abordaje intraoral o externo, por debajo del mentón.';
+            desc2.innerHTML = '';
             additionalOps.classList.add('hidden');
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
@@ -464,7 +516,8 @@ function myServiceSelector(serviceId, operation){
         case 'nose-comp-4':
             title.innerHTML = 'Bichatectomia (Bichectomia)';
             title2.innerHTML = '';
-            desc.innerHTML = 'Procedimiento quirúrgico que implica la extirpación de las bolsas de grasa de Bichat con el propósito de dar forma y perfilar el área de las mejillas.';
+            desc.innerHTML = 'Procedimiento quirúrgico que implica la extirpación de las bolsas de grasa de Bichat \
+                                con el propósito de dar forma y perfilar el área de las mejillas.';
             desc2.innerHTML = '';
             additionalOps.classList.add('hidden');
             img1.src = "ear.jpg";
