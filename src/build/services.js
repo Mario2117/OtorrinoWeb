@@ -115,7 +115,10 @@ function myServiceSelector(serviceId, operation){
     var img4 = document.getElementById("dialog-img4");
     var hideableText = [title2, desc2, compTitle];
     var upperCaseText = [title, title2, compTitle];
-    var quoteText = [desc, desc2]
+    // var quoteText = [desc, desc2];
+    var galleryTitle = document.getElementById("gallery-title");
+    var galleryPhotos = document.getElementById("gallery-photos");
+    var galleryLine = document.getElementById("gallery-line");
 
     var additionalOps = document.getElementById('additional-ops');
     if (operation == 'open' && serviceId.indexOf('nose-comp-') > -1){
@@ -131,10 +134,7 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = 'Limpieza de  Oidos';
             desc.innerHTML = 'La exploración instrumental de los oídos puede ser respaldada mediante endoscopia o microscopio.';
             desc2.innerHTML = 'La limpieza cuidadosa de los oídos se lleva a cabo, en caso de ser necesaria, como parte de la consulta médica.';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-2':
@@ -145,10 +145,7 @@ function myServiceSelector(serviceId, operation){
                                 la necesidad de cirugía en algunos casos y, por lo general, se lleva a cabo durante \
                                 la consulta médica.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-3':
@@ -158,10 +155,7 @@ function myServiceSelector(serviceId, operation){
                                 Este procedimiento se lleva a cabo en quirófano, con anestesia local y sedación en adultos, \
                                 o bajo anestesia general en niños.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-4':
@@ -171,10 +165,7 @@ function myServiceSelector(serviceId, operation){
                                 eliminadas en consulta bajo anestesia local o en quirófano si es necesario. \
                                 El manejo se realiza en colaboración con dermatología.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-5':
@@ -183,10 +174,7 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'La timpanoplastia es la reconstrucción quirúrgica de la membrana del tímpano y puede \
                                 llevarse a cabo en conjunto con otras cirugías, como la mastoidectomía.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-6':
@@ -194,10 +182,7 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'Es la cirugía para la eliminación de infecciones o colesteatomas en el hueso del oído.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-7':
@@ -208,10 +193,7 @@ function myServiceSelector(serviceId, operation){
                                 de derrame purulento o seroso. Se hace necesaria la evaluación y exploración para obtener \
                                 un diagnóstico preciso y aplicar un tratamiento adecuado.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-8':
@@ -222,10 +204,7 @@ function myServiceSelector(serviceId, operation){
                                 directa, el tradicional lavado de oído o por aspiración, siendo la elección del \
                                 método determinada de acuerdo a las necesidades de cada paciente.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-9':
@@ -236,10 +215,7 @@ function myServiceSelector(serviceId, operation){
                                 Se llevan a cabo pruebas y valoraciones en consulta, y en algunos casos, se recurre \
                                 a estudios neurofuncionales o de imagen para obtener un diagnóstico más completo.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-10':
@@ -249,10 +225,7 @@ function myServiceSelector(serviceId, operation){
                                 identificables, como tapones de cerumen, hasta problemas más serios, como neoplasias \
                                 o tumores en el oído.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-11':
@@ -264,10 +237,7 @@ function myServiceSelector(serviceId, operation){
                                 alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado \
                                 durante la época de cuaresma';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'ear-12':
@@ -277,10 +247,7 @@ function myServiceSelector(serviceId, operation){
                                 manipulación del oído mediante el uso de artefactos de limpieza como cotonetes y \
                                 pasadores. Puede tener un origen infeccioso, causado tanto por bacterias como por hongos.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         // THROAT SERVICES
@@ -292,10 +259,7 @@ function myServiceSelector(serviceId, operation){
                                 nasofaringoscopia, así como laringoscopia flexible para evaluar las cuerdas vocales y su \
                                 movilidad.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'throat-2':
@@ -304,10 +268,7 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'Ofrecemos el tratamiento médico de los procesos de infección aguda y crónica de las amígdalas \
                                 o adenoides. Además, se contempla el tratamiento quirúrgico mediante amigdalectomía y adenoidectomía.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'throat-3':
@@ -319,10 +280,7 @@ function myServiceSelector(serviceId, operation){
                                 alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado \
                                 durante la época de cuaresma';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'throat-4':
@@ -331,10 +289,7 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'Se ofrecen servicios como el diagnóstico y tratamiento de problemas en el cuello, así como \
                                 biopsias y cirugías relacionadas con ganglios, quistes, entre otros.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'throat-5':
@@ -343,10 +298,7 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'Se realizan intervenciones quirúrgicas en glándulas salivales, incluyendo la parótida \
                                 y la submaxilar, así como cirugía en la glándula tiroides.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
         case 'throat-6':
@@ -356,10 +308,7 @@ function myServiceSelector(serviceId, operation){
                                 infeccioso, irritativo, entre otras. Se requiere evaluar cada caso para un diagnóstico \
                                 preciso con un tratamiento adecuado.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
 
@@ -369,10 +318,7 @@ function myServiceSelector(serviceId, operation){
             title2.innerHTML = '';
             desc.innerHTML = 'La rinoscopia es la exploración de la nariz se realiza en consulta y puede llevarse a cabo en dos pasos, con el uso de un vasoconstrictor.';
             desc2.innerHTML = '<br>La endoscopia nasal se lleva a cabo en consulta y puede realizarse con un endoscopio rígido o flexible.';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
 
         case 'nose-2':
@@ -381,10 +327,7 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'Es la alineación del tabique nasal, tiene como objetivo mejorar la respiración; \
                                 además, ayuda en el manejo de la sinusitis o la alergia nasal.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
 
         case 'nose-3':
@@ -401,6 +344,9 @@ function myServiceSelector(serviceId, operation){
             additionalOps.classList.remove('hidden');
             closeButton.classList.remove('hidden');
             closeCompButton.classList.add('hidden');
+            galleryTitle.classList.remove('hidden');
+            galleryPhotos.classList.remove('hidden');
+            galleryLine.classList.add('hidden');
             img1.src = "ear.jpg";
             img2.src = "ear.jpg";
             img3.src = "ear.jpg";
@@ -414,10 +360,7 @@ function myServiceSelector(serviceId, operation){
                                 como el uso de electrocauterio, radiofrecuencia o microdebridador. La técnica a \
                                 usar se determina según las necesidades individuales de cada paciente.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
 
         case 'nose-5':
@@ -428,10 +371,7 @@ function myServiceSelector(serviceId, operation){
                                 hemostáticos, taponamientos nasales, entre otros, de acuerdo con las necesidades \
                                 individuales de cada paciente.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
 
         case 'nose-6':
@@ -441,10 +381,7 @@ function myServiceSelector(serviceId, operation){
                                 mediante cirugía de la inflamación de los senos paranasales. Esta inflamación puede \
                                 deberse a diversas causas, como alergias, infecciones, entre otros.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
 
         case 'nose-7':
@@ -453,10 +390,7 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'Tratamiento médico de la enfermedad alérgica nasal, ya sea estacional o persistente. \
                                 Además, puede llevarse a cabo en conjunto con el servicio de alergología.';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
 
         case 'nose-8':
@@ -468,10 +402,7 @@ function myServiceSelector(serviceId, operation){
                                 alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado \
                                 durante la época de cuaresma';
             desc2.innerHTML = '';
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
 
         case 'nose-comp-1':
@@ -481,10 +412,7 @@ function myServiceSelector(serviceId, operation){
                                 las bolsas de grasa en dicha área.';
             desc2.innerHTML = '';
             additionalOps.classList.add('hidden');
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
 
         case 'nose-comp-2':
@@ -493,10 +421,7 @@ function myServiceSelector(serviceId, operation){
             desc.innerHTML = 'Procedimiento destinado a contribuir al perfilado facial.';
             desc2.innerHTML = '';
             additionalOps.classList.add('hidden');
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
 
         case 'nose-comp-3':
@@ -507,10 +432,7 @@ function myServiceSelector(serviceId, operation){
                                 un abordaje intraoral o externo, por debajo del mentón.';
             desc2.innerHTML = '';
             additionalOps.classList.add('hidden');
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
 
         case 'nose-comp-4':
@@ -520,10 +442,7 @@ function myServiceSelector(serviceId, operation){
                                 con el propósito de dar forma y perfilar el área de las mejillas.';
             desc2.innerHTML = '';
             additionalOps.classList.add('hidden');
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            
             break;
         
     }
@@ -555,12 +474,12 @@ function myServiceSelector(serviceId, operation){
     }
 
     // ADD QUOTES
-    for (var i = 0; i < quoteText.length; i++) {
-        // Get the variable name
-        var variableName = quoteText[i];
-        // Check if the content is empty and hide the corresponding element
-        variableName.innerHTML = variableName.innerHTML;
-    }
+    // for (var i = 0; i < quoteText.length; i++) {
+    //     // Get the variable name
+    //     var variableName = quoteText[i];
+    //     // Check if the content is empty and hide the corresponding element
+    //     variableName.innerHTML = variableName.innerHTML;
+    // }
     
     if (operation == 'open'){
         dialog.classList.remove('hidden');
@@ -571,6 +490,9 @@ function myServiceSelector(serviceId, operation){
         overlay.classList.add('hidden');
         additionalOps.classList.add('hidden');
         compTitle.innerHTML = '';
+        galleryTitle.classList.add('hidden');
+        galleryPhotos.classList.add('hidden');
+        galleryLine.classList.remove('hidden');
     }
     
     
