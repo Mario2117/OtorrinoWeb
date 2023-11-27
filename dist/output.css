@@ -682,9 +682,9 @@ video {
   margin-right: 0.75rem;
 }
 
-.my-16{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .my-4{
@@ -705,11 +705,6 @@ video {
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .mb-1{
@@ -1608,6 +1603,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-\[10px\]{
   font-size: 10px;
 }
@@ -1958,6 +1958,11 @@ video {
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -2430,6 +2435,10 @@ video {
   .xl\:mx-60{
     margin-left: 15rem;
     margin-right: 15rem;
+  }
+
+  .xl\:w-full{
+    width: 100%;
   }
 
   .xl\:pl-40{

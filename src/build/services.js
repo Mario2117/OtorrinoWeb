@@ -219,7 +219,7 @@ function myServiceSelector(serviceId, operation){
             break;
         
         case 'ear-10':
-            title.innerHTML = 'Zumbidos de oídos (Acufeno/Tinnitus)';
+            title.innerHTML = 'Zumbidos de oídos<br>(Acufeno/Tinnitus)';
             title2.innerHTML = '';
             desc.innerHTML = 'El zumbido en los oídos puede tener diversas causas, que van desde orígenes fácilmente \
                                 identificables, como tapones de cerumen, hasta problemas más serios, como neoplasias \
