@@ -1,4 +1,109 @@
-<section class="flex w-full pt-16 pb-16 h-fit justify-center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+    <title>Document</title>
+
+    
+<nav class="hidden transition-all items-center justify-between fixed w-full z-50  bg-white h-32 md:flex">
+    <a href="/src/build/index.html">
+        <div class="flex items-center pl-6">
+            <img src="../img/Logo.png" alt="Logo" class="h-28 w-auto">
+            <div>
+            <p class="text-sm tracking-widest font-serif">DR. CARLO PEDROZA</p>
+            <p class="text-xs tracking-widest font-serif">OTORRINOLARINGÓLOGO</p>
+            </div>
+        </div>
+    </a>
+
+    <div class="flex items-center justify-evenly h-16 w-3/5 shadow-lg ml-auto 
+        rounded-l-full bg-[#303A2C] text-base text-white font-serif font-light lg:text-lg">
+        <a class="hover:text-orange-100" href="/src/build/index.html">INICIO</a>
+        <a class="hover:text-orange-100" href="/src/build/page_q_somos.html">¿QUIÉNES SOMOS?</a>
+        <a class="hover:text-orange-100" href="/src/build/page_servicios.html">SERVICIOS</a>
+        <a class="hover:text-orange-100" href="/src/build/page_contacto.html">CONTACTO</a>
+    </div>
+</nav>
+
+
+<!--md:hidden-->
+
+<nav class="fixed z-50 flex items-center justify-between bg-white  h-24 w-screen md:hidden">
+
+    <a href="/src/build/index.html">
+        <div class="flex items-center pl-1">
+            <img src="../img/Logo.png" alt="Logo" class="h-20 w-auto">
+            <div>
+                <p class="text-sm tracking-widest font-serif">DR. CARLO PEDROZA</p>
+                <p class="text-xs tracking-widest font-serif">OTORRINOLARINGÓLOGO</p>
+            </div>
+        </div>
+    </a>
+
+    <div id="y" class="flex items-center justify-evenly h-16 w-3/12 shadow-lg transition-all
+        rounded-l-full bg-[#303A2C] text-lg text-white font-serif font-light hover:w-4/12
+        " _="on click hide #y then toggle .hidden on #x">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="pl-2 w-10 h-10 " fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+    </div>
+
+
+    <div id="x" class="hidden relative z-50">
+        <div class="flex items-center justify-evenly h-16 w-20 bg-[#303A2C] shadow-lg transition-all
+        rounded-l-full absolute top-4 right-[222px] text-white hover:w-[90px]"
+        _="on click show #y then toggle .hidden on #x">
+        <svg xmlns="http://www.w3.org/2000/svg" class="pl-2 w-10 h-10 " fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </div>
+
+        <div  class="bg-[#303A2C] w-56 h-screen absolute top-4 right-0 shadow-xl shadow-black">
+            <div class="flex flex-col items-center w-56 h-auto text-3xl text-center text-white font-serif font-normal">   
+            <a class="hover:text-[#878560] pt-7 pb-7" href="/src/build/index.html">INICIO</a>
+            <div class="w-48 h-[1px] bg-[#878560]"></div>
+            <a class="hover:text-[#878560] pt-7 pb-7" href="/src/build/page_q_somos.html">¿QUIÉNES SOMOS?</a>
+            <div class="w-48 h-[1px] bg-[#878560]"></div>
+            <a class="hover:text-[#878560] pt-7 pb-7" href="/src/build/page_servicios.html">SERVICIOS</a>
+            <div class="w-48 h-[1px] bg-[#878560]"></div>
+            <a class="hover:text-[#878560] pt-7 pb-7" href="/src/build/page_contacto.html">CONTACTO</a>
+            <div class="w-48 h-[1px] bg-[#878560]"></div>
+            </div> 
+        </div>
+    </div>
+    
+    
+</nav>
+
+
+</head>
+<body>
+    <div class="flex items-center py-4 pt-24 md:pt-36">
+        <!-- The left line -->
+        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+
+        <!-- Your text here -->
+        <h1 class="text-3xl mt-3 mb-3 text-[#333122] text-center font-bold md:text-5xl font-serif">
+            CONTACTO
+        </h1>
+
+        <!-- The right line -->
+        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+    </div>
+
+
+    <div class="pb-8 flex flex-col items-center justify-center text-center font-serif">
+        <p class="pr-10 pl-10 max-w-4xl text-base md:text-xl lg:text-2xl text-[#878560] pb-5">¿Tiene preguntas sobre tu salud auditiva, nasal o de garganta?</p>
+        <p class="pr-10 pl-10 max-w-4xl text-[#333122] text-base md:text-lg lg:text-xl">Estamos aquí para ayudar. Nuestra dedicada clínica de otorrinolaringología se enorgullece de ofrecer atención experta y atenta. Póngase en contacto con nosotros para programar una cita, hacer preguntas o abordar sus preocupaciones.
+        </p>
+    </div>
+    <section class="flex w-full pt-16 pb-16 h-fit justify-center">
     <div class="flex flex-row w-full justify-evenly min-[1130px]:justify-between  max-w-screen-xl">
 
         
@@ -105,3 +210,87 @@
     </div>
 </section>
 
+
+    <footer class="md:relative flex w-screen place-content-center shadow-inner  bg-[#303A2C] relative h-fit md:h-56 ">
+    <div class="mt-3 flex flex-col-reverse md:flex-row max-w-screen-xl items-center md:absolute top-0 h-38">
+        <div class="my-5 md:mt-6 flex flex-row items-center pr-6 h-full">
+            <img src="./logo.png" alt="logo" class="h-24 w-auto">
+            <div>
+            <p class="text-sm tracking-widest font-serif text-white">DR. CARLO PEDROZA</p>
+            <p class="text-[8px] tracking-widest font-serif text-white">OTORRINOLARINGÓLOGO</p>
+            </div>
+        </div>
+        <div class="flex flex-col h-full w-44 place-content-center font-serif text-center">
+            <div class="text-sm text-[#CDB8A0]">
+                UBICACIÓN
+            </div>
+            <div class="text-white font-serif text-[13px] text-center mt-2">
+                Calle Diego Rivera #2386 5to piso , oficina 505, Edificio CER, Zona Urbana Rio Tijuana, 22880.
+            </div>
+            <div class="flex flex-row mt-2 items-center justify-center">
+                <a href="https://maps.app.goo.gl/sPhD43XVfBjJuc4y7"><img src="./maps_logo.png" alt="logo" class="h-8 w-auto"></a>
+                <a href="https://maps.app.goo.gl/sPhD43XVfBjJuc4y7"><div class="text-sm text-white font-serif ml-2">Google Maps</div></a>
+            </div>
+            <div class="mt-[2px] w-full"></div><svg width="" height="18" viewBox="0 0 361 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="9.5" x2="161" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <line x1="200" y1="9.5" x2="361" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <ellipse cx="180.5" cy="9" rx="8.5" ry="9" fill="#888661"/>
+            </svg>
+        </div>
+        <div class="my-4 md:mx-5 flex flex-col h-full w-44 place-content-center font-serif text-center">
+            <div class="text-sm text-[#CDB8A0] ">
+                HORARIO
+            </div>
+            <table class="mt-2 ml-2 text-left text-white font-serif text-xs md:text-[10px] min-[802px]:text-xs">
+                <tr><td>LUNES</td><td>4 pm - 7:30 pm</td></tr>
+                <tr><td>MARTES</td><td>CERRADO</td></tr>
+                <tr><td>MIÉRCOLES</td><td>4 pm - 7:30 pm</td></tr>
+                <tr><td>JUEVES</td><td>4 pm - 7:30 pm</td></tr>
+                <tr><td>VIERNES</td><td>4 pm - 7:30 pm</td></tr>
+                <tr><td>SÁBADO</td><td>9:30 am - 2 pm</td></tr>
+            </table>
+            <div class="mt-3 w-full"></div><svg width="" height="18" viewBox="0 0 361 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="9.5" x2="161" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <line x1="200" y1="9.5" x2="361" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <ellipse cx="180.5" cy="9" rx="8.5" ry="9" fill="#888661"/>
+            </svg>
+        </div>
+        <div class="flex flex-col h-full w-44 place-content-center font-serif text-center">
+            <div class="text-sm text-[#CDB8A0]">
+                CONTACTO
+            </div>
+            <div class="mt-1 md:mt-5 text-white font-serif text-sm text-center">
+                <a href="mailto:Otorrinotj@gmail.com">Otorrinotj@gmail.com</a>
+            </div>
+            <div class="mt-2 text-white font-serif text-sm text-center">
+                <a href="https://wa.me/526642627274">664-262-7274</a>
+            </div>
+            <div class=" text-white font-serif text-sm text-center">
+                <p>664-208-7909</p>
+            </div>
+            <div class="mt-5 flex flex-row items-center justify-center">
+                <a href="https://www.facebook.com/drpedrozatijuana"><img src="./facebook_logo.png" alt="logo" class="h-5 w-auto mx-2"></a>
+                <a href="https://wa.me/526642627274"><img src="./wa_logo.png" alt="logo" class="h-6 w-auto mx-2"></a>
+                <a href="https://www.instagram.com/dr.carlopedroza/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="./insta_logo.png" alt="logo" class="h-5 w-auto mx-2"></a>
+                <a href="mailto:Otorrinotj@gmail.com"><img src="./mail_logo.png" alt="logo" class="h-6 w-auto mx-2"></a>
+
+                <a href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana#tab=profile-reviews"  target="_blank" rel="noopener noreferrer">                 
+                    <img src="./dralia_logoblanco.png" alt="logo" class="h-5 w-auto mx-2">
+                </a>
+
+
+            </div>
+            <div class="mt-3 w-full"></div><svg width="" height="18" viewBox="0 0 361 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="9.5" x2="161" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <line x1="200" y1="9.5" x2="361" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <ellipse cx="180.5" cy="9" rx="8.5" ry="9" fill="#888661"/>
+            </svg>
+        </div>
+    </div>
+        
+            
+</div>
+        
+</footer>
+</body>
+</html>
