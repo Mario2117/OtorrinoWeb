@@ -2258,6 +2258,10 @@ video {
     width: 10rem;
   }
 
+  .lg\:w-48{
+    width: 12rem;
+  }
+
   .lg\:w-6\/12{
     width: 50%;
   }

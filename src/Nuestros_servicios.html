@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+    <title>Document</title>
+
+    @@include('./submenu.html')
+    
+</head>
+<body>
+    <div class="pt-24 md:pt-32"></div>
+    <div class="flex items-center py-4">
+        <!-- The left line -->
+        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+
+        <!-- Your text here -->
+        <h1 class="text-3xl mt-3 mb-3 text-[#333122] text-center font-bold md:text-5xl font-serif">
+            SERVICIOS
+        </h1>
+
+        <!-- The right line -->
+        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+    </div>
+    @@include('./servicios.html')
+    <div id="bottom-line" class="flex-grow h-1 bg-[#333122] mt-5 mx-3"></div>
+    @@include('./Comp_contacto.html')
+    @@include('./footer.html')
+</body>
+</html>
