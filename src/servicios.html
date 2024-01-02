@@ -10,13 +10,13 @@
         <div class="box-content items-center">
             <div class="flex items-center py-4 w-full">
                 <!-- The left line -->
-                <button onclick="myServiceSelector('', 'close')" id="close-dialog-button"
+                <button onclick="myServiceSelector('', 'close')" title="Cerrar" id="close-dialog-button"
                     class="cursor-pointer flex-shrink-0">
-                    <img src=".\selector-icon.png" class="h-10 w-10 sm:w-20 sm:h-20 md:h-24 md:w-24">
+                    <img src=".\selector-icon.png" alt="cerrar" class="h-10 w-10 sm:w-20 sm:h-20 md:h-24 md:w-24">
                 </button>
-                <button onclick="myServiceSelector('nose-3', 'open')" id="close-comp-button"
+                <button onclick="myServiceSelector('nose-3', 'open')" title="Cerrar" id="close-comp-button"
                     class="cursor-pointer flex-shrink-0 hidden">
-                    <img src=".\selector-icon.png" class="h-10 w-10 sm:w-20 sm:h-20 md:h-24 md:w-24">
+                    <img src=".\selector-icon.png" alt="cerrar" class="h-10 w-10 sm:w-20 sm:h-20 md:h-24 md:w-24">
                 </button>
                 <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
                 
@@ -113,7 +113,7 @@
         </div>
 
         <div class="flex flex-row w-full h-fit place-content-center items-center overflow-y-visible">
-            <button id="prevBs" class="w-fit h-fit md:hidden invisible">
+            <button id="prevBs" title="Botón izquierda" class="w-fit h-fit md:hidden invisible">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#303A2C"
                     class="lg:w-9 lg:h-9 w-7 h-7">
                     <path fill-rule="evenodd"
@@ -132,7 +132,7 @@
                                 <div id="ear-box"
                                     class="relative round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer"
                                     style="background-image: url('ear.jpg');">
-                                    <button onclick="serviceMenu('ear')" id="ear-button"
+                                    <button onclick="serviceMenu('ear')" title="Abrir opciones de oído" id="ear-button"
                                         class="w-full h-full shadow-[0px_0px_5px_0px_#000000]">
 
                                         <div
@@ -159,7 +159,7 @@
                                 <div id="throat-box"
                                     class="relative round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer"
                                     style="background-image: url('throat.jpg');">
-                                    <button onclick="serviceMenu('throat')" id="throat-button"
+                                    <button onclick="serviceMenu('throat')" title="Abrir opciones de garganta" id="throat-button"
                                         class="w-full h-full shadow-[0px_0px_5px_0px_#000000]">
 
                                         <div
@@ -185,7 +185,7 @@
                                 <div id="nose-box"
                                     class="relative round-lg bg-cover bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer"
                                     style="background-image: url('nose.jpg');">
-                                    <button onclick="serviceMenu('nose')" id="nose-button"
+                                    <button onclick="serviceMenu('nose')" title="Abrir opciones de nariz" id="nose-button"
                                         class="w-full h-full shadow-[0px_0px_5px_0px_#000000]">
 
                                         <div
@@ -208,7 +208,7 @@
                 </ul>
             </div>
 
-            <button id="nextBs" class="w-fit h-fit md:hidden">
+            <button id="nextBs" title="Botón derecha" class="w-fit h-fit md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#303A2C"
                     class="lg:w-9 lg:h-9 w-7 h-7">
                     <path fill-rule="evenodd"
