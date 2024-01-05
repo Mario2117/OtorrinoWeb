@@ -38,7 +38,7 @@ function main() {
     */
 
     //Dragging
-    let isDraggingRev = false, startX, startScrollLeft, timeOutId;
+/*     let isDraggingRev = false, startX, startScrollLeft, timeOutId;
     if(reviewsToShow > 2) {
     const dragStart = (e) => {
         isDraggingRev = true;
@@ -68,7 +68,7 @@ function main() {
     reviewCards.addEventListener("mousedown", dragStart);
     reviewCards.addEventListener("mousemove", dragging);
     reviewCards.addEventListener("mouseup", dragStop);
-    } else {}
+    } else {} */
     //endDragging
 
     //infiniteScroll
@@ -89,7 +89,7 @@ function main() {
         }
 
         clearTimeout(timeOutId);
-        if(!reviewCards.matches(":hover")) {autoplay();}
+        if(!reviewCards.matches(":hover")) {/* autoplay(); */}
         else {reviewCards.classList.remove("scroll-smooth");}
     };
     reviewCards.addEventListener("scroll",infiniteScroll);
@@ -124,16 +124,16 @@ function main() {
     //endButtonMovement
 
     //autoplay
-    const autoplay = () => {
+    /* const autoplay = () => {
         reviewCards.classList.add("scroll-smooth");
-        timeOutId = setTimeout(() => reviewCards.scrollLeft += reviewWidth, 2500);
+        timeOutId = setTimeout(() => reviewCards.scrollLeft += reviewWidth, 3500);
         //reviewCards.classList.remove("scroll-smooth");
     }
 
     autoplay();
 
     reviewCards.addEventListener("mouseenter", () => clearTimeout(timeOutId));
-    reviewCards.addEventListener("mouseleave", autoplay);
+    reviewCards.addEventListener("mouseleave", autoplay); */
 }
 
 main();

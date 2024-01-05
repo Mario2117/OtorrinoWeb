@@ -20,7 +20,7 @@ function initializeVariables() {
 
 function main() {
     //Dragging
-    let isDragging = false, startX, startScrollLeft, timeOutId;
+/*     let isDragging = false, startX, startScrollLeft, timeOutId;
     //if(elementsToShow > 2) {
     const dragStart = (e) => {
         isDragging = true;
@@ -49,7 +49,7 @@ function main() {
 
     sliderContainer.addEventListener("mousedown", dragStart);
     sliderContainer.addEventListener("mousemove", dragging);
-    sliderContainer.addEventListener("mouseup", dragStop);
+    sliderContainer.addEventListener("mouseup", dragStop); */
     //} else {}
     //endDragging
 
@@ -117,7 +117,7 @@ function main() {
     //autoplay
     const autoplay = () => {
         sliderContainer.classList.add("scroll-smooth");
-        timeOutId = setTimeout(() => sliderContainer.scrollLeft += imageWidth, 2500);
+        timeOutId = setTimeout(() => sliderContainer.scrollLeft += imageWidth, 3500);
         //sliderContainer.classList.remove("scroll-smooth");
     }
 

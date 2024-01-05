@@ -42,16 +42,16 @@ function main() {
     if(somossToShow < 2) {
 
         //autoplay
-        const autoplay = () => {
+        /* const autoplay = () => {
             somosCards.classList.add("scroll-smooth");
-            timeOutId = setTimeout(() => somosCards.scrollLeft += somosWidth, 2500);
+            timeOutId = setTimeout(() => somosCards.scrollLeft += somosWidth, 3500);
             //somosCards.classList.remove("scroll-smooth");
         }
 
         autoplay();
 
         somosCards.addEventListener("mouseenter", () => clearTimeout(timeOutId));
-        somosCards.addEventListener("mouseleave", autoplay);
+        somosCards.addEventListener("mouseleave", autoplay); */
         //infiniteScroll
 
 
@@ -70,7 +70,7 @@ function main() {
             }
 
             clearTimeout(timeOutId);
-            if(!somosCards.matches(":hover")) {autoplay();}
+            if(!somosCards.matches(":hover")) {/* autoplay(); */}
             else {somosCards.classList.remove("scroll-smooth");}
         };
         somosCards.addEventListener("scroll",infiniteScroll);
