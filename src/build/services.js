@@ -113,6 +113,10 @@ function myServiceSelector(serviceId, operation){
     var img2 = document.getElementById("dialog-img2");
     var img3 = document.getElementById("dialog-img3");
     var img4 = document.getElementById("dialog-img4");
+    var img5 = document.getElementById("dialog-img5");
+    var img6 = document.getElementById("dialog-img6");
+    var img7 = document.getElementById("dialog-img7");
+    var img8 = document.getElementById("dialog-img8");
     var hideableText = [title2, desc2, compTitle];
     var upperCaseText = [title, title2, compTitle];
     // var quoteText = [desc, desc2];
@@ -347,10 +351,22 @@ function myServiceSelector(serviceId, operation){
             galleryTitle.classList.remove('hidden');
             galleryPhotos.classList.remove('hidden');
             galleryLine.classList.add('hidden');
-            img1.src = "ear.jpg";
-            img2.src = "ear.jpg";
-            img3.src = "ear.jpg";
-            img4.src = "ear.jpg";
+            img1.src = "Rino-pac-A-antes-perfil.jpg";
+            img1.alt = "Fotografía de perfil de la paciente 1 antes de la operacion de rinoplastía";
+            img2.src = "Rino-pac-A-despues-perfil.jpg";
+            img2.alt = "Fotografía de perfil de la paciente 1 después de la operacion de rinoplastía";
+            img3.src = "Rino-pac-A-antes-frente.jpg";
+            img3.alt = "Fotografía de frente de la paciente 1 antes de la operacion de rinoplastía";
+            img4.src = "Rino-pac-A-despues-frente.jpg";
+            img4.alt = "Fotografía de frente de la paciente 1 después de la operacion de rinoplastía";
+            img5.src = "Rino-pac-B-antes-perfil.jpg";
+            img5.alt = "Fotografía de frente de la paciente 2 antes de una operacion de rinoplastía";
+            img6.src = "Rino-pac-B-despues-perfil.jpg";
+            img6.alt = "Fotografía de perfil de la paciente 2 después de la operacion de rinoplastía";
+            img7.src = "Rino-pac-B-antes-frente.jpg";
+            img7.alt = "Fotografía de frente de la paciente 2 antes de la operacion de rinoplastía";
+            img8.src = "Rino-pac-B-despues-frente.jpg"; 
+            img8.alt = "Fotografía de frente de la paciente 2 después de la operacion de rinoplastía";
             break;
 
         case 'nose-4':
