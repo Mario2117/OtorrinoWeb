@@ -256,7 +256,7 @@ function myServiceSelector(serviceId, operation){
         
         // THROAT SERVICES
         case 'throat-1':
-            title.innerHTML = 'Faringoscopia- Laringoscopia';
+            title.innerHTML = 'Faringoscopia';
             title2.innerHTML = '';
             desc.innerHTML = 'Procedimiento realizado en consulta médica que puede llevarse a cabo con diversas técnicas, \
                                 adaptándose a cada caso. Esto puede incluir exploración mediante endoscopia rígida o \

@@ -101,12 +101,12 @@
     <section class="flex relative w-screen bg-white h-fit pb-5 justify-center">
 
     <div id="overlay"
-        class="fixed z-50 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60 place-content-center items-center hidden">
+        class="fixed z-50 w-full h-full inset-0 bg-gray-900 bg-opacity-60 place-content-center items-center hidden">
     </div>
 
     <!-- Dialog Test -->
     <div id="dialog-service"
-    class="flex flex-col absolute z-50 bg-white px-8 py-6 drop-shadow-lg h-fit overflow-y-auto mx-3 xl:w-full max-w-7xl hidden">
+    class="flex flex-col absolute z-50 bg-white drop-shadow-lg h-fit overflow-y-auto mx-3 px-3 xl:w-full max-w-7xl hidden">
         <div class="box-content items-center">
             
             <div class="flex flex-col sm:flex-row items-center py-4 px-0 sm:px-4 w-full mb-3 sm:mb-0">
@@ -124,7 +124,7 @@
                 <div class="flex-grow h-1 bg-[#333122] ml-0 mr-3 sm:ml-3"></div>
                                
                 <!-- Your text here -->
-                <h1 id="dialog-title" class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#333122] font-serif text-center"></h1>
+                <h1 id="dialog-title" class="text-ellipsis text-xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#333122] font-serif text-center"></h1>
                 
                 <!-- The right line -->
                 <div class="flex-grow h-1 bg-[#333122] ml-3"></div>
@@ -137,7 +137,7 @@
             <div class="flex  flex-col items-center">
                 <p id="dialog-desc" class="text-lg sm:text-2xl md:text-2xl text-center font-serif sm:w-5/6 md:w-2/3"></p>
                 <h2 id="comp-title" class="sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#878560] font-serif text-center mt-7 mb-3"></h2>
-                <h2 id="dialog-title2" class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#333122] font-serif text-center pb-4 pt-10"></h2>
+                <h2 id="dialog-title2" class="text-xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#333122] font-serif text-center pb-4 pt-10"></h2>
                 <p id="dialog-desc2" class="text-lg sm:text-2xl md:text-2xl text-center font-serif sm:w-5/6 md:w-2/3"></p>
                 <div id="additional-ops" class="flex flex-wrap gap-4 p-6 justify-center text-lg font-serif hidden">
                     <a onclick="myServiceSelector('nose-comp-1', 'open')" id="open-nose-comp-1" href="#"
@@ -183,7 +183,7 @@
                 <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
 
                 <!-- Your text here -->
-                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#333122] font-serif text-center">
+                <h2 class="text-xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#333122] font-serif text-center">
                     GALERÍA
                 </h2>
 
@@ -215,7 +215,7 @@
     </div>
 
     <!-- Main Menu Service Page -->
-
+    
     <div class="flex flex-col w-full max-w-7xl">
 
         <div class="flex flex-col items-center justify-center text-base  text-center md:text-lg lg:text-xl font-serif">
@@ -238,8 +238,8 @@
             </button>
 
             <div id="service-cards"
-                class="snap-x select-none cursor-grab flex flex-row mt-4 w-9/12 md:w-10/12 lg:w-11/12 lg:max-w-6xl overflow-x-scroll md:overflow-x-hidden overflow-y-visible">
-                <ul id="sliderS" class="flex flex-row h-max w-full mb-5 md:mx-5">
+                class="h-fit snap-x select-none cursor-grab flex flex-row mt-4 w-9/12 md:w-10/12 lg:w-11/12 lg:max-w-6xl overflow-x-scroll md:overflow-x-hidden overflow-y-visible">
+                <ul id="sliderS" class="flex flex-row h-max w-full md:mx-5">
                     <li id="service" class="snap-start px-4 pt-3 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col">
                         <div class="flex flex-col items-center">
                             <div class="snap-start h-full w-full flex flex-col">
@@ -263,10 +263,11 @@
                                 </div>
                             </div>
                             <div id="ear-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
+                            
 
                         </div>
                     </li>
-
+                    
                     <li class="snap-start px-4 pt-3 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col">
                         <div class="flex flex-col items-center">
                             <div class="snap-start h-full w-full flex flex-col">
@@ -322,7 +323,7 @@
                     </li>
                 </ul>
             </div>
-
+            
             <button id="nextBs" title="Botón derecha" class="w-fit h-fit md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#303A2C"
                     class="lg:w-9 lg:h-9 w-7 h-7">
@@ -331,10 +332,10 @@
                         clip-rule="evenodd" />
                 </svg>
             </button>
-
         </div>
-
+        
         <div id="ear-services" class="mx-3 bg-[#303A2C] hidden">
+            
             <div class="flex flex-wrap gap-4 p-6 justify-center text-lg font-serif">
                 <a onclick="myServiceSelector('ear-1', 'open')" id="open-ear-1" href="#"
                     class="bg-gray-100 flex-grow text-black border-l-8 border-[#333122] rounded-md px-3 py-4 w-full md:w-5/12 lg:w-3/12 hover:border-[#F1E9E0]">
