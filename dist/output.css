@@ -1178,6 +1178,10 @@ video {
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -1909,6 +1913,10 @@ video {
     margin-right: 0.75rem;
   }
 
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
   .sm\:h-20 {
     height: 5rem;
   }
@@ -1927,6 +1935,10 @@ video {
 
   .sm\:w-5\/6 {
     width: 83.333333%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:flex-row {
