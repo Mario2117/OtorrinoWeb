@@ -1921,10 +1921,6 @@ video {
     height: 5rem;
   }
 
-  .sm\:h-5 {
-    height: 1.25rem;
-  }
-
   .sm\:w-1\/2 {
     width: 50%;
   }
