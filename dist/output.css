@@ -1178,10 +1178,6 @@ video {
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -1896,6 +1892,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:visible {
+    visibility: visible;
+  }
+
   .sm\:mx-3 {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
@@ -1921,6 +1921,10 @@ video {
     height: 5rem;
   }
 
+  .sm\:h-5 {
+    height: 1.25rem;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -1943,6 +1947,11 @@ video {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:bg-\[\#303A2C\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(48 58 44 / var(--tw-bg-opacity));
   }
 
   .sm\:px-3 {
