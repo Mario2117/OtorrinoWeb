@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    width: 100vw;
+    height: 100vw;
+}
+
   /* width */
 ::-webkit-scrollbar{
     background-color: rgba(255, 0, 0, 0);
