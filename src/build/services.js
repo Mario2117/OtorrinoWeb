@@ -201,7 +201,7 @@ function myServiceSelector(serviceId, operation){
             break;
         
         case 'ear-8':
-            title.innerHTML = 'Tapones de cerilla';
+            title.innerHTML = 'Tapones de <br>cerilla';
             title2.innerHTML = '';
             desc.innerHTML = 'En la mayoría de los casos, se producen debido a la manipulación con cotonetes, \
                                 uso de audífonos, entre otros. Pueden extraerse mediante limpieza bajo visión \
@@ -223,7 +223,7 @@ function myServiceSelector(serviceId, operation){
             break;
         
         case 'ear-10':
-            title.innerHTML = 'Zumbidos de oídos';
+            title.innerHTML = 'Zumbidos de <br>oídos';
             title2.innerHTML = '';
             desc.innerHTML = 'El zumbido en los oídos (Acufeno/Tinnitus) puede tener diversas causas, que van desde orígenes fácilmente \
             identificables, como tapones de cerumen, hasta problemas más serios, como neoplasias \
@@ -233,10 +233,10 @@ function myServiceSelector(serviceId, operation){
             break;
         
         case 'ear-11':
-            title.innerHTML = 'Cuerpos extraños';
+            title.innerHTML = 'Cuerpos <br>extraños';
             title2.innerHTML = '';
             desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los \
-                                niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los \
+                                niños,  en la nariz como  piezas de plástico  y de manera importante, baterías  los \
                                 cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir \
                                 alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado \
                                 durante la época de cuaresma';
@@ -245,7 +245,7 @@ function myServiceSelector(serviceId, operation){
             break;
         
         case 'ear-12':
-            title.innerHTML = 'Otitis Externa';
+            title.innerHTML = 'Otitis <br>Externa';
             title2.innerHTML = '';
             desc.innerHTML = 'También conocida coloquialmente como la otitis de los nadadores, se produce debido a la \
                                 manipulación del oído mediante el uso de artefactos de limpieza como cotonetes y \
@@ -267,7 +267,7 @@ function myServiceSelector(serviceId, operation){
             break;
         
         case 'throat-2':
-            title.innerHTML = 'Amigdalitis (anginas)';
+            title.innerHTML = 'Amigdalitis <br>(anginas)';
             title2.innerHTML = '';
             desc.innerHTML = 'Ofrecemos el tratamiento médico de los procesos de infección aguda y crónica de las amígdalas \
                                 o adenoides. Además, se contempla el tratamiento quirúrgico mediante amigdalectomía y adenoidectomía.';
@@ -276,10 +276,10 @@ function myServiceSelector(serviceId, operation){
             break;
         
         case 'throat-3':
-            title.innerHTML = 'Cuerpos extraños en Orofaringe';
+            title.innerHTML = 'Cuerpos <br>extraños';
             title2.innerHTML = '';
             desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los \
-                                niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los \
+                                niños,  en la nariz como  piezas de plástico  y de manera importante, baterías  los \
                                 cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir \
                                 alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado \
                                 durante la época de cuaresma';
@@ -288,7 +288,7 @@ function myServiceSelector(serviceId, operation){
             break;
         
         case 'throat-4':
-            title.innerHTML = 'Lesiones del  cuello';
+            title.innerHTML = 'Lesiones del <br>cuello';
             title2.innerHTML = '';
             desc.innerHTML = 'Se ofrecen servicios como el diagnóstico y tratamiento de problemas en el cuello, así como \
                                 biopsias y cirugías relacionadas con ganglios, quistes, entre otros.';
@@ -297,7 +297,7 @@ function myServiceSelector(serviceId, operation){
             break;
         
         case 'throat-5':
-            title.innerHTML = 'Cirugía de  glándulas';
+            title.innerHTML = 'Cirugía de <br>glándulas';
             title2.innerHTML = '';
             desc.innerHTML = 'Se realizan intervenciones quirúrgicas en glándulas salivales, incluyendo la parótida \
                                 y la submaxilar, así como cirugía en la glándula tiroides.';
@@ -380,7 +380,7 @@ function myServiceSelector(serviceId, operation){
             break;
 
         case 'nose-5':
-            title.innerHTML = 'Sangrado  Nasal (Epistaxis)';
+            title.innerHTML = 'Sangrado Nasal <br>(Epistaxis)';
             title2.innerHTML = '';
             desc.innerHTML = 'Según el caso, el sangrado puede resolverse en el consultorio o en quirófano. \
                                 Se emplean diversos tratamientos como cauterización local, colocación de agentes \
@@ -401,7 +401,7 @@ function myServiceSelector(serviceId, operation){
             break;
 
         case 'nose-7':
-            title.innerHTML = 'Rinitis alérgica';
+            title.innerHTML = 'Rinitis <br>alérgica';
             title2.innerHTML = '';
             desc.innerHTML = 'Tratamiento médico de la enfermedad alérgica nasal, ya sea estacional o persistente. \
                                 Además, puede llevarse a cabo en conjunto con el servicio de alergología.';
@@ -410,10 +410,10 @@ function myServiceSelector(serviceId, operation){
             break;
 
         case 'nose-8':
-            title.innerHTML = 'Cuerpos extraños';
+            title.innerHTML = 'Cuerpos <br>extraños';
             title2.innerHTML = '';
             desc.innerHTML = 'Objetos que se pueden encontrar en oídos, como  insectos o cuentas de plástico en los \
-                                niños,  en la nariz como  piezas de plástico  y de manresa importante, baterías  los \
+                                niños,  en la nariz como  piezas de plástico  y de manera importante, baterías  los \
                                 cual constituye una urgencia por que puede  perforar el  tabique nasal y  producir \
                                 alteraciones en el desarrollo  de la  nariz, o en la garganta,  como espinas de pescado \
                                 durante la época de cuaresma';
@@ -432,7 +432,7 @@ function myServiceSelector(serviceId, operation){
             break;
 
         case 'nose-comp-2':
-            title.innerHTML = 'Liposucción del cuello';
+            title.innerHTML = 'Liposucción <br>del cuello';
             title2.innerHTML = '';
             desc.innerHTML = 'Procedimiento destinado a contribuir al perfilado facial.';
             desc2.innerHTML = '';
@@ -452,7 +452,7 @@ function myServiceSelector(serviceId, operation){
             break;
 
         case 'nose-comp-4':
-            title.innerHTML = 'Bichatectomia (Bichectomia)';
+            title.innerHTML = 'Bichatectomia <br>(Bichectomia)';
             title2.innerHTML = '';
             desc.innerHTML = 'Procedimiento quirúrgico que implica la extirpación de las bolsas de grasa de Bichat \
                                 con el propósito de dar forma y perfilar el área de las mejillas.';
@@ -460,13 +460,19 @@ function myServiceSelector(serviceId, operation){
             additionalOps.classList.add('hidden');
             
             break;
-        
+            
+            
     }
 
 
-
+    
     // CLEAN UP AND FIXES
-
+    let positionComp = serviceId.search("nose-comp");
+    if (positionComp != -1){
+        galleryTitle.classList.add('hidden');
+        galleryPhotos.classList.add('hidden');
+        galleryLine.classList.remove('hidden');
+    }
     // HIDE UNUSED VARIABLES
     for (var i = 0; i < hideableText.length; i++) {
         // Get the variable name
@@ -479,6 +485,7 @@ function myServiceSelector(serviceId, operation){
         else{
             variableName.classList.remove('hidden');
         }
+
     }
 
     // UPPERCASE TITLES
