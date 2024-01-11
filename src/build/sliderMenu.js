@@ -22,13 +22,13 @@ function main() {
 
     //Dragging
     let isDraggingRev = false, startX, startScrollLeft, timeOutId;
-    // console.log(servicesToShow);
+    
 
     if(servicesToShow < 2) {
         // console.log(servicesToShow);
-        let sizeServiceMenu = serviceCards.scrollWidth - serviceCards.offsetWidth;
+        let sizeServiceMenu = Math.ceil(serviceCards.scrollWidth - serviceCards.offsetWidth);
 
-        console.log(sizeServiceMenu);
+        // console.log(sizeServiceMenu);
         let indexService = 'ear';
         const infiniteScroll=() => {
             if (serviceCards.scrollLeft === 0) {
@@ -36,12 +36,12 @@ function main() {
                 nextservices.classList.remove("invisible");
                 indexService = 'ear';
                 
-            } else if(Math.ceil(serviceCards.scrollLeft) > sizeServiceMenu-10){
+            } else if(Math.ceil(serviceCards.scrollLeft) === sizeServiceMenu){
                 nextservices.classList.add("invisible");      
                 prevservices.classList.remove("invisible");
                 indexService = 'nose';
                 
-            } else {
+            } else if(Math.ceil(serviceCards.scrollLeft) === Math.ceil(sizeServiceMenu/2)){
                 nextservices.classList.remove("invisible");
                 prevservices.classList.remove("invisible");
                 indexService = 'throat';
@@ -53,35 +53,46 @@ function main() {
 
         //buttonMovement
         prevservices.onclick = () => {
+            serviceCards.classList.add("scroll-smooth");
             if (indexService === 'nose') {
                 serviceMenu('throat');
-                serviceCards.classList.add("scroll-smooth");
-                serviceCards.scrollLeft = sizeServiceMenu/2;
-                serviceCards.classList.remove("scroll-smooth");
-            }
-            else if (indexService === 'throat') {
-                serviceMenu('ear');
-                serviceCards.classList.add("scroll-smooth");
-                serviceCards.scrollLeft = 0;
-                serviceCards.classList.remove("scroll-smooth");
-            }
-        };
-
-        nextservices.onclick = () => {
-            
-            if (indexService === 'ear') {
-                serviceMenu('throat');
-                serviceCards.classList.add("scroll-smooth");
-                serviceCards.scrollLeft = sizeServiceMenu/2;
+                serviceCards.scrollLeft = Math.ceil(sizeServiceMenu/2);
                 serviceCards.classList.remove("scroll-smooth");
                 
             }
             else if (indexService === 'throat') {
+                serviceMenu('ear');
+                serviceCards.scrollLeft = 0;
+                serviceCards.classList.remove("scroll-smooth");
+            } 
+            else if(indexService === 'ear') {
+                serviceMenu('ear');
+                serviceCards.scrollLeft = 0;
+                serviceCards.classList.remove("scroll-smooth");
+            }
+            
+        };
+
+        nextservices.onclick = () => {
+            serviceCards.classList.add("scroll-smooth");
+            if (indexService === 'ear') {
+                serviceMenu('throat');
+                serviceCards.scrollLeft = Math.ceil(sizeServiceMenu/2);
+                serviceCards.classList.remove("scroll-smooth");
+            }
+            else if (indexService === 'throat') {
                 serviceMenu('nose');
-                serviceCards.classList.add("scroll-smooth");
                 serviceCards.scrollLeft = sizeServiceMenu;
                 serviceCards.classList.remove("scroll-smooth");
             }
+            else if(indexService === 'nose') {
+                serviceMenu('nose');
+                serviceCards.scrollLeft = sizeServiceMenu;
+                serviceCards.classList.remove("scroll-smooth");
+            }
+            // serviceCards.classList.add("scroll-smooth");
+            // serviceCards.scrollLeft += serviceWidth;
+            // serviceCards.classList.remove("scroll-smooth");
         };
         
         //endButtonMovement
