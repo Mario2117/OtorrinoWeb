@@ -159,6 +159,12 @@ function myServiceSelector(serviceId, operation){
                                 Este procedimiento se lleva a cabo en quirófano, con anestesia local y sedación en adultos, \
                                 o bajo anestesia general en niños.';
             desc2.innerHTML = '';
+            galleryTitle.classList.remove('hidden');
+            galleryPhotos.classList.remove('hidden');
+            img1.src = "Otoplastia-A-antes.jpg";
+            img1.alt = "Fotografía de perfil de la paciente 1 antes de la operacion de otoplastia";
+            img2.src = "Otoplastia-A-despues.jpg";
+            img2.alt = "Fotografía de perfil de la paciente 1 después de la operacion de otoplastia";
             
             break;
         
@@ -350,7 +356,6 @@ function myServiceSelector(serviceId, operation){
             closeCompButton.classList.add('hidden');
             galleryTitle.classList.remove('hidden');
             galleryPhotos.classList.remove('hidden');
-            galleryLine.classList.add('hidden');
             img1.src = "Rino-pac-A-antes-perfil.jpg";
             img1.alt = "Fotografía de perfil de la paciente 1 antes de la operacion de rinoplastía";
             img2.src = "Rino-pac-A-despues-perfil.jpg";
@@ -516,6 +521,22 @@ function myServiceSelector(serviceId, operation){
         galleryTitle.classList.add('hidden');
         galleryPhotos.classList.add('hidden');
         galleryLine.classList.remove('hidden');
+        img1.src = "";
+        img1.alt = "";
+        img2.src = "";
+        img2.alt = "";
+        img3.src = "";
+        img3.alt = "";
+        img4.src = "";
+        img4.alt = "";
+        img5.src = "";
+        img5.alt = "";
+        img6.src = "";
+        img6.alt = "";
+        img7.src = "";
+        img7.alt = "";
+        img8.src = "";
+        img8.alt = "";
     }
     
     
