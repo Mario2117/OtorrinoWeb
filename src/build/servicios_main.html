@@ -1,0 +1,126 @@
+<section class="relative w-screen bg-white h-fit pb-5 pt-5">
+    
+    <!-- Main Menu Service Page -->
+    
+
+    <div class="flex items-center">
+        <!-- The left line -->
+        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+
+        <!-- Your text here -->
+        <h1 class="text-3xl mt-3 mb-3 text-[#333122] text-center font-bold md:text-5xl font-serif">
+            SERVICIOS
+        </h1>
+
+        <!-- The right line -->
+        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+    </div>
+
+
+    <div class="flex flex-col items-center justify-center text-base  text-center md:text-lg lg:text-xl font-serif">
+        <p class="pr-10 pl-10 max-w-4xl text-[#333122] ">Nuestra clínica de otorrinolaringología se enorgullece de ofrecer una gama completa de servicios para abordar sus necesidades de salud auditiva, nasal y de garganta.
+        </p>
+        <p class="pr-10 pt-4 pl-10 text-base md:text-xl lg:text-2xl max-w-4xl text-[#878560]">Entre los servicios más comunes se encuentran:</p>
+    </div>
+
+        <div class="flex flex-row w-full h-fit place-content-center items-center">
+            <button id="prevBs"  title="Flecha Izquierda"  class="w-fit h-fit md:hidden invisible">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#303A2C" class="lg:w-9 lg:h-9 w-7 h-7">
+                    <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        
+            <div id="service-cards" class="snap-x select-none cursor-grab flex flex-row mt-4 w-9/12 md:w-10/12 lg:w-11/12 lg:max-w-6xl overflow-x-scroll md:overflow-x-hidden">
+                <ul id="sliderS" class="flex flex-row h-max w-full mb-5 md:mx-5">
+                    <li id="service" class="snap-start px-4 pt-3 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col">
+                        <div class="flex flex-col items-center">
+                            <div class="snap-start h-full w-full flex flex-col">
+                                
+                                <div id="ear-box" class="relative rounded-md bg-cover shadow-[0px_0px_5px_0px_#000000] bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                    style="background-image: url('ear.jpg');">
+                                    <a href="/src/build/Nuestros_servicios.html" aria-label="Servicios Oreja" class="w-full h-full ">
+                                        
+                                        <div class="bg-[#333122] bg-opacity-50 rounded-md w-full h-full grow flex flex-col place-content-center items-center">
+                                        
+                                            <div class="text-white text-serif text-center pb-5">
+                                                <p class="text-2xl">Otoplastias</p> <p class="text-xl pt-2">¡Redefine tu estilo!</p>
+                                            </div>
+        
+                                        </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="ear-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
+                        </div>
+                    </li>
+                    
+                    <li class="snap-start px-4 pt-3 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col">
+                        <div class="flex flex-col items-center">
+                            <div class="snap-start h-full w-full flex flex-col">
+                                
+                                <div id="throat-box" class="relative rounded-md bg-cover shadow-[0px_0px_5px_0px_#000000] bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                    style="background-image: url('throat.png');" alt="Garganta">
+                                    <a href="/src/build/Nuestros_servicios.html" aria-label="Servicios garganta" class="w-full rounded-md h-full shadow-[0px_0px_5px_0px_#000000]">
+                                        
+                                        <div class="bg-[#333122] bg-opacity-50 w-full rounded-md h-full grow flex flex-col place-content-center items-center">
+                                        
+                                            <div class="text-white text-serif text-center pb-5">
+                                                <p class="text-2xl">Amigdalitis</p> <p class="text-xl pt-2">¡No tengas miedo a sentirte bien!</p>
+                                            </div>
+        
+                                        </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="throat-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
+                        </div>
+                    </li>
+        
+                    <li class="snap-start px-4 pt-3 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col">
+                        <div class="flex flex-col items-center">
+                            <div class="snap-start h-full w-full flex flex-col">
+                                
+                                <div id="nose-box" class="relative rounded-md bg-cover shadow-[0px_0px_5px_0px_#000000] bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                    style="background-image: url('nose.jpg');">
+                                    <a href="/src/build/Nuestros_servicios.html" aria-label="Servicios Nariz" class="w-full rounded-md h-full shadow-[0px_0px_5px_0px_#000000]">
+                                        
+                                        <div class="bg-[#333122] bg-opacity-50 w-full rounded-md h-full grow flex flex-col place-content-center items-center">
+                                        
+                                            <div class="text-white text-serif text-center pb-5">
+                                                <p class="text-2xl ">Rinoplastias</p> <p class="text-xl pt-2">¡Consigue la nariz de tu sueños!</p>
+                                             </div>
+        
+                                        </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="nose-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <button id="nextBs"  title="Flecha Derecha"  class="w-fit h-fit md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#303A2C" class="lg:w-9 lg:h-9 w-7 h-7">
+                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        
+        </div>
+        
+        <div class="flex flex-col items-center justify-center text-base  text-center md:text-lg lg:text-xl font-serif">
+            <p class="pr-10 pl-10 pt-2 max-w-4xl text-[#333122] ">¡Conoce los servicios que ofrecemos!</p>
+            <a href="/src/build/Nuestros_servicios.html" class=" w-4/6 px-2 py-2 mt-5 text-lg rounded-full border-2 border-[#303A2C] shadow-md bg-[#F1E9E0] md:w-56 text-center lg:w-72 lg:text-lg lg:py-4 lg:px-4 hover:shadow-[0px_0px_5px_0px_#000000]">Saber más...</a>
+        </div>
+    
+    <div id="bottom-line" class="flex-grow h-1 bg-[#333122] mt-5 mx-3"></div>
+
+
+    
+    <script src="./sliderMenu.js" defer></script>
+
+    
+</section>

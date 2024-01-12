@@ -1,14 +1,728 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
-    <title>Document</title>
+    <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+    <link rel="icon" href="./assets/logoblanco.png"/>
+    <meta name="description" content="Encuentra atención especializada en oído, nariz y garganta en Tijuana con el otorrinolaringólogo Carlo Pedroza. Conócenos, explora nuestros servicios y contáctanos.">
+    <title>Dr. Carlo Pedroza - Otorrinolaringólogo en Tijuana.</title>
+
+    
+<nav class="hidden transition-all items-center justify-between fixed w-full z-50  bg-white h-32 md:flex">
+    <a href="/src/build/index.html">
+        <div class="flex items-center pl-6">
+            <img src="../assets/Logo.png" alt="Logo del otorrinolaringólogo Carlo Pedroza" class="h-28 w-auto">
+            <div>
+            <p class="text-sm tracking-widest font-serif">DR. CARLO PEDROZA</p>
+            <p class="text-xs tracking-widest font-serif">OTORRINOLARINGÓLOGO</p>
+            </div>
+        </div>
+    </a>
+
+    <div class="flex items-center justify-evenly h-16 w-3/5 shadow-lg ml-auto 
+        rounded-l-full bg-[#303A2C] text-base text-white font-serif font-light lg:text-lg">
+        <a class="hover:text-orange-100" href="/src/build/index.html">INICIO</a>
+        <a class="hover:text-orange-100" href="/src/build/Quienes_somos.html">¿QUIÉNES SOMOS?</a>
+        <a class="hover:text-orange-100" href="/src/build/Nuestros_servicios.html">SERVICIOS</a>
+        <a class="hover:text-orange-100" href="/src/build/Contacto.html">CONTACTO</a>
+    </div>
+</nav>
+
+
+<!--md:hidden-->
+
+<nav class="fixed z-50 flex items-center justify-between bg-white h-24 w-screen md:hidden">
+
+    <a href="/src/build/index.html">
+        <div class="flex items-center pl-1">
+            <img src="../assets/Logo.png" alt="Logo del otorrinolaringólogo Carlo Pedroza" class="h-20 w-auto">
+            <div>
+                <p class="min-[300px]:text-xs tracking-widest min-[273px]:text-[10px] font-serif">DR. CARLO PEDROZA</p>
+                <p class=" min-[273px]:text-[10px] min-[300px]:text-xs tracking-widest font-serif">OTORRINO</p>
+            </div>
+        </div>
+    </a>
+
+    <div id="y" class="flex items-center justify-evenly h-16 w-3/12 shadow-lg transition-all
+        rounded-l-full bg-[#303A2C] text-lg text-white font-serif font-light hover:w-4/12
+        " _="on click hide #y then toggle .hidden on #x">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="pl-2 w-10 h-10 " fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+    </div>
+
+
+    <div id="x" class="hidden relative z-50">
+        <div class="flex items-center justify-evenly h-16 w-20 bg-[#303A2C] shadow-lg transition-all
+        rounded-l-full absolute top-4 right-[222px] text-white hover:w-[90px]"
+        _="on click show #y then toggle .hidden on #x">
+        <svg xmlns="http://www.w3.org/2000/svg" class="pl-2 w-10 h-10 " fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </div>
+
+        <div  class="bg-[#303A2C] w-56 h-screen absolute top-4 right-0 shadow-xl shadow-black">
+            <div class="flex flex-col items-center w-56 h-auto text-3xl text-center text-white font-serif font-normal">   
+            <a class="hover:text-[#878560] pt-7 pb-7" href="/src/build/index.html">INICIO</a>
+            <div class="w-8/12 h-[2px] bg-[#878560]"></div>
+            <a class="hover:text-[#878560] pt-7 pb-7" href="/src/build/Quienes_somos.html">¿QUIÉNES SOMOS?</a>
+            <div class="w-8/12 h-[2px] bg-[#878560]"></div>
+            <a class="hover:text-[#878560] pt-7 pb-7" href="/src/build/Nuestros_servicios.html">SERVICIOS</a>
+            <div class="w-8/12 h-[2px] bg-[#878560]"></div>
+            <a class="hover:text-[#878560] pt-7 pb-7" href="/src/build/Contacto.html">CONTACTO</a>
+            <div class="w-8/12 h-[2px] bg-[#878560]"></div>
+            </div> 
+        </div>
+    </div>
+    
+    
+</nav>
+
+
 </head>
 <body>
-    <h1>header</h1>
-    <h1 class="bg-green-500 md:bg-red-400">Hello world</h1>
-    <h1>footer</h1>
+    <div class="md:h-32 h-24 w-screen bg-white"></div>
+    <section class="shadow-inner">
+    <div id="carrusel"
+        class="snap-x select-none flex flex-row w-full h-fit overflow-x-scroll md:overflow-x-hidden">
+        <ul id="slider_image" class="flex w-full h-4/5">
+            <li id="bg_image" class="relative snap-start flex-shrink-0 w-full h-[80vh] bg-gray-900">
+                <img loading="lazy" class="h-full z-10 w-full object-cover opacity-60 object-center" src="./Main_Recepcion.jpg" alt="Recepción de la oficina del otorrinolaringólogo Carlo Pedroza">
+                <div class="absolute z-40 bottom-5 md:bottom-16  left-0  w-full flex flex-col items-center">
+                    <p class="text-2xl sm:text-6xl font-semibold font-serif text-white w-full text-center">
+                        ¿Ya agendaste tu cita?
+                    </p>
+                    <p class="text-base sm:text-4xl font-serif text-white my-4 w-3/4 text-center">
+                        ¡Comunícate con nosotros o ven a nuestro consultorio para programar tu cita!
+                    </p>
+                    <a href="/src/build/Contacto.html" aria-label="Contactar otorrino"
+                        class="text-white  w-4/6 px-2 py-2 mt-5 text-lg rounded-full border-2 bg-[#303A2C] shadow-md border-[#F1E9E0] md:w-56 text-center lg:w-40 lg:text-lg lg:py-4 lg:px-4 hover:shadow-[0px_0px_5px_0px_#000000]">Contacto </a>
+                </div>
+            </li>
+            <li class="relative snap-start flex-shrink-0 w-full bg-gray-900 h-[80vh]">
+                <img loading="lazy" class="z-10 h-full w-full object-cover object-center opacity-60" src="./Carlo.png" alt="Fotografía del otorrinolaringólogo Carlo Pedroza">
+                <div class="absolute z-40 bottom-5 md:bottom-16  left-0  w-full flex flex-col place-content-end items-center">
+                    <p class="text-2xl sm:text-6xl font-semibold font-serif text-white w-full text-center">
+                        ¡Conoce quiénes somos!
+                    </p>
+                    <p class="text-base sm:text-4xl font-serif text-white my-4 w-3/4 text-center">
+                        Explora a fondo nuestra visión y qué nos define.
+                    </p>
+                    <a href="/src/build/Quienes_somos.html" aria-label="Conocer al doctor"
+                        class="text-white  w-4/6 px-2 py-2 mt-5 text-lg rounded-full border-2 bg-[#303A2C] shadow-md border-[#F1E9E0] md:w-56 text-center lg:w-48 lg:text-lg lg:py-4 lg:px-4 hover:shadow-[0px_0px_5px_0px_#000000]">¿Quiénes somos?</a>
+                </div>
+            </li>
+            <li class="relative snap-start flex-shrink-0 w-full bg-gray-900 h-[80vh]">
+                <img loading="lazy" class="z-10 h-full w-full object-cover opacity-60" src="./Servicios.JPG" alt="Servicios que ofrece el otorrinolaringólogo Carlo Pedroza">
+                <div class="absolute z-40 bottom-5 md:bottom-16 left-0  w-full flex flex-col place-content-end items-center">
+                    <p class="text-2xl sm:text-6xl font-semibold font-serif text-white w-full text-center">
+                        ¿Buscas mejorar tu salud?
+                    </p>
+                    <p class="text-base sm:text-4xl font-serif text-white my-4 w-3/4 text-center">
+                        ¡Explora los servicios que brindamos!
+                    </p>
+                    <a href="/src/build/Nuestros_servicios.html" aria-label="Servicios de Otorrino"
+                        class="text-white  w-4/6 px-2 py-2 mt-5 text-lg rounded-full border-2 bg-[#303A2C] shadow-md border-[#F1E9E0] md:w-56 text-center lg:w-40 lg:text-lg lg:py-4 lg:px-4 hover:shadow-[0px_0px_5px_0px_#000000]">Servicios</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="w-full flex md:flex lg:flex h-full absolute top-0 left-0">
+        <div class="z-40  justify-between w-full flex flex-row my-auto mx-2">
+            <button id="preB" title="Flecha Izquierda" class="rounded-full bg-white opacity-40 w-fit h-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+                    class="lg:w-9 lg:h-9 w-7 h-7 pr-1">
+                    <path fill-rule="evenodd"
+                        d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+            <button id="nexB" title="Flecha Derecha" class="rounded-full bg-white opacity-40 w-fit h-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+                    class="lg:w-9 lg:h-9 w-7 h-7 pl-1">
+                    <path fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./mainSlider.js" defer></script>
+</section>
+    <section class="flex w-full mt-10 mb-10 lg:pb-24 md:pt-20 lg:pt-5 h-fit justify-center">
+    <div
+        class="flex flex-col items-center justify-center w-screen h-[800px] mt-5 mb-5 lg:flex-row relative max-w-screen-2xl">
+        <!-- max-w-screen-2xl -->
+
+        <div class="hidden lg:block bg-[#F1E9E0] h-[600px] w-[550px] absolute z-0 left-0 top-52"></div>
+        <img loading="lazy" src="../assets/doctor.png" alt="Otorrinolaringólogo Carlo Pedroza durante una operación."
+            class="shadow-[0px_0px_5px_0px_#000000] h-auto hidden z-10 lg:block ml-44 w-[460px]">
+
+        <div
+            class="lg:hidden relative flex h-[260px] md:h-[350px] w-screen items-center justify-center mt-16 bg-[#F1E9E0] mb-10">
+            <img loading="lazy" src="../assets/doctor.png" alt="Otorrinolaringólogo Carlo Pedroza durante una operación."
+                class="relative h-[300px]  shadow-[0px_0px_5px_0px_#000000] md:h-[450px] ">
+        </div>
+
+        <div
+            class="flex flex-col items-center w-auto lg:w-3/4 pt:5 md:pt-10 pl-5 pr-5 font-serif lg:pt-5 lg:items-start lg:pl-32 xl:pl-40">
+            <!--Texto-->
+            <div class="w-11/12 md:w-8/12 lg:w-11/12">
+                
+                <h1
+                    class="text-2xl text-[#303A2C] pb-1 md:text-5xl xl:text-7xl text-center lg:text-left font-serif">
+                    Dr. Carlo Pedroza 
+                </h1>
+                <h2 class="text-xl text-[#303A2C]   md:text-3xl xl:text-3xl text-center lg:text-left font-serif">Otorrinolaringólogo</h2>
+
+                <div class="bg-[#878560] w-full h-0.5 lg:hidden"></div>
+                <p class=" pt-4 text-base text-[#333122] 
+                md:text-lg lg:text-lg lg:text-left font-serif text-center ">
+                    Médico especialista en el diagnóstico y tratamiento de las enfermedades de oídos, nariz, garganta y
+                    cuello, con más de 20 años de experiencia en atención para adultos y niños, con amplia experiencia
+                    en cirugía estética y funcional de nariz, resolución quirúrgica de enfermedades de los oídos,
+                    garganta.</p>
+                <p class=" pt-4 text-base text-[#333122] 
+                md:text-lg lg:text-lg lg:text-left font-serif text-center">
+                    Atención con paciencia y calidad, buscando la recuperación de la salud de la manera más óptima.</p>
+            </div>
+
+            <a href="/src/build/Quienes_somos.html" aria-label="Página de quienes somos"
+                class=" w-4/6 px-2 py-2 mt-5 mb-16 text-lg rounded-full border-2 border-[#303A2C] shadow-md bg-[#F1E9E0] md:w-56 text-center lg:w-40 lg:text-lg lg:py-4 lg:px-4 hover:shadow-[0px_0px_5px_0px_#000000]">Saber
+                más...
+            </a>
+        </div>
+    </div>
+
+</section>
+    <section id="lol" class="w-full bg-[#303A2C] relative h-fit shadow-[inset_0px_0px_32px_0px_#000] pt-5 pb-5 font-serif">
+    
+    <div class="flex flex-col w-full h-full items-center">
+        <h2 class="mt-3 text-white text-center font-bold text-2xl font-serif md:text-4xl">NUESTRA IDENTIDAD</h2>
+        <p class="text-md text-[#CDB8A0] font-serif md:text-xl">Conoce nuestros intereses</p>
+        <div class="flex flex-row w-full place-content-center justify-center items-center">
+            <button id="prevBso"  title="Flecha Izquierda"  class="w-fit h-fit lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="lg:w-9 lg:h-9 w-8 h-8">
+                    <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <div id="somos-cards" class="snap-x select-none flex flex-row mb-4 w-9/12 md:w-10/12 lg:11/12 lg:max-w-6xl overflow-x-scroll md:overflow-x-hidden font-serif">
+                <ul id="somos-slider" class="flex w-full ">
+                    <li id="somos" class="snap-start px-2 py-1 w-full lg:w-1/3 flex-shrink-0 flex flex-col items-center justify-center z-10">
+                        <img loading="lazy" src="/src/assets/Mision.jpg" alt="Misión del otorrinolaringólogo Carlo Pedroza" class="rounded-md shadow-[0px_0px_5px_0px_#000000] w-4/5 relative object-center top-5 z-10">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0] rounded-md z-0 w-full grow flex flex-col relative items-center -top-5">
+                            
+                            <h3 class="text-4xl tracking-wide pt-14 pb-4 font-serif">Misión</h3>
+                            <p class="leading-relaxed pr-6 pl-6 pb-16 text-center text-base md:text-xl font-serif">Proporcionar servicios médicos especializados en otorrinolaringología, asegurando altos estándares de calidad a costos accesibles.</p>
+                            <div class="flex flex-row pb-6 pt-4 items-center absolute bottom-0">
+                                <div class="bg-[#878560] w-10 md:w-16 lg:w-28 h-0.5 mr-2"></div> <div class="bg-[#878560] w-2 h-2 rounded-full"></div> <div class="ml-2 pl-3 bg-[#878560] w-10 md:w-16 lg:w-28 h-0.5"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="snap-start px-2 py-1 w-full lg:w-1/3 flex-shrink-0 flex flex-col items-center  justify-center z-10">
+                        <img loading="lazy" src="/src/assets/Vision.png" alt="Visión del otorrinolaringólogo Carlo Pedroza" class="rounded-md  shadow-[0px_0px_5px_0px_#000000] w-4/5  relative top-5 z-10">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0] rounded-md  z-0 w-full grow flex flex-col relative items-center -top-5">
+                            
+                            <h3 class="text-4xl tracking-wide font-serif pt-14 pb-4">Visión</h3>
+                            <p class="leading-relaxed pr-6 pl-6 pb-16 text-center text-base md:text-xl font-serif">Ser un servicio reconocido en Tijuana, destacando por la excelencia en el cuidado auditivo y respiratorio.</p>
+                            <div class="flex flex-row pb-6 pt-4 items-center absolute bottom-0">
+                                <div class="bg-[#878560] w-10 md:w-16 lg:w-28 h-0.5 mr-2"></div> <div class="bg-[#878560] w-2 h-2 rounded-full"></div> <div class="ml-2 pl-3 bg-[#878560] w-10 md:w-16 lg:w-28 h-0.5"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="snap-start px-2 py-1 w-full lg:w-1/3 flex-shrink-0 flex flex-col items-center justify-center z-10">
+                        <img loading="lazy" src="/src/assets/Valores.jpg" alt="Valores del otorrinolaringólogo Carlo Pedroza" class="rounded-md shadow-[0px_0px_5px_0px_#000000] w-4/5 object-right relative  top-5 z-10">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0] pb-10 rounded-md z-0 w-full grow flex flex-col relative items-center -top-5">
+                            
+                            <h3 class="text-4xl tracking-wide font-serif pt-14 pb-4">Valores</h3>
+                            <p class="leading-relaxed pr-6 pl-6 text-center text-base md:text-xl font-serif">Los valores que orientan nuestras acciones en nuestra labor son: </p>
+                            <p class="leading-relaxed pr-6 pl-6 text-center text-base md:text-xl font-serif">La Ética</p>
+                            <p class="leading-relaxed pr-6 pl-6 text-center text-base md:text-xl font-serif">La Responsabilidad</p>
+                            <p class="leading-relaxed pr-6 pl-6 text-center text-base md:text-xl font-serif">La Honestidad</p>
+                            <div class="flex flex-row pb-6 pt-4 items-center absolute bottom-0">
+                                <div class="bg-[#878560] w-10 md:w-16 lg:w-28 h-0.5 mr-2"></div> <div class="bg-[#878560] w-2 h-2 rounded-full"></div> <div class="ml-2 pl-3 bg-[#878560] w-10 md:w-16 lg:w-28 h-0.5"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button id="nextBso"  title="Flecha Derecha"  class="w-fit h-fit lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="lg:w-9 lg:h-9 w-8 h-8">
+                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+
+    
+    <script src="./qSomosSlider.js" defer></script>
+</section>
+
+    <section class="relative w-screen bg-white h-fit pb-5 pt-5">
+    
+    <!-- Main Menu Service Page -->
+    
+
+    <div class="flex items-center">
+        <!-- The left line -->
+        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+
+        <!-- Your text here -->
+        <h1 class="text-3xl mt-3 mb-3 text-[#333122] text-center font-bold md:text-5xl font-serif">
+            SERVICIOS
+        </h1>
+
+        <!-- The right line -->
+        <div class="flex-grow h-1 bg-[#333122] mx-3"></div>
+    </div>
+
+
+    <div class="flex flex-col items-center justify-center text-base  text-center md:text-lg lg:text-xl font-serif">
+        <p class="pr-10 pl-10 max-w-4xl text-[#333122] ">Nuestra clínica de otorrinolaringología se enorgullece de ofrecer una gama completa de servicios para abordar sus necesidades de salud auditiva, nasal y de garganta.
+        </p>
+        <p class="pr-10 pt-4 pl-10 text-base md:text-xl lg:text-2xl max-w-4xl text-[#878560]">Entre los servicios más comunes se encuentran:</p>
+    </div>
+
+        <div class="flex flex-row w-full h-fit place-content-center items-center">
+            <button id="prevBs"  title="Flecha Izquierda"  class="w-fit h-fit md:hidden invisible">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#303A2C" class="lg:w-9 lg:h-9 w-7 h-7">
+                    <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        
+            <div id="service-cards" class="snap-x select-none cursor-grab flex flex-row mt-4 w-9/12 md:w-10/12 lg:w-11/12 lg:max-w-6xl overflow-x-scroll md:overflow-x-hidden">
+                <ul id="sliderS" class="flex flex-row h-max w-full mb-5 md:mx-5">
+                    <li id="service" class="snap-start px-4 pt-3 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col">
+                        <div class="flex flex-col items-center">
+                            <div class="snap-start h-full w-full flex flex-col">
+                                
+                                <div id="ear-box" class="relative rounded-md bg-cover shadow-[0px_0px_5px_0px_#000000] bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                    style="background-image: url('ear.jpg');">
+                                    <a href="/src/build/Nuestros_servicios.html" aria-label="Servicios Oreja" class="w-full h-full ">
+                                        
+                                        <div class="bg-[#333122] bg-opacity-50 rounded-md w-full h-full grow flex flex-col place-content-center items-center">
+                                        
+                                            <div class="text-white text-serif text-center pb-5">
+                                                <p class="text-2xl">Otoplastias</p> <p class="text-xl pt-2">¡Redefine tu estilo!</p>
+                                            </div>
+        
+                                        </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="ear-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
+                        </div>
+                    </li>
+                    
+                    <li class="snap-start px-4 pt-3 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col">
+                        <div class="flex flex-col items-center">
+                            <div class="snap-start h-full w-full flex flex-col">
+                                
+                                <div id="throat-box" class="relative rounded-md bg-cover shadow-[0px_0px_5px_0px_#000000] bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                    style="background-image: url('throat.png');" alt="Garganta">
+                                    <a href="/src/build/Nuestros_servicios.html" aria-label="Servicios garganta" class="w-full rounded-md h-full shadow-[0px_0px_5px_0px_#000000]">
+                                        
+                                        <div class="bg-[#333122] bg-opacity-50 w-full rounded-md h-full grow flex flex-col place-content-center items-center">
+                                        
+                                            <div class="text-white text-serif text-center pb-5">
+                                                <p class="text-2xl">Amigdalitis</p> <p class="text-xl pt-2">¡No tengas miedo a sentirte bien!</p>
+                                            </div>
+        
+                                        </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="throat-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
+                        </div>
+                    </li>
+        
+                    <li class="snap-start px-4 pt-3 w-full md:w-1/3 h-fit flex-shrink-0 flex flex-col">
+                        <div class="flex flex-col items-center">
+                            <div class="snap-start h-full w-full flex flex-col">
+                                
+                                <div id="nose-box" class="relative rounded-md bg-cover shadow-[0px_0px_5px_0px_#000000] bg-no-repeat bg-center bg-opacity-10 w-full h-72 hover:scale-105 transition duration-500 cursor-pointer" 
+                                    style="background-image: url('nose.jpg');">
+                                    <a href="/src/build/Nuestros_servicios.html" aria-label="Servicios Nariz" class="w-full rounded-md h-full shadow-[0px_0px_5px_0px_#000000]">
+                                        
+                                        <div class="bg-[#333122] bg-opacity-50 w-full rounded-md h-full grow flex flex-col place-content-center items-center">
+                                        
+                                            <div class="text-white text-serif text-center pb-5">
+                                                <p class="text-2xl ">Rinoplastias</p> <p class="text-xl pt-2">¡Consigue la nariz de tu sueños!</p>
+                                             </div>
+        
+                                        </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="nose-line" class="hidden bg-[#303A2C] h-5 w-2"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <button id="nextBs"  title="Flecha Derecha"  class="w-fit h-fit md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#303A2C" class="lg:w-9 lg:h-9 w-7 h-7">
+                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        
+        </div>
+        
+        <div class="flex flex-col items-center justify-center text-base  text-center md:text-lg lg:text-xl font-serif">
+            <p class="pr-10 pl-10 pt-2 max-w-4xl text-[#333122] ">¡Conoce los servicios que ofrecemos!</p>
+            <a href="/src/build/Nuestros_servicios.html" class=" w-4/6 px-2 py-2 mt-5 text-lg rounded-full border-2 border-[#303A2C] shadow-md bg-[#F1E9E0] md:w-56 text-center lg:w-72 lg:text-lg lg:py-4 lg:px-4 hover:shadow-[0px_0px_5px_0px_#000000]">Saber más...</a>
+        </div>
+    
+    <div id="bottom-line" class="flex-grow h-1 bg-[#333122] mt-5 mx-3"></div>
+
+
+    
+    <script src="./sliderMenu.js" defer></script>
+
+    
+</section>
+    <section class="w-full bg-[#303A2C] relative h-fit shadow-[inset_0px_0px_32px_0px_#000] pt-5 pb-5">
+    <div class="flex flex-col w-full h-full items-center ">
+        <div class="mt-3 text-white font-bold text-2xl font-serif md:text-4xl">
+            RESEÑAS
+        </div>
+        <div class="text-md text-[#CDB8A0] font-serif mb-3 md:text-xl">
+            Pacientes te cuentan su experiencias
+        </div>
+        
+        <div class="flex flex-row w-full place-content-center items-center">
+            <button id="prevB"  title="Flecha Izquierda"  class="w-fit h-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="lg:w-9 lg:h-9 w-7 h-7">
+                    <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <div id="review-cards" class="snap-x select-none flex flex-row mb-4 w-9/12 md:w-10/12 lg:11/12 lg:max-w-6xl overflow-x-scroll md:overflow-x-hidden ">
+                <ul id="slider" class="flex w-full">
+                    <li id="review" class="snap-start px-2 py-1 w-full md:w-1/2 min-[1130px]:w-1/3 h-[400px] flex-shrink-0 flex flex-col">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] w-full h-[70px] flex-none bg-[#333122] rounded-tr-lg rounded-tl-lg flex flex-row items-center"> 
+                            <a href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana#tab=profile-reviews" aria-label="Reseña doctoralia" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="ml-3 mr-1 w-11 h-11">
+                                <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                            </svg></a>
+                            <div class="flex-col flex">
+                                <p class="text-[#F1E9E0] font-serif text-sm min-[370px]:text-lg lg:text-[22px] leading-5">Ramón Bojorquez</p>
+                                <p class="text-[#F1E9E0] font-serif text-[10px] lg:text-[10px]">Perfil verificado.<br/>5 de agosto de 2023</p>
+                            </div>
+                        </div>
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0] w-full grow flex flex-col relative items-center pl-2 pr-2 rounded-br-lg rounded-bl-lg ">
+                            <div class="text-[#333122] font-serif font-normal text-base min-[370px]:text-lg md:text-lg text-center  mt-5 px-2 pb-4">
+                                El doctor es muy paciente y profesional, para atender con detalles tus dudas. Te ofrece el tratamiento y la explicación del uso del mismo.
+                            </div>
+                            <div class="absolute bottom-3">
+                                <a href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana#tab=profile-reviews" aria-label="Reseña doctoralia" target="_blank" rel="noopener noreferrer">                 
+                                    <img src="./dralia_logo_brown.png" alt="logo de doctoralia" class="mb-1 h-8 w-8">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="snap-start px-2 py-1 w-full md:w-1/2 min-[1130px]:w-1/3 h-[400px] flex-shrink-0 flex flex-col">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] w-full h-[70px] flex-none bg-[#333122] flex flex-row items-center rounded-tr-lg rounded-tl-lg"> 
+                            <a href="https://maps.app.goo.gl/CcQt4xKiYetVqJwdA" aria-label="Reseña de Google" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="ml-3 mr-1 w-11 h-11">
+                                <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                            </svg></a>
+                            <div class="flex-col flex">
+                                <p class="text-[#F1E9E0] font-serif  text-sm min-[370px]:text-lg leading-5">Sarai Guerrero</p>
+                                <p class="text-[#F1E9E0] font-serif text-[10px] ">Perfil verificado.<br/>2022</p>
+                            </div>
+                        </div>
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0] w-full grow flex flex-col relative items-center rounded-br-lg rounded-bl-lg">
+                            <div class="text-[#333122] font-serif font-normal text-base min-[370px]:text-lg md:text-lg text-center mt-5 px-2 pb-4">
+                                ¡Increíble doctor! ¡Recomiendo mucho al Dr.Carlo Pedroza! Mi hija tuvo una infección de oído muy dolorosa.
+                                Me recomendaron al Dr Carlo Pedroza y él inmediatamente accedió a la situación.
+                            </div>
+                            <div class="absolute bottom-2 ">
+                                <a href="https://maps.app.goo.gl/CcQt4xKiYetVqJwdA" aria-label="Reseña de Google" target="_blank" rel="noopener noreferrer"><div class="flex-row flex">                 
+                                    <img src="./google_logo_brown.png" alt="logo de google" class="mb-3 h-8 w-8">
+                                </div></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="snap-start px-2 py-1 w-full md:w-1/2 min-[1130px]:w-1/3 h-[400px] flex-shrink-0 flex flex-col">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] w-full h-[70px] flex-none bg-[#333122] flex flex-row items-center rounded-tr-lg rounded-tl-lg"> 
+                            <a href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana#tab=profile-reviews" aria-label="Reseña doctoralia" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="ml-3 mr-1 w-11 h-11">
+                                <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                            </svg></a>
+                            <div class="flex-col flex">
+                                <p class="text-[#F1E9E0] font-serif text-sm min-[370px]:text-lg leading-5">Danna Alba</p>
+                                <p class="text-[#F1E9E0] font-serif text-[10px]">Perfil verificado.<br/>7 de diciembre de 2022</p>
+                            </div>
+                        </div>
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0] w-full grow flex flex-col relative items-center rounded-br-lg rounded-bl-lg">
+                            <div class="text-[#333122] font-serif font-normal text-base min-[370px]:text-lg md:text-lg text-center  mt-5 px-2 pb-4">
+                                Excelente trato al paciente, gran profesionalidad y excelente trato por asistentes. Muy satisfecha con el tratamiento y resultados sin duda alguna recomendaría siempre a Dr. Pedroza.
+                            </div>
+                            <div class="absolute bottom-3">
+                                <a href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana#tab=profile-reviews" aria-label="Reseña doctoralia" target="_blank" rel="noopener noreferrer">                 
+                                    <img src="./dralia_logo_brown.png" alt="logo de doctoralia" class="mb-1 h-8 w-8">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="snap-start px-2 py-1 w-full md:w-1/2 min-[1130px]:w-1/3 h-[400px] flex-shrink-0 flex flex-col">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] w-full h-[70px] flex-none bg-[#333122] flex flex-row items-center rounded-tr-lg rounded-tl-lg"> 
+                            <a href="https://www.facebook.com/drpedrozatijuana/reviews" aria-label="Reseña de Facebook" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="ml-3 mr-1 w-11 h-11">
+                                <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                            </svg></a>
+                            <div class="flex-col flex">
+                                <p class="text-[#F1E9E0] font-serif text-sm min-[370px]:text-lg leading-5">Fermín Antonio</p>
+                                <p class="text-[#F1E9E0] font-serif text-[10px]">Perfil verificado.<br/>10 de noviembre de 2019</p>
+                            </div>
+                        </div>
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0] w-full grow flex flex-col items-center relative rounded-br-lg rounded-bl-lg">
+                            <div class="text-[#333122] font-serif font-normal text-base min-[370px]:text-lg md:text-lg text-center  mt-5 px-2 pb-4">
+                                Gran vocación de servicio, con calidad y calidez en su trato siempre el mismo, profesionista de alto nivel y sencillez en su trato que cautiva tanto a mexicanos como a extranjeros por su excelencia.
+                            </div>
+                            <div class="absolute bottom-2">
+                                <a href="https://www.facebook.com/drpedrozatijuana/reviews" aria-label="Reseña de Facebook" target="_blank" rel="noopener noreferrer"><div class="flex-row flex">                 
+                                    <img src="./fb_logo_brown.png" alt="logo de facebook" class="mb-3 h-9 w-9">
+                                </div></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="snap-start px-2 py-1 w-full md:w-1/2 min-[1130px]:w-1/3 h-[400px] flex-shrink-0 flex flex-col">
+                        <div class="shadow-[0px_0px_5px_0px_#000000] w-full h-[70px] flex-none bg-[#333122] flex flex-row items-center rounded-tr-lg rounded-tl-lg"> 
+                            <a href="https://www.facebook.com/drpedrozatijuana/reviews" aria-label="Reseña de Facebook" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="ml-3 mr-1 w-11 h-11">
+                                <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                            </svg></a>
+                            <div class="flex-col flex">
+                                <p class="text-[#F1E9E0] font-serif text-sm min-[370px]:text-lg leading-5">Anna Casillas</p>
+                                <p class="text-[#F1E9E0] font-serif text-[10px]">Perfil verificado.<br/>21 de enero de 2020 </p>
+                            </div>
+                        </div>
+                        <div class="shadow-[0px_0px_5px_0px_#000000] bg-[#F1E9E0] w-full grow flex flex-col items-center relative rounded-br-lg rounded-bl-lg">
+                            <div class="text-[#333122] font-serif text-base min-[370px]:text-lg md:text-lg text-center mt-5 px-2 pb-4">
+                                Muy recomendado. Excelente Persona y Doctor. Con un nivel increíble de paciencia para explicar la causa de la enfermedad y el porque del tratamiento sugerido.
+                            </div>
+                            <div class="absolute bottom-2">
+                                <a href="https://www.facebook.com/drpedrozatijuana/reviews"  aria-label="Reseña de Facebook" target="_blank" rel="noopener noreferrer"><div class="flex-row flex">                 
+                                    <img src="./fb_logo_brown.png" alt="Logo de doctoralia" class="mb-3 h-9 w-9">
+                                </div></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button id="nextB"  title="Flecha Derecha"   class="w-fit h-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F1E9E0" class="lg:w-9 lg:h-9 w-7 h-7">
+                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col relative w-full max-w-3xl lg:max-w-4xl items-center place-content-center mb-3">
+            <span class="text-md text-[#CDB8A0] font-serif">
+                Para más reseñas visítanos en:
+            </span>
+            <div class="md:absolute md:right-0 flex flex-row">
+                <a href="https://maps.app.goo.gl/CcQt4xKiYetVqJwdA" aria-label="Reseñas de Google" target="_blank" rel="noopener noreferrer"><button class="h-7 w-[85px] lg:w-24 flex flex-row place-content-center items-center rounded-full bg-[#F1E9E0] shadow-[0px_0px_5px_0px_#000000]">
+                    <img src="./google_black_logo.png" alt="Logo de google" class="mr-1 h-5 w-5">
+                    <p class="text-sm font-semibold">Google</p>
+                </button></a>
+                <a href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana" aria-label="Reseña de doctoralia" target="_blank" rel="noopener noreferrer"><button class="h-7  w-[85px] lg:w-24 flex flex-row place-content-center items-center rounded-full bg-[#F1E9E0] shadow-[0px_0px_5px_0px_#000000] mx-1 lg:mx-3">
+                    <img src="./doctoralia_logo_black.png" alt="logo de doctoralia" class="mr-[2px] h-4 w-4">
+                    <p class="text-xs font-bold">Doctoralia</p>
+                </button></a>
+                <a href="https://www.facebook.com/drpedrozatijuana/reviews" aria-label="Reseña de Facebook" target="_blank" rel="noopener noreferrer"><button class="h-7 w-[85px] lg:w-24 flex flex-row place-content-center items-center rounded-full bg-[#F1E9E0] shadow-[0px_0px_5px_0px_#000000] mr-1 lg:mr-3">
+                    <img src="./fb_logo_black.png" alt="logo de facebook" class="mr-[2px] h-5 w-5">
+                    <p class="text-xs font-bold">facebook</p>
+                </button></a>
+            </div>
+        </div>
+    </div>
+    <script src="./reviewSlider.js" defer></script>
+</section>
+
+    <section class="flex w-full pt-16 pb-16 h-fit justify-center">
+    <div class="flex flex-row w-full justify-evenly min-[1130px]:justify-between  max-w-screen-xl">
+
+        
+        <div class="flex flex-col font-serif items-center justify-center  lg:pr-0 lg:pl-0 w-fit relative"><!-- md:w-7/12 lg:w-6/12 2xl:w-5/12 -->
+            <div class="flex flex-col items-center justify-center tracking-widest">
+                <h2 class="text-3xl lg:text-4xl pb-5 text-[#303A2C] font-bold">VISÍTANOS EN</h2>
+                <div class="md:text-base lg:text-xl text-[#333122] text-center">
+                    <p class="text-center pb-2 pl-5 pr-5 font-serif text-[15px] md:text-xl lg:text-2xl">Calle Diego Rivera #2386 5to piso, oficina 505.<br>Edificio CER, Zona Urbana Rio
+                        Tijuana, 22880.</p>
+                    <a aria-label="Ver en Google Maps" class="pt-5 text-[#CDB8A0] hover:text-[#333122] font-medium" href="https://www.google.com/maps/place/CER+Hospital/@32.5231494,-117.015704,17z/data=!4m6!3m5!1s0x80d9483ff08eae45:0xd6508fccbc320e2f!8m2!3d32.5232052!4d-117.013089!16s%2Fg%2F1tcy4lkv?entry=ttu">Ver en Google maps</a>
+                </div>
+            </div>
+
+
+            <div class="lg:hidden relative flex h-[220px]  sm:mb-0 md:h-[300px] md:mb-10 w-screen items-center justify-center bg-[#F1E9E0] mt-10 mb-5">
+                    <img loading="lazy" src="./HospitalCER.jpg" class="relative z-10 object-cover rounded-md object-bottom  h-[250px] w-[250px] min-[370px]:w-[300px] md:h-[350px] md:w-[400px]  shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]" alt="Fotografía de la entrada del Hospital CER en Tijuana, México.">
+            </div>
+            
+            
+            <div class="pt-5 flex flex-col md:flex-row min-[1130px]:flex-row min-[1130px]:items-center min-[1130px]:justify-center justify-evenly lg:ml-5 w-12/12">
+                <div class="flex flex-col pb-5 pr-1 truncate">
+                    <h3 class="text-2xl text-center tracking-widest text-[#303A2C] font-semibold pt-5 pb-3">HORARIO<br>DE CONSULTA</h3>
+                        <div class="flex tracking-wider md:pr-3 text-base justify-center">
+                            <div>
+                                <p>LUNES</p>
+                                <p>MARTES</p>
+                                <p>MIÉRCOLES</p>
+                                <p>JUEVES</p>
+                                <p>VIERNES</p>
+                                <p>SÁBADO</p>
+                            </div>
+                        
+                            <div class=" min-[1130px]:pl-0">
+                                <p>4:00 pm - 7:30 pm</p>
+                                <p>CERRADO</p>
+                                <p>4:00 pm - 7:30 pm</p>
+                                <p>4:00 pm - 7:30 pm</p>
+                                <p>4:00 pm - 7:30 pm</p>
+                                <p>9:30 am - 2:00 pm</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#303A2C] shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] ml-0 rounded-md lg:ml-5 mt-5 md:mt-0">
+                    <div class="flex flex-col items-center p-6">
+                        <h3 class="text-xl tracking-widest text-[#CDB8A0]">AGENDA TU CITA</h3>
+                        <a href="mailto:Otorrinotj@gmail.com?subject = Quiero agendar una cita." class="text-white text-xl hover:text-[#CDB8A0]">Otorrinotj@gmail.com</a>
+                        <p class="text-white text-xl">664-208-7909</p>
+                        <a class="text-white text-xl hover:text-[#CDB8A0]" href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana#tab=profile-reviews" target="_blank" rel="noopener noreferrer">                 
+                            Doctoralia
+                        </a>
+                        <div class="flex flex-row pb-2 pt-2 items-center">
+                            <div class="bg-[#CDB8A0] w-16 h-0.5 mr-2"></div> <div class="bg-[#CDB8A0] w-2 h-2 rounded-full"></div> <div class="ml-2 pl-3 bg-[#CDB8A0] w-16 h-0.5"></div>
+                        </div>
+                        <h3 class="text-xl tracking-widest text-center text-[#CDB8A0]">CONTÁCTANOS Y<br/>SIGUENOS EN</h3>
+                        <ul class="flex justify-center pt-2 space-x-5">
+                            <li>
+                                <a href="https://www.facebook.com/drpedrozatijuana" aria-label="Contactar por Facebook" class="text-white ">
+                                    <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/dr.carlopedroza/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" aria-label="Contactar por Instagram" class="text-white">
+                                    <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana#tab=profile-reviews" aria-label="Contactar por Doctoralia" target="_blank" rel="noopener noreferrer">                 
+                                    <img src="./dralia_logoblanco.png" alt="logo de doctoralia" class="mb-1 h-8 w-8">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/526642627274" aria-label="Contactar por Whatsapp" class="text-white ">
+                                    <img src="./wa_logo.png" alt="logo de whatsapp" class="w-9 h-9">
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="min-[1130px]:w-0"></div>
+        <div class="hidden lg:block lg:w-6/12 2xl:w-7/12 max-w-xl relative">
+            <div class="block lg:hidden bg-[#F1E9E0] min-[1130px]:block min-[1130px]:w-[530px] min-[1130px]:h-[400px] min-[1130px]:left-0 lg:w-[400px] lg:h-[300px] lg:top-10 lg:left-10 absolute z-0 ml-5 top-9"></div>
+                <img loading="lazy" src="./HospitalCER.jpg" class=" object-cover z-10 lg:ml-14 min-[1130px]:ml-0 absolute min-[1130px]:top-0 min-[1130px]:w-[530px] min-[1130px]:h-[400px] lg:top-16 lg:w-[400px] lg:h-[300px] shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]" alt="Fotografía de la entrada del Hospital CER en Tijuana, México.">
+        </div>
+    </div>
+</section>
+
+
+    <footer class="md:relative flex w-screen place-content-center shadow-inner  bg-[#303A2C] relative h-fit md:h-56 ">
+    <div class="mt-3 flex flex-col-reverse md:flex-row max-w-screen-xl items-center md:absolute top-0 h-38">
+        <div class="my-5 md:mt-6 flex flex-row items-center justify-center pr-6 h-full">
+            <img src="./logoblanco.png" alt="logo del otorrinolaringólogo Carlo Pedroza." class="h-24 w-auto">
+            <div>
+            <p class="text-sm tracking-widest font-serif text-white">DR. CARLO PEDROZA</p>
+            <p class="text-[8px] tracking-widest font-serif text-white">OTORRINOLARINGÓLOGO</p>
+            </div>
+        </div>
+        <div class="flex flex-col h-full w-44 place-content-center font-serif text-center">
+            <div class="text-sm text-[#CDB8A0]">
+                UBICACIÓN
+            </div>
+            <div class="text-white font-serif text-[13px] text-center mt-2">
+                Calle Diego Rivera #2386 5to piso , oficina 505, Edificio CER, Zona Urbana Rio Tijuana, 22880.
+            </div>
+            <div class="flex flex-row mt-2 items-center justify-center">
+                <a href="https://maps.app.goo.gl/sPhD43XVfBjJuc4y7" aria-label="Dirección en Google Maps"><img src="./maps_logo.png" alt="logo de google" class="h-8 w-auto"></a>
+                <a href="https://maps.app.goo.gl/sPhD43XVfBjJuc4y7" class="text-sm text-white font-serif ml-2">Google Maps</a>
+            </div>
+            <div class="mt-[2px] w-full"></div><svg width="176" height="18" viewBox="0 0 361 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="9.5" x2="161" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <line x1="200" y1="9.5" x2="361" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <ellipse cx="180.5" cy="9" rx="8.5" ry="9" fill="#888661"/>
+            </svg>
+        </div>
+        <div class="my-4 md:mx-5 flex flex-col h-full w-44 place-content-center font-serif text-center">
+            <div class="text-sm text-[#CDB8A0] ">
+                HORARIO
+            </div>
+            <table class="mt-2 ml-2 text-left text-white font-serif text-xs md:text-[10px] min-[802px]:text-xs">
+                <tr><td>LUNES</td><td>4 pm - 7:30 pm</td></tr>
+                <tr><td>MARTES</td><td>CERRADO</td></tr>
+                <tr><td>MIÉRCOLES</td><td>4 pm - 7:30 pm</td></tr>
+                <tr><td>JUEVES</td><td>4 pm - 7:30 pm</td></tr>
+                <tr><td>VIERNES</td><td>4 pm - 7:30 pm</td></tr>
+                <tr><td>SÁBADO</td><td>9:30 am - 2 pm</td></tr>
+            </table>
+            <div class="mt-3 w-full"></div><svg width="176" height="18" viewBox="0 0 361 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="9.5" x2="161" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <line x1="200" y1="9.5" x2="361" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <ellipse cx="180.5" cy="9" rx="8.5" ry="9" fill="#888661"/>
+            </svg>
+        </div>
+        <div class="flex flex-col h-full w-44 place-content-center font-serif text-center">
+            <div class="text-sm text-[#CDB8A0]">
+                CONTACTO
+            </div>
+            <div class="pt-5 md:mt-0 text-white font-serif text-sm text-center">
+                <a href="mailto:Otorrinotj@gmail.com">Otorrinotj@gmail.com</a>
+            </div>
+            <div class=" text-white font-serif pb-3 text-sm text-center">
+                <p>664-208-7909</p>
+            </div>
+            <div class="mt-5 flex flex-row items-center justify-center">
+                <a href="https://www.facebook.com/drpedrozatijuana" aria-label="Facebook"><img src="./facebook_logo.png" alt="logo de facebook" class="h-5 w-auto mx-2"></a>
+                <a href="https://wa.me/526642627274" aria-label="Whatsapp"><img src="./wa_logo.png" alt="logo de whatsapp" class="h-6 w-auto mx-2"></a>
+                <a href="https://www.instagram.com/dr.carlopedroza/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" aria-label="Instagram"><img src="./insta_logo.png" alt="logo" class="h-5 w-auto mx-2"></a>
+                <a href="mailto:Otorrinotj@gmail.com" aria-label="Mail"><img src="./mail_logo.png" alt="imagen de correo electrónico" class="h-6 w-auto mx-2"></a>
+
+                <a href="https://www.doctoralia.com.mx/carlo-pedroza-mendez/otorrinolaringologo/tijuana#tab=profile-reviews"  target="_blank" rel="noopener noreferrer">                 
+                    <img src="./dralia_logoblanco.png" alt="logo de doctoralia" class="h-5 w-auto mx-2">
+                </a>
+
+
+            </div>
+            <div class="mt-3 w-full"></div><svg width="176" height="18" viewBox="0 0 361 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="9.5" x2="161" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <line x1="200" y1="9.5" x2="361" y2="9.5" stroke="#888661" stroke-width="5"/>
+                <ellipse cx="180.5" cy="9" rx="8.5" ry="9" fill="#888661"/>
+            </svg>
+        </div>
+    </div>
+        
+            
+</div>
+        
+</footer>
 </body>
 </html>
