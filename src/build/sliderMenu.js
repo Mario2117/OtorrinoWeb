@@ -35,7 +35,7 @@ function main() {
                 nextservices.classList.remove("invisible");
                 // indexService = 'ear';
                 
-            } else if (Math.ceil(serviceCards.scrollLeft) > Math.ceil((sizeServiceMenu/3)*2)){
+            } else if ((Math.ceil(serviceCards.scrollLeft) > Math.ceil((sizeServiceMenu/3)*2.5))){
                 nextservices.classList.add("invisible");      
                 prevservices.classList.remove("invisible");
                 // indexService = 'nose';
