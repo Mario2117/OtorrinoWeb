@@ -5,9 +5,9 @@ let prevservices = document.getElementById('prevBs');
 let nextservices = document.getElementById('nextBs');
 let serviceCardsWidth = serviceCards.clientWidth;
 let servicesToShow = Math.round(serviceCardsWidth/serviceWidth); 
-
+// let indexService = '';
 servicesliderSChildren = [...servicesliderS.children];
-
+serviceCards.scrollLeft = 0;
 function inicializaVariables(){
     serviceCards = document.getElementById('service-cards');
     servicesliderS = document.getElementById('sliderS');
@@ -27,24 +27,23 @@ function main() {
     if(servicesToShow < 2) {
         // console.log(servicesToShow);
         let sizeServiceMenu = Math.ceil(serviceCards.scrollWidth - serviceCards.offsetWidth);
-
         // console.log(sizeServiceMenu);
-        let indexService = 'ear';
+        
         const infiniteScroll=() => {
             if (serviceCards.scrollLeft === 0) {
                 prevservices.classList.add("invisible");
                 nextservices.classList.remove("invisible");
-                indexService = 'ear';
+                // indexService = 'ear';
                 
-            } else if(Math.ceil(serviceCards.scrollLeft) === sizeServiceMenu){
+            } else if ((Math.ceil(serviceCards.scrollLeft) > Math.ceil((sizeServiceMenu/3)*2.5))){
                 nextservices.classList.add("invisible");      
                 prevservices.classList.remove("invisible");
-                indexService = 'nose';
+                // indexService = 'nose';
                 
-            } else if(Math.ceil(serviceCards.scrollLeft) === Math.ceil(sizeServiceMenu/2)){
+            } else if(Math.ceil(serviceCards.scrollLeft) <= Math.ceil((sizeServiceMenu/3)*2) && Math.ceil(serviceCards.scrollLeft) >= Math.ceil(sizeServiceMenu/3)){
                 nextservices.classList.remove("invisible");
                 prevservices.classList.remove("invisible");
-                indexService = 'throat';
+                // indexService = 'throat';
             }
 
         };
@@ -54,18 +53,20 @@ function main() {
         //buttonMovement
         prevservices.onclick = () => {
             serviceCards.classList.add("scroll-smooth");
-            if (indexService === 'nose') {
+            if (Math.ceil(serviceCards.scrollLeft) > Math.ceil((sizeServiceMenu/3)*2)) {
+                // console.log('En Nariz');
                 serviceMenu('throat');
                 serviceCards.scrollLeft = Math.ceil(sizeServiceMenu/2);
                 serviceCards.classList.remove("scroll-smooth");
-                
             }
-            else if (indexService === 'throat') {
+            else if (Math.ceil(serviceCards.scrollLeft) <= Math.ceil((sizeServiceMenu/3)*2) && Math.ceil(serviceCards.scrollLeft) >= Math.ceil(sizeServiceMenu/3)) {
+                // console.log('En Garganta');
                 serviceMenu('ear');
                 serviceCards.scrollLeft = 0;
                 serviceCards.classList.remove("scroll-smooth");
             } 
-            else if(indexService === 'ear') {
+            else if (Math.ceil(serviceCards.scrollLeft) < Math.ceil(sizeServiceMenu/3) && Math.ceil(serviceCards.scrollLeft) >= 0) {
+                // console.log('En Oreja');
                 serviceMenu('ear');
                 serviceCards.scrollLeft = 0;
                 serviceCards.classList.remove("scroll-smooth");
@@ -75,17 +76,20 @@ function main() {
 
         nextservices.onclick = () => {
             serviceCards.classList.add("scroll-smooth");
-            if (indexService === 'ear') {
+            if (Math.ceil(serviceCards.scrollLeft) < Math.ceil(sizeServiceMenu/3) && Math.ceil(serviceCards.scrollLeft) >= 0) {
+                // console.log('En Oreja');
                 serviceMenu('throat');
                 serviceCards.scrollLeft = Math.ceil(sizeServiceMenu/2);
                 serviceCards.classList.remove("scroll-smooth");
             }
-            else if (indexService === 'throat') {
+            else if (Math.ceil(serviceCards.scrollLeft) <= Math.ceil((sizeServiceMenu/3)*2) && Math.ceil(serviceCards.scrollLeft) >= Math.ceil(sizeServiceMenu/3)) {
+                // console.log('En Garganta');
                 serviceMenu('nose');
                 serviceCards.scrollLeft = sizeServiceMenu;
                 serviceCards.classList.remove("scroll-smooth");
             }
-            else if(indexService === 'nose') {
+            else if (Math.ceil(serviceCards.scrollLeft) > Math.ceil((sizeServiceMenu/3)*2)) {
+                // console.log('En Nariz');
                 serviceMenu('nose');
                 serviceCards.scrollLeft = sizeServiceMenu;
                 serviceCards.classList.remove("scroll-smooth");
